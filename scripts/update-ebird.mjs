@@ -36,21 +36,43 @@ function inBorough(lon, lat, polygons) {
 }
 
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
-// Search a wide enough radius to cover the borough, then require the hotspot's
-// coordinates to fall inside the exact borough boundary. eBird's notable endpoint
-// lets the board omit rare/unusual records while retaining regular local species.
-const params = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', hotspot: 'true', includeProvisional: 'false', maxResults: '10000'});
+// Discover hotspots with recent activity near the borough, then keep only
+// hotspots whose mapped coordinates fall inside the exact borough boundary.
+// Query each hotspot's location feed so multiple checklists/reports are retained;
+// the nearby geo endpoint returns only the latest report per species.
 const headers = {'X-eBirdApiToken': apiKey};
-const observationsUrl = new URL(`${apiRoot}/data/obs/geo/recent`);
-observationsUrl.search = params;
-const notableUrl = new URL(`${apiRoot}/data/obs/geo/recent/notable`);
-notableUrl.search = params;
-const [observations, notableObservations] = await Promise.all([
-  getJson(observationsUrl, headers),
-  getJson(notableUrl, headers)
-]);
-const observationKey = observation => `${observation.comName}|${observation.locId}|${String(observation.obsDt).slice(0, 10)}`;
-const notableKeys = new Set(notableObservations.map(observationKey));
+const hotspotUrl = new URL(`${apiRoot}/ref/hotspot/geo`);
+hotspotUrl.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', fmt: 'json'});
+const nearbyHotspots = await getJson(hotspotUrl, headers);
+const boroughHotspots = nearbyHotspots.filter(h => h.locId && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons));
+
+async function mapLimit(items, limit, callback) {
+  const output = new Array(items.length);
+  let next = 0;
+  await Promise.all(Array.from({length: Math.min(limit, items.length)}, async () => {
+    while (next < items.length) {
+      const index = next++;
+      output[index] = await callback(items[index]);
+    }
+  }));
+  return output;
+}
+
+const hotspotResults = await mapLimit(boroughHotspots, 2, async hotspot => {
+  const params = new URLSearchParams({back: '30', includeProvisional: 'false', maxResults: '10000'});
+  const observationsUrl = new URL(`${apiRoot}/data/obs/${encodeURIComponent(hotspot.locId)}/recent`);
+  observationsUrl.search = params;
+  const notableUrl = new URL(`${apiRoot}/data/obs/${encodeURIComponent(hotspot.locId)}/recent/notable`);
+  notableUrl.search = params;
+  const [observations, notableObservations] = await Promise.all([
+    getJson(observationsUrl, headers),
+    getJson(notableUrl, headers)
+  ]);
+  const notableKeys = new Set(notableObservations.map(observation => `${observation.comName}|${String(observation.obsDt).slice(0, 10)}`));
+  return {observations, notableKeys};
+});
+const observations = hotspotResults.flatMap(result => result.observations);
+const notableByLocation = new Map(boroughHotspots.map((hotspot, index) => [hotspot.locId, hotspotResults[index].notableKeys]));
 
 const fs = await import('node:fs/promises');
 let feed;
@@ -58,13 +80,13 @@ try { feed = JSON.parse(await fs.readFile(outputPath, 'utf8')); }
 catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
 // Use the hotspot ID consistently so old records keyed by hotspot name are
 // normalised and repeated daily runs replace, rather than duplicate, reports.
-const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}`;
+const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}|${record.checklistId || ''}`;
 const byId = new Map(feed.records.map(record => [recordKey(record), record]));
 let accepted = 0;
 
 for (const observation of observations) {
   if (!observation.locId || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
-  if (observation.obsValid !== true || notableKeys.has(observationKey(observation))) continue;
+  if (observation.obsValid !== true || notableByLocation.get(observation.locId)?.has(`${observation.comName}|${String(observation.obsDt).slice(0, 10)}`)) continue;
   if (!inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
@@ -77,4 +99,4 @@ for (const observation of observations) {
 const records = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.species.localeCompare(b.species));
 feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted};
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
-console.log(`Saved ${records.length} retained non-notable hotspot reports (${accepted} accepted from the latest 30-day query).`);
+console.log(`Saved ${records.length} retained non-notable hotspot reports (${accepted} accepted from ${boroughHotspots.length} in-borough hotspots in the latest 30-day query).`);
