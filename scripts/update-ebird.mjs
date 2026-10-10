@@ -5,6 +5,7 @@ const apiRoot = 'https://api.ebird.org/v2';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/observations.json', import.meta.url);
 const excludedHotspotIds = new Set(['L12107155']); // St Mary's Catholic Cemetery (Kensal Green), outside the borough
+const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)']);
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
@@ -45,9 +46,16 @@ const headers = {'X-eBirdApiToken': apiKey};
 const hotspotUrl = new URL(`${apiRoot}/ref/hotspot/geo`);
 hotspotUrl.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', fmt: 'json'});
 const nearbyHotspots = await getJson(hotspotUrl, headers);
-const boroughHotspots = nearbyHotspots.filter(h => {
+// Also look up configured hotspots without the recent-activity filter so the
+// target location is queried even when its last checklist was more than 30 days ago.
+const allHotspotUrl = new URL(`${apiRoot}/ref/hotspot/geo`);
+allHotspotUrl.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', fmt: 'json'});
+const allNearbyHotspots = await getJson(allHotspotUrl, headers);
+const recentHotspotIds = new Set(nearbyHotspots.map(h => h.locId));
+const hotspotCandidates = new Map([...allNearbyHotspots, ...nearbyHotspots].map(h => [h.locId, h]));
+const boroughHotspots = [...hotspotCandidates.values()].filter(h => {
   const name = String(h.name || h.locName || '');
-  return h.locId && !excludedHotspotIds.has(h.locId) && !/kensal green/i.test(name) && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons);
+  return h.locId && !excludedHotspotIds.has(h.locId) && !/kensal green/i.test(name) && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons) && (recentHotspotIds.has(h.locId) || explicitlyIncludedHotspotNames.has(name));
 });
 
 async function mapLimit(items, limit, callback) {
