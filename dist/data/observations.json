@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-10T09:15:50.042Z",
+  "updatedAt": "2026-10-10T11:33:02.492Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -1652,7 +1652,20 @@
       "checklistId": "S400740888",
       "observer": "Chris Parry",
       "howMany": 1
+    },
+    {
+      "species": "House Sparrow",
+      "latin": "Passer domesticus",
+      "speciesCode": "houspa",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-10",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S400773786",
+      "observer": "Chris Parry",
+      "howMany": null
     }
   ],
-  "lastRunNewReports": 126
+  "lastRunNewReports": 128
 }
