@@ -95,6 +95,20 @@
       .row>div::before,.sighting-row>div::before{color:#9db9ff}
     }
 
+  
+    /* Give each field a deliberate share of the table width. */
+    .gridhead,.row{grid-template-columns:minmax(0,1.15fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.4fr)}
+    .sightings-grid,.sighting-row{grid-template-columns:minmax(0,1.05fr) minmax(0,1.3fr) minmax(0,1.35fr) minmax(0,.9fr)}
+    @media(max-width:620px){
+      .row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px 12px}
+      .row>.species,.row>.actual{grid-column:auto}
+      .sighting-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px 12px}
+      .sighting-row>div:first-child,.sighting-row>div:last-child{grid-column:auto}
+    }
+    html.tv-mode .gridhead{display:grid}
+    html.tv-mode .row{grid-template-columns:minmax(0,1.15fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.4fr)}
+    html.tv-mode .row>div::before,html.tv-mode .sighting-row>div::before{display:none}
+
   </style>
 </head>
 <body>
