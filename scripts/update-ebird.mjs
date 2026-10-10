@@ -4,10 +4,6 @@ if (!apiKey) throw new Error('Set EBIRD_API_KEY in the GitHub Actions repository
 const apiRoot = 'https://api.ebird.org/v2';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/observations.json', import.meta.url);
-const targetSpecies = new Set([
-  'Sand Martin', 'Swallow', 'House Martin', 'Common Swift', 'Common Whitethroat',
-  'Redwing', 'Fieldfare', 'Brambling', 'Siskin'
-]);
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
@@ -40,10 +36,21 @@ function inBorough(lon, lat, polygons) {
 }
 
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
-// Recent geospatial results cover the borough; exact polygon filtering below removes nearby out-of-borough records.
-const url = new URL(`${apiRoot}/data/obs/geo/recent`);
-url.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', hotspot: 'true', includeProvisional: 'false'});
-const observations = await getJson(url, {'X-eBirdApiToken': apiKey});
+// Search a wide enough radius to cover the borough, then require the hotspot's
+// coordinates to fall inside the exact borough boundary. eBird's notable endpoint
+// lets the board omit rare/unusual records while retaining regular local species.
+const params = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', hotspot: 'true', includeProvisional: 'false', maxResults: '10000'});
+const headers = {'X-eBirdApiToken': apiKey};
+const observationsUrl = new URL(`${apiRoot}/data/obs/geo/recent`);
+observationsUrl.search = params;
+const notableUrl = new URL(`${apiRoot}/data/obs/geo/recent/notable`);
+notableUrl.search = params;
+const [observations, notableObservations] = await Promise.all([
+  getJson(observationsUrl, headers),
+  getJson(notableUrl, headers)
+]);
+const observationKey = observation => `${observation.comName}|${observation.locId}|${String(observation.obsDt).slice(0, 10)}`;
+const notableKeys = new Set(notableObservations.map(observationKey));
 
 const fs = await import('node:fs/promises');
 let feed;
@@ -56,12 +63,13 @@ const byId = new Map(feed.records.map(record => [recordKey(record), record]));
 let accepted = 0;
 
 for (const observation of observations) {
-  if (!targetSpecies.has(observation.comName) || !observation.locId || !observation.lat || !observation.lng) continue;
+  if (!observation.locId || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
+  if (observation.obsValid !== true || notableKeys.has(observationKey(observation))) continue;
   if (!inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
-  const record = {species: observation.comName, year, month, date, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null};
+  const record = {species: observation.comName, latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null};
   byId.set(recordKey(record), record);
   accepted++;
 }
@@ -69,4 +77,4 @@ for (const observation of observations) {
 const records = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.species.localeCompare(b.species));
 feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted};
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
-console.log(`Saved ${records.length} retained reports (${accepted} accepted from the latest 30-day query).`);
+console.log(`Saved ${records.length} retained non-notable hotspot reports (${accepted} accepted from the latest 30-day query).`);
