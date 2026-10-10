@@ -1,0 +1,20 @@
+{
+  "name": "Hammersmith & Fulham Bird Board",
+  "short_name": "H&F Birds",
+  "description": "Monthly bird arrivals, departures and actual borough hotspot sightings.",
+  "lang": "en-GB",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#080a0e",
+  "theme_color": "#101923",
+  "icons": [
+    {
+      "src": "./icons/bird.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
