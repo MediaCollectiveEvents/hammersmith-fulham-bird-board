@@ -1,6 +1,12 @@
 name: Update eBird observations
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update-ebird.mjs'
+      - 'dist/index.html'
+      - '.github/workflows/update-ebird.yml'
   schedule:
     - cron: '23 5 * * *'
   workflow_dispatch:
