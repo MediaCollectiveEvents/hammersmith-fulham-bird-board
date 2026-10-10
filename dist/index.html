@@ -80,6 +80,21 @@
       .sighting-row>div:first-child,.sighting-row>div:last-child{grid-column:1/-1}
     }
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  
+    /* Airport departure-board table treatment */
+    .board{border-color:#3e4b61;box-shadow:0 12px 34px #0009}
+    .gridhead{padding:11px 13px 10px;color:#f2f5fb;letter-spacing:.07em;border-bottom:2px solid #7ea9ff;text-shadow:0 0 6px #9ab7ff70}
+    .row,.sighting-row{border-bottom:1px solid #648fff}
+    .row:last-child,.sighting-row:last-child{border-bottom:2px solid #7ea9ff}
+    .row:nth-child(even),.sighting-row:nth-child(even){background:#0b0e14}
+    .species{letter-spacing:.035em;text-shadow:0 0 6px #b7caff38}
+    .direction,.window{ text-shadow:0 0 5px #c8d8ff35}
+    @media(max-width:620px){
+      .row,.sighting-row{border-bottom:1px solid #648fff}
+      .row:last-child,.sighting-row:last-child{border-bottom:2px solid #7ea9ff}
+      .row>div::before,.sighting-row>div::before{color:#9db9ff}
+    }
+
   </style>
 </head>
 <body>
