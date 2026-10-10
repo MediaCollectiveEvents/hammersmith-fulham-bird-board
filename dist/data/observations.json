@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-10T08:35:44.765Z",
+  "updatedAt": "2026-10-10T08:39:57.956Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -11,7 +11,9 @@
       "date": "2026-09-10",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S391517238"
+      "checklistId": "S391517238",
+      "observer": "Jim Herkert",
+      "howMany": 1
     },
     {
       "species": "Carrion Crow",
@@ -22,7 +24,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 6
     },
     {
       "species": "Common Wood-Pigeon",
@@ -33,7 +37,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 12
     },
     {
       "species": "Eurasian Blackbird",
@@ -44,7 +50,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 3
     },
     {
       "species": "Eurasian Magpie",
@@ -55,7 +63,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 8
     },
     {
       "species": "European Robin",
@@ -66,7 +76,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 3
     },
     {
       "species": "European Starling",
@@ -77,7 +89,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 5
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -88,7 +102,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 1
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -99,7 +115,9 @@
       "date": "2026-09-11",
       "hotspot": "Shepherd's Bush (LBC District)",
       "hotspotId": "L12107769",
-      "checklistId": "S393263905"
+      "checklistId": "S393263905",
+      "observer": "James Strain",
+      "howMany": 1
     },
     {
       "species": "Great Tit",
@@ -110,7 +128,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 1
     },
     {
       "species": "Rock Pigeon",
@@ -121,7 +141,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 7
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -132,7 +154,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 4
     },
     {
       "species": "White Wagtail",
@@ -143,7 +167,9 @@
       "date": "2026-09-11",
       "hotspot": "Ravenscourt Park",
       "hotspotId": "L939893",
-      "checklistId": "S391747277"
+      "checklistId": "S391747277",
+      "observer": "Luciano Gelfi",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -154,7 +180,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 4
     },
     {
       "species": "Canada Goose",
@@ -165,7 +193,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 6
     },
     {
       "species": "Carrion Crow",
@@ -176,7 +206,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 2
     },
     {
       "species": "Common Wood-Pigeon",
@@ -187,7 +219,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 2
     },
     {
       "species": "Eurasian Magpie",
@@ -198,7 +232,9 @@
       "date": "2026-09-12",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S392214563"
+      "checklistId": "S392214563",
+      "observer": "Zane Khademi",
+      "howMany": null
     },
     {
       "species": "Eurasian Moorhen",
@@ -209,7 +245,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 1
     },
     {
       "species": "European Herring Gull",
@@ -220,7 +258,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 1
     },
     {
       "species": "Great Cormorant",
@@ -231,7 +271,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 1
     },
     {
       "species": "Mallard",
@@ -242,7 +284,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 2
     },
     {
       "species": "Mandarin Duck",
@@ -253,7 +297,9 @@
       "date": "2026-09-12",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S392214563"
+      "checklistId": "S392214563",
+      "observer": "Zane Khademi",
+      "howMany": null
     },
     {
       "species": "Peregrine Falcon",
@@ -264,7 +310,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 1
     },
     {
       "species": "Rock Pigeon",
@@ -275,7 +323,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 4
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -286,7 +336,9 @@
       "date": "2026-09-12",
       "hotspot": "Furnival Gardens",
       "hotspotId": "L12105749",
-      "checklistId": "S392255931"
+      "checklistId": "S392255931",
+      "observer": "Mark Stanley",
+      "howMany": 2
     },
     {
       "species": "Common Chaffinch",
@@ -297,7 +349,9 @@
       "date": "2026-09-19",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S394148064"
+      "checklistId": "S394148064",
+      "observer": "The Urban Birder",
+      "howMany": 1
     },
     {
       "species": "Eurasian Jay",
@@ -308,7 +362,9 @@
       "date": "2026-09-19",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S394148064"
+      "checklistId": "S394148064",
+      "observer": "The Urban Birder",
+      "howMany": 2
     },
     {
       "species": "Greater Whitethroat",
@@ -319,7 +375,9 @@
       "date": "2026-09-19",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S394148064"
+      "checklistId": "S394148064",
+      "observer": "The Urban Birder",
+      "howMany": 1
     },
     {
       "species": "Whinchat",
@@ -330,7 +388,9 @@
       "date": "2026-09-19",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S394148064"
+      "checklistId": "S394148064",
+      "observer": "The Urban Birder",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -341,7 +401,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 30
     },
     {
       "species": "Carrion Crow",
@@ -352,7 +414,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 1
     },
     {
       "species": "European Herring Gull",
@@ -363,7 +427,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 3
     },
     {
       "species": "European Robin",
@@ -374,7 +440,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 1
     },
     {
       "species": "Long-tailed Tit",
@@ -385,7 +453,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 4
     },
     {
       "species": "Rock Pigeon",
@@ -396,7 +466,9 @@
       "date": "2026-09-20",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
-      "checklistId": "S394577607"
+      "checklistId": "S394577607",
+      "observer": "Ben Normark",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -407,7 +479,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "Common Chiffchaff",
@@ -418,7 +492,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 5
     },
     {
       "species": "Common Wood-Pigeon",
@@ -429,7 +505,9 @@
       "date": "2026-09-25",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S395984569"
+      "checklistId": "S395984569",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Dunnock",
@@ -440,7 +518,9 @@
       "date": "2026-09-25",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S395984569"
+      "checklistId": "S395984569",
+      "observer": "Ben Roe",
+      "howMany": 1
     },
     {
       "species": "Eurasian Blue Tit",
@@ -451,7 +531,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 10
     },
     {
       "species": "Eurasian Green Woodpecker",
@@ -462,7 +544,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "Eurasian Jay",
@@ -473,7 +557,9 @@
       "date": "2026-09-25",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S395984569"
+      "checklistId": "S395984569",
+      "observer": "Ben Roe",
+      "howMany": 2
     },
     {
       "species": "Eurasian Sparrowhawk",
@@ -484,7 +570,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "European Herring Gull",
@@ -495,7 +583,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 4
     },
     {
       "species": "Gray Heron",
@@ -506,7 +596,9 @@
       "date": "2026-09-25",
       "hotspot": "Chelsea Harbour",
       "hotspotId": "L12105224",
-      "checklistId": "S395988646"
+      "checklistId": "S395988646",
+      "observer": "Nick Parr",
+      "howMany": 2
     },
     {
       "species": "Great Cormorant",
@@ -517,7 +609,9 @@
       "date": "2026-09-25",
       "hotspot": "Chelsea Harbour",
       "hotspotId": "L12105224",
-      "checklistId": "S395990052"
+      "checklistId": "S395990052",
+      "observer": "Nick Parr",
+      "howMany": 1
     },
     {
       "species": "House Sparrow",
@@ -528,7 +622,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 12
     },
     {
       "species": "Lesser Black-backed Gull",
@@ -539,7 +635,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "Meadow Pipit",
@@ -550,7 +648,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "Peregrine Falcon",
@@ -561,7 +661,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 1
     },
     {
       "species": "Rock Pigeon",
@@ -572,7 +674,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 8
     },
     {
       "species": "Song Thrush",
@@ -583,7 +687,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 3
     },
     {
       "species": "Stock Dove",
@@ -594,7 +700,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 4
     },
     {
       "species": "White Wagtail",
@@ -605,7 +713,9 @@
       "date": "2026-09-25",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S397745705"
+      "checklistId": "S397745705",
+      "observer": "Magnus Andersson",
+      "howMany": 2
     },
     {
       "species": "Carrion Crow",
@@ -616,7 +726,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": null
     },
     {
       "species": "Coal Tit",
@@ -627,7 +739,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 1
     },
     {
       "species": "Common Wood-Pigeon",
@@ -638,7 +752,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 3
     },
     {
       "species": "Dunnock",
@@ -649,7 +765,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 2
     },
     {
       "species": "Eurasian Blackbird",
@@ -660,7 +778,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 2
     },
     {
       "species": "Eurasian Blackcap",
@@ -671,7 +791,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 2
     },
     {
       "species": "Eurasian Kestrel",
@@ -682,7 +804,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 3
     },
     {
       "species": "Eurasian Magpie",
@@ -693,7 +817,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": null
     },
     {
       "species": "Eurasian Wren",
@@ -704,7 +830,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 1
     },
     {
       "species": "European Greenfinch",
@@ -715,7 +843,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 1
     },
     {
       "species": "European Robin",
@@ -726,7 +856,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 1
     },
     {
       "species": "European Starling",
@@ -737,7 +869,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": null
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -748,7 +882,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 1
     },
     {
       "species": "Great Tit",
@@ -759,7 +895,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 3
     },
     {
       "species": "Long-tailed Tit",
@@ -770,7 +908,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": 3
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -781,7 +921,9 @@
       "date": "2026-09-26",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S396764669"
+      "checklistId": "S396764669",
+      "observer": "Barry Wilson",
+      "howMany": null
     },
     {
       "species": "Eurasian Blackbird",
@@ -792,7 +934,9 @@
       "date": "2026-09-27",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S396738126"
+      "checklistId": "S396738126",
+      "observer": "Ben Roe",
+      "howMany": 1
     },
     {
       "species": "European Starling",
@@ -803,7 +947,9 @@
       "date": "2026-09-27",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S396738126"
+      "checklistId": "S396738126",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -814,7 +960,9 @@
       "date": "2026-09-27",
       "hotspot": "East Acton (LBC District)",
       "hotspotId": "L12105508",
-      "checklistId": "S396970653"
+      "checklistId": "S396970653",
+      "observer": "Joe Russell",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -825,7 +973,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 35
     },
     {
       "species": "Canada Goose",
@@ -836,7 +986,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 22
     },
     {
       "species": "Carrion Crow",
@@ -847,7 +999,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 7
     },
     {
       "species": "Carrion Crow",
@@ -858,7 +1012,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Egyptian Goose",
@@ -869,7 +1025,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 1
     },
     {
       "species": "Eurasian Blue Tit",
@@ -880,7 +1038,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 1
     },
     {
       "species": "Eurasian Blue Tit",
@@ -891,7 +1051,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Eurasian Kestrel",
@@ -902,7 +1064,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397242300"
+      "checklistId": "S397242300",
+      "observer": "Ben Roe",
+      "howMany": 1
     },
     {
       "species": "Eurasian Magpie",
@@ -913,7 +1077,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": 3
     },
     {
       "species": "Eurasian Moorhen",
@@ -924,7 +1090,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 2
     },
     {
       "species": "European Herring Gull",
@@ -935,7 +1103,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 4
     },
     {
       "species": "European Robin",
@@ -946,7 +1116,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 1
     },
     {
       "species": "European Robin",
@@ -957,7 +1129,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Gray Heron",
@@ -968,7 +1142,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 1
     },
     {
       "species": "Great Cormorant",
@@ -979,7 +1155,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 1
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -990,7 +1168,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": 1
     },
     {
       "species": "Great Tit",
@@ -1001,7 +1181,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Mallard",
@@ -1012,7 +1194,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 4
     },
     {
       "species": "Mute Swan",
@@ -1023,7 +1207,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 6
     },
     {
       "species": "Rock Pigeon",
@@ -1034,7 +1220,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 30
     },
     {
       "species": "Rock Pigeon",
@@ -1045,7 +1233,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -1056,7 +1246,9 @@
       "date": "2026-09-28",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
-      "checklistId": "S397116238"
+      "checklistId": "S397116238",
+      "observer": "Bob Meads",
+      "howMany": 8
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -1067,7 +1259,9 @@
       "date": "2026-09-28",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
-      "checklistId": "S397083095"
+      "checklistId": "S397083095",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Common Swift",
@@ -1078,7 +1272,9 @@
       "date": "2026-10-03",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S398656699"
+      "checklistId": "S398656699",
+      "observer": "Alastair Newton",
+      "howMany": 4
     },
     {
       "species": "House Sparrow",
@@ -1089,7 +1285,9 @@
       "date": "2026-10-03",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S398656699"
+      "checklistId": "S398656699",
+      "observer": "Alastair Newton",
+      "howMany": 4
     },
     {
       "species": "House Sparrow",
@@ -1100,7 +1298,9 @@
       "date": "2026-10-03",
       "hotspot": "Shepherd's Bush (LBC District)",
       "hotspotId": "L12107769",
-      "checklistId": "S398548315"
+      "checklistId": "S398548315",
+      "observer": "Ben Roe",
+      "howMany": null
     },
     {
       "species": "Redwing",
@@ -1111,7 +1311,9 @@
       "date": "2026-10-03",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S398656699"
+      "checklistId": "S398656699",
+      "observer": "Alastair Newton",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -1122,7 +1324,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 8
     },
     {
       "species": "Canada Goose",
@@ -1133,7 +1337,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 3
     },
     {
       "species": "Carrion Crow",
@@ -1144,7 +1350,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 6
     },
     {
       "species": "Common Wood-Pigeon",
@@ -1155,7 +1363,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "Egyptian Goose",
@@ -1166,7 +1376,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 12
     },
     {
       "species": "Eurasian Blue Tit",
@@ -1177,7 +1389,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 1
     },
     {
       "species": "Eurasian Jackdaw",
@@ -1188,7 +1402,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 3
     },
     {
       "species": "Eurasian Magpie",
@@ -1199,7 +1415,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "Eurasian Moorhen",
@@ -1210,7 +1428,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "European Herring Gull",
@@ -1221,7 +1441,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 6
     },
     {
       "species": "European Robin",
@@ -1232,7 +1454,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "European Starling",
@@ -1243,7 +1467,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 4
     },
     {
       "species": "Gray Heron",
@@ -1254,7 +1480,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 1
     },
     {
       "species": "Gray Wagtail",
@@ -1265,7 +1493,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "Great Cormorant",
@@ -1276,7 +1506,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 1
     },
     {
       "species": "Great Tit",
@@ -1287,7 +1519,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 1
     },
     {
       "species": "Lesser Black-backed Gull",
@@ -1298,7 +1532,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "Mallard",
@@ -1309,7 +1545,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 4
     },
     {
       "species": "Mute Swan",
@@ -1320,7 +1558,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 2
     },
     {
       "species": "Rock Pigeon",
@@ -1331,7 +1571,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": null
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -1342,7 +1584,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 6
     },
     {
       "species": "White Wagtail",
@@ -1353,7 +1597,9 @@
       "date": "2026-10-06",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
-      "checklistId": "S399770799"
+      "checklistId": "S399770799",
+      "observer": "Joanna Kubica",
+      "howMany": 1
     },
     {
       "species": "Black-headed Gull",
@@ -1364,7 +1610,9 @@
       "date": "2026-10-08",
       "hotspot": "Shepherd's Bush Green",
       "hotspotId": "L21101281",
-      "checklistId": "S400326668"
+      "checklistId": "S400326668",
+      "observer": "Toke Nygaard",
+      "howMany": 1
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -1375,7 +1623,9 @@
       "date": "2026-10-08",
       "hotspot": "Shepherd's Bush Green",
       "hotspotId": "L21101281",
-      "checklistId": "S400326874"
+      "checklistId": "S400326874",
+      "observer": "Toke Nygaard",
+      "howMany": 1
     },
     {
       "species": "Red Kite",
@@ -1386,7 +1636,9 @@
       "date": "2026-10-09",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
-      "checklistId": "S400464626"
+      "checklistId": "S400464626",
+      "observer": "Robyn Shepherd",
+      "howMany": 1
     }
   ],
   "lastRunNewReports": 126
