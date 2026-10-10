@@ -1,16 +1,40 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-10T06:32:32.627Z",
+  "updatedAt": "2026-10-10T06:49:02.325Z",
   "records": [
     {
+      "species": "Greater Whitethroat",
+      "latin": "Curruca communis",
+      "speciesCode": "grewhi1",
+      "year": 2026,
+      "month": 9,
+      "date": "2026-09-19",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S394148064"
+    },
+    {
       "species": "Common Swift",
+      "latin": "Apus apus",
+      "speciesCode": "comswi",
       "year": 2026,
       "month": 10,
       "date": "2026-10-03",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S398656699"
+    },
+    {
+      "species": "Red Kite",
+      "latin": "Milvus milvus",
+      "speciesCode": "redkit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-09",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S400464626"
     }
   ],
-  "lastRunNewReports": 1
+  "lastRunNewReports": 3
 }
