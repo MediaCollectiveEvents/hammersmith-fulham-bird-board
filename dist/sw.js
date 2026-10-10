@@ -1,6 +1,6 @@
 const CACHE='hf-bird-board-v2';
 const scopeUrl=new URL(self.registration.scope);
-const shell=[new URL('./',scopeUrl).href,new URL('./index.html',scopeUrl).href,new URL('./manifest.webmanifest',scopeUrl).href,new URL('./icons/bird.svg',scopeUrl).href,new URL('./data/observations.json',scopeUrl).href];
+const shell=[new URL('./',scopeUrl).href,new URL('./index.html',scopeUrl).href,new URL('./manifest.webmanifest',scopeUrl).href,new URL('./icons/bird.svg',scopeUrl).href,new URL('./data/observations.json',scopeUrl).href,new URL('./data/nbn-history.json',scopeUrl).href];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(shell)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('hf-bird-board-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{
