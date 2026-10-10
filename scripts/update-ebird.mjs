@@ -49,7 +49,10 @@ const fs = await import('node:fs/promises');
 let feed;
 try { feed = JSON.parse(await fs.readFile(outputPath, 'utf8')); }
 catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
-const byId = new Map(feed.records.map(record => [`${record.species}|${record.date}|${record.hotspot}`, record]));
+// Use the hotspot ID consistently so old records keyed by hotspot name are
+// normalised and repeated daily runs replace, rather than duplicate, reports.
+const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}`;
+const byId = new Map(feed.records.map(record => [recordKey(record), record]));
 let accepted = 0;
 
 for (const observation of observations) {
@@ -59,7 +62,7 @@ for (const observation of observations) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
   const record = {species: observation.comName, year, month, date, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null};
-  byId.set(`${record.species}|${record.date}|${record.hotspotId}`, record);
+  byId.set(recordKey(record), record);
   accepted++;
 }
 
