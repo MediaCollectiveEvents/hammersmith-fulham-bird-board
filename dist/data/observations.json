@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-10T08:52:09.836Z",
+  "updatedAt": "2026-10-10T08:58:44.733Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -1639,7 +1639,20 @@
       "checklistId": "S400464626",
       "observer": "Robyn Shepherd",
       "howMany": 1
+    },
+    {
+      "species": "Eurasian Blue Tit",
+      "latin": "Cyanistes caeruleus",
+      "speciesCode": "blutit",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-10",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S400740888",
+      "observer": "Chris Parry",
+      "howMany": 1
     }
   ],
-  "lastRunNewReports": 126
+  "lastRunNewReports": 127
 }
