@@ -95,7 +95,7 @@ for (const observation of observations) {
   const date = String(observation.obsDt).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
-  const record = {species: observation.comName, latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
+  const record = {species: observation.comName, latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: observation.howMany !== null && observation.howMany !== undefined && observation.howMany !== '' && Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
   byId.set(recordKey(record), record);
   accepted++;
 }
