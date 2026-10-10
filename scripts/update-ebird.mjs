@@ -5,7 +5,7 @@ const apiRoot = 'https://api.ebird.org/v2';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/observations.json', import.meta.url);
 const excludedHotspotIds = new Set(['L12107155']); // St Mary's Catholic Cemetery (Kensal Green), outside the borough
-const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)']);
+const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)']); // Keep this hotspot in refreshes even without a recent checklist.
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
