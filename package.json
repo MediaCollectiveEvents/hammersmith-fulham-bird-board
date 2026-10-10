@@ -1,0 +1,6 @@
+{
+  "name": "hammersmith-fulham-bird-board",
+  "private": true,
+  "type": "module",
+  "scripts": { "update:ebird": "node scripts/update-ebird.mjs" }
+}
