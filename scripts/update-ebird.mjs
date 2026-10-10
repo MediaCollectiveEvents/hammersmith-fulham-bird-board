@@ -4,6 +4,7 @@ if (!apiKey) throw new Error('Set EBIRD_API_KEY in the GitHub Actions repository
 const apiRoot = 'https://api.ebird.org/v2';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/observations.json', import.meta.url);
+const excludedHotspotIds = new Set(['L12107155']); // St Mary's Catholic Cemetery (Kensal Green), outside the borough
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
@@ -44,7 +45,10 @@ const headers = {'X-eBirdApiToken': apiKey};
 const hotspotUrl = new URL(`${apiRoot}/ref/hotspot/geo`);
 hotspotUrl.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', back: '30', fmt: 'json'});
 const nearbyHotspots = await getJson(hotspotUrl, headers);
-const boroughHotspots = nearbyHotspots.filter(h => h.locId && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons));
+const boroughHotspots = nearbyHotspots.filter(h => {
+  const name = String(h.name || h.locName || '');
+  return h.locId && !excludedHotspotIds.has(h.locId) && !/kensal green/i.test(name) && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons);
+});
 
 async function mapLimit(items, limit, callback) {
   const output = new Array(items.length);
@@ -81,11 +85,11 @@ catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
 // Use the hotspot ID consistently so old records keyed by hotspot name are
 // normalised and repeated daily runs replace, rather than duplicate, reports.
 const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}|${record.checklistId || ''}`;
-const byId = new Map(feed.records.map(record => [recordKey(record), record]));
+const byId = new Map(feed.records.filter(record => !excludedHotspotIds.has(record.hotspotId) && !/kensal green/i.test(record.hotspot || '')).map(record => [recordKey(record), record]));
 let accepted = 0;
 
 for (const observation of observations) {
-  if (!observation.locId || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
+  if (!observation.locId || excludedHotspotIds.has(observation.locId) || /kensal green/i.test(observation.locName || '') || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
   if (observation.obsValid !== true || notableByLocation.get(observation.locId)?.has(`${observation.comName}|${String(observation.obsDt).slice(0, 10)}`)) continue;
   if (!inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
