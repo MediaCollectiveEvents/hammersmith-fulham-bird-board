@@ -26,32 +26,28 @@
     .tv-navigation{display:none}
     html.tv-mode,html.tv-mode body{width:100%;height:100%;min-height:100%;margin:0;overflow:hidden}
     html.tv-mode body{display:grid;place-items:center;background:#000}
-    html.tv-mode .shell{width:min(100vw,177.7778vh);height:min(56.25vw,100vh);aspect-ratio:16/9;max-width:none;margin:0;padding:clamp(14px,1.7vw,28px);overflow:hidden;display:flex;flex-direction:column;gap:5px}
-    html.tv-mode .topline{font-size:clamp(9px,.8vw,14px);margin:0;flex:none}
-    html.tv-mode .hero{display:flex;align-items:center;justify-content:flex-start;margin:0;flex:none}
-    html.tv-mode h1{font-size:clamp(22px,2.1vw,38px)}
-    html.tv-mode .intro,html.tv-mode .controls,html.tv-mode .month-strip,html.tv-mode .footnote{display:none!important}
-    html.tv-mode .month-context{flex:none;margin:0 0 4px;font-size:clamp(10px,.8vw,14px)}
-    html.tv-mode .boards{flex:1;min-height:0;grid-template-columns:1fr 1fr;gap:1.2vw}
-    html.tv-mode .board{min-height:0}
-    html.tv-mode .board-head{min-height:clamp(54px,7.2vh,84px);padding:8px 12px;gap:10px}
-    html.tv-mode .board-icon{width:clamp(38px,4vw,56px);height:clamp(38px,4vw,56px);padding:7px}
-    html.tv-mode .board-head h2{font-size:clamp(20px,2.2vw,36px)}
-    html.tv-mode .board-head p{font-size:clamp(8px,.68vw,11px);margin-top:3px}
-    html.tv-mode .hf-logo{height:clamp(46px,6vh,66px);max-width:56px}
-    html.tv-mode .gridhead,.tv-mode .row{gap:6px}
-    html.tv-mode .gridhead{padding:6px 9px;font-size:clamp(9px,.78vw,13px)}
-    html.tv-mode .row{padding:6px 9px;min-height:clamp(38px,5.1vh,54px);font-size:clamp(10px,.9vw,15px)}
-    html.tv-mode .latin{font-size:clamp(8px,.65vw,11px)}
-    html.tv-mode .actual{font-size:clamp(9px,.72vw,12px)}
-    html.tv-mode .status{font-size:clamp(8px,.65vw,11px)}
-    html.tv-mode #tv-sightings{display:none;flex:1;min-height:0;margin:0}
+    html.tv-mode .shell{width:min(100vw,177.7778vh);height:min(56.25vw,100vh);aspect-ratio:16/9;max-width:none;margin:0;padding:clamp(12px,1vw,20px);overflow:hidden;display:flex;flex-direction:column;gap:0}
+    html.tv-mode .topline,html.tv-mode .hero,html.tv-mode .month-strip,html.tv-mode .month-context,html.tv-mode .footnote,html.tv-mode #feed-error{display:none!important}
+    html.tv-mode #tv-boards{order:1;display:grid;grid-template-columns:1fr 1fr;gap:1vw;align-items:stretch;flex:1;min-height:0}
+    html.tv-mode .board{height:100%;min-height:0;display:flex;flex-direction:column}
+    html.tv-mode .board-head{flex:none;min-height:91px;padding:clamp(12px,1.6vw,22px);gap:16px}
+    html.tv-mode .board-icon{width:clamp(42px,5vw,64px);height:clamp(42px,5vw,64px);padding:10px}
+    html.tv-mode .board-head h2{font-size:clamp(1.45rem,3.2vw,2.7rem)}
+    html.tv-mode .board-head p{font-size:.7rem;margin:6px 0 0}
+    html.tv-mode .hf-logo{height:clamp(54px,6vw,76px);max-width:72px}
+    html.tv-mode .gridhead{flex:none;padding:10px 13px 9px;font-size:.75rem;gap:10px}
+    html.tv-mode .row{font-size:.82rem;padding:10px 13px;min-height:46px;gap:10px}
+    html.tv-mode .latin{font-size:.66rem}
+    html.tv-mode .actual{font-size:.72rem}
+    html.tv-mode .status{font-size:.7rem}
+    html.tv-mode #tv-sightings{display:none}
     html.tv-mode[data-tv-screen="sightings"] #tv-boards{display:none}
-    html.tv-mode[data-tv-screen="sightings"] #tv-sightings{display:flex;flex-direction:column}
-    html.tv-mode[data-tv-screen="sightings"] #sightings-rows{flex:1;min-height:0}
-    html.tv-mode .sightings-grid,html.tv-mode .sighting-row{grid-template-columns:minmax(130px,1fr) minmax(170px,1.15fr) minmax(190px,1.25fr) minmax(130px,1fr);gap:8px}
-    html.tv-mode .sighting-row{padding:5px 10px;min-height:clamp(37px,4.9vh,50px);font-size:clamp(10px,.85vw,14px)}
-    html.tv-mode .tv-navigation{display:flex;position:fixed;right:2vw;bottom:1.6vh;align-items:center;gap:10px;z-index:10}
+    html.tv-mode[data-tv-screen="sightings"] #tv-sightings{order:1;display:flex;flex:1;min-height:0;height:100%;margin:0;flex-direction:column}
+    html.tv-mode #tv-sightings .board-head{flex:none}
+    html.tv-mode #tv-sightings .sightings-grid{flex:none;font-size:.75rem;padding:10px 13px 9px;gap:10px}
+    html.tv-mode #sightings-rows{flex:1;min-height:0;overflow:hidden}
+    html.tv-mode .sighting-row{font-size:.82rem;padding:10px 13px;min-height:46px;gap:10px}
+    html.tv-mode .tv-navigation{order:2;display:flex;position:static;flex:none;align-self:flex-end;align-items:center;justify-content:flex-end;gap:10px;padding:6px 0 0;z-index:10}
     html.tv-mode .tv-navigation button{min-width:44px;min-height:40px;background:#161d28;color:#fff;border:1px solid #71819a;font-size:23px;cursor:pointer}
     html.tv-mode .tv-navigation button:disabled{opacity:.4}
     html.tv-mode .tv-navigation #tv-screen-count{font-size:13px;color:#fff}
@@ -100,7 +96,7 @@
   const monthSelect=document.querySelector('#month-select'),yearSelect=document.querySelector('#year-select'),strip=document.querySelector('#month-strip');
   const tvDialog=document.querySelector('#tv-dialog'),tvNav=document.querySelector('#tv-navigation');
   let tvScreenIndex=0;
-  function updateTvScreen(){if(!document.documentElement.classList.contains('tv-mode'))return;const rows=[...document.querySelectorAll('#sightings-rows>.sighting-row')],pageSize=10,total=1+Math.ceil(rows.length/pageSize);tvScreenIndex=Math.max(0,Math.min(tvScreenIndex,total-1));const onSightings=tvScreenIndex>0;document.documentElement.dataset.tvScreen=onSightings?'sightings':'boards';rows.forEach((row,i)=>row.hidden=onSightings&&(i<(tvScreenIndex-1)*pageSize||i>=tvScreenIndex*pageSize));document.querySelector('#tv-prev').disabled=tvScreenIndex===0;document.querySelector('#tv-next').disabled=tvScreenIndex>=total-1;document.querySelector('#tv-screen-count').textContent=onSightings?'Local sightings · '+(tvScreenIndex)+' of '+(total-1):'Arrivals & departures';}
+  function updateTvScreen(){if(!document.documentElement.classList.contains('tv-mode'))return;const rows=[...document.querySelectorAll('#sightings-rows>.sighting-row')],list=document.querySelector('#sightings-rows');document.documentElement.dataset.tvScreen='sightings';rows.forEach(row=>row.hidden=false);const available=list.clientHeight||Math.max(1,window.innerHeight-240);const starts=[];let used=0;for(let i=0;i<rows.length;i++){const h=rows[i].getBoundingClientRect().height||46;if(i===0||used+h>available){starts.push(i);used=0}used+=h}if(!starts.length)starts.push(0);const total=1+starts.length;tvScreenIndex=Math.max(0,Math.min(tvScreenIndex,total-1));const onSightings=tvScreenIndex>0;document.documentElement.dataset.tvScreen=onSightings?'sightings':'boards';let from=0,to=0;if(onSightings){from=starts[tvScreenIndex-1];to=tvScreenIndex<starts.length?starts[tvScreenIndex]:rows.length}rows.forEach((row,i)=>row.hidden=!onSightings||i<from||i>=to);document.querySelector('#tv-prev').disabled=tvScreenIndex===0;document.querySelector('#tv-next').disabled=tvScreenIndex>=total-1;document.querySelector('#tv-screen-count').textContent=onSightings?'Local sightings · '+tvScreenIndex+' of '+(total-1):'Arrivals & departures';}
   document.querySelector('#tv-button').addEventListener('click',()=>{if(document.documentElement.classList.contains('tv-mode'))document.exitFullscreen();else tvDialog.showModal()});
   document.querySelector('#close-tv').addEventListener('click',()=>tvDialog.close());
   document.querySelector('#tv-prev').addEventListener('click',()=>{tvScreenIndex--;updateTvScreen()});
