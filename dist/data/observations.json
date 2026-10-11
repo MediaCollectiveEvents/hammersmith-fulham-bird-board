@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-10T14:39:25.673Z",
+  "updatedAt": "2026-10-11T07:58:38.946Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -1665,7 +1665,85 @@
       "checklistId": "S400773786",
       "observer": "Chris Parry",
       "howMany": null
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Coal Tit",
+      "latin": "Periparus ater",
+      "speciesCode": "coatit2",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Eurasian Blue Tit",
+      "latin": "Cyanistes caeruleus",
+      "speciesCode": "blutit",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "European Robin",
+      "latin": "Erithacus rubecula",
+      "speciesCode": "eurrob1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "House Sparrow",
+      "latin": "Passer domesticus",
+      "speciesCode": "houspa",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-11",
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401199476",
+      "observer": "Chris Parry",
+      "howMany": 4
     }
   ],
-  "lastRunNewReports": 128
+  "lastRunNewReports": 130
 }
