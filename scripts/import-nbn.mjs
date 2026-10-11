@@ -60,19 +60,10 @@ for (const row of values) {
   const key = `${scientificName}|${taxonRank}`;
   let taxon = taxa.get(key);
   if (!taxon) {
-    taxon = {commonName, scientificName, taxonRank, records: 0, years: new Map(), months: Array.from({length: 12}, () => ({records: 0, years: new Set()}))};
+    taxon = {commonName, scientificName, taxonRank, records: 0};
     taxa.set(key, taxon);
   }
   taxon.records++;
-  let annual = taxon.years.get(year);
-  if (!annual) { annual = {year, records: 0, firstDate: date, lastDate: date, firstOrder: orderDate, lastOrder: orderDate, months: Array(12).fill(0)}; taxon.years.set(year, annual); }
-  annual.records++;
-  if (orderDate < annual.firstOrder) { annual.firstDate = date; annual.firstOrder = orderDate; }
-  if (orderDate > annual.lastOrder) { annual.lastDate = date; annual.lastOrder = orderDate; }
-  annual.months[month - 1]++;
-  taxon.months[month - 1].records++;
-  taxon.months[month - 1].years.add(year);
-  years.add(year);
   firstDate = firstDate === null || date < firstDate ? date : firstDate;
   lastDate = lastDate === null || date > lastDate ? date : lastDate;
   const licence = get(row, 'Licence') || 'Not supplied';
@@ -91,11 +82,7 @@ const species = [...taxa.values()].map(taxon => ({
   commonName: taxon.commonName || taxon.scientificName,
   scientificName: taxon.scientificName,
   taxonRank: taxon.taxonRank,
-  records: taxon.records,
-  months: Array.from({length: 12}, (_, i) => {
-    const years = [...taxon.years.values()].map(year => ({year: year.year, records: year.months[i]})).filter(year => year.records);
-    return years.length ? {month: i + 1, records: years.reduce((sum, year) => sum + year.records, 0), years} : null;
-  }).filter(Boolean)
+  records: taxon.records
 })).sort((a,b) => a.commonName.localeCompare(b.commonName) || a.scientificName.localeCompare(b.scientificName));
 
 const output = {
@@ -105,8 +92,7 @@ const output = {
   recordCount: included,
   taxonCount: species.length,
   recordsWithMonthOnlyDate: monthPrecisionRecords,
-  years: [...years].sort((a,b) => a-b),
-  scope: 'The supplied export was confirmed by the project owner as records within the London Borough of Hammersmith & Fulham. Only aggregated bird names, dates and record counts are retained; recorder names and coordinates are not published.',
+  scope: 'The supplied export was confirmed by the project owner as records within the London Borough of Hammersmith & Fulham. Only bird names and overall occurrence-record totals are retained; dates, recorder names and coordinates are not published.',
   licenceCounts: Object.fromEntries([...licences.entries()].sort(([a],[b]) => a.localeCompare(b))),
   dataSources: sourceList,
   attribution: [
@@ -115,8 +101,8 @@ const output = {
   ],
   notes: [
     'Counts are occurrence records, not individual bird totals.',
-    'A record in a month shows that a bird was recorded then; no record does not establish absence.',
-    'The archive provides historical borough-wide timing context and is not a list of named eBird hotspot records.',
+    'The NBN Atlas is an incomplete source. This project uses it only as a list of bird taxa recorded in the borough, not to forecast seasonal presence or absence.',
+    'Counts are records in the supplied export; they are not counts of individual birds. Missing entries do not establish absence.',
     'CC-BY-NC records are included for this non-commercial community project. Keep this dataset and resulting display non-commercial and retain attribution.'
   ],
   species
