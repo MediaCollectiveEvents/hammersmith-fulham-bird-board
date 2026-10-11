@@ -19,19 +19,19 @@ For free GitHub Pages on GitHub Free, the repository needs to be public. Do not 
 - eBird does not provide a borough migration calendar from its regional summaries. Expected dates in the page are provisional seasonal guidance, not live predictions. Actual eBird reports are shown for the selected month and year.
 - If Actions stop for more than 30 days, some observations can fall outside the API window before they are archived. Run the workflow regularly.
 
-## Historical NBN archive
+## NBN Atlas bird record list
 
-The board also uses a supplied NBN Atlas occurrence export, confirmed by the project owner to contain records within the London Borough of Hammersmith & Fulham. The public file stores aggregate counts by species, month, and year only; it does not publish recorder names, coordinates, or raw records. It contains 15,400 bird occurrence records for 129 taxa from 2016–2025, including 1,572 records supplied at month-level date precision. These are records, not individual bird counts. They provide historical borough-wide monthly context and are not precise eBird hotspot data. A month with no record is not evidence that a species was absent.
+The board includes a source list of bird taxa recorded in the London Borough of Hammersmith & Fulham, based on an NBN Atlas export confirmed by the project owner to cover the borough. The NBN archive is incomplete, so it is used only to list recorded taxa and is not used to determine expected monthly arrivals or departures. A missing record is not evidence that a bird was absent.
 
-The dataset includes records under CC-BY-NC, Open Government Licence, and CC-BY terms. This project is non-commercial. Retain the NBN Trust and data-partner/dataset credits in the board, and keep the derived archive non-commercial. The board loads the credits from `dist/data/nbn-history.json` in its archive-source details.
+The public aggregate keeps bird names, taxonomic rank and overall occurrence-record totals only. Counts are records, not individual birds. It excludes dates, recorder names and coordinates. Provider, dataset, licence and attribution details are retained in `dist/data/nbn-history.json` and shown on the page. The export contains records under CC-BY-NC, Open Government Licence and CC-BY terms; keep this project and the derived list non-commercial and preserve the source credits.
 
-To rebuild the aggregate after downloading a fresh NBN Atlas CSV export:
+To rebuild the list after downloading a fresh NBN Atlas CSV export:
 
 ```sh
 node scripts/import-nbn.mjs path/to/nbn-export.csv
 ```
 
-Do not commit the downloaded source CSV or publish record-level exports. The script preserves all bird records with a year/month and omits exact locations and recorder identities.
+Do not commit the downloaded source CSV or publish record-level exports. The importer outputs only the borough bird list and aggregate occurrence totals.
 
 ## Local validation
 
