@@ -7,11 +7,11 @@ const headers = {'X-eBirdApiToken': apiKey};
 
 async function getJson(url) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
-  if (!response.ok) throw new Error(response.status + ' from eBird ' + url.split('?')[0] + ': ' + await response.text());
+  if (!response.ok) throw new Error(response.status + ' from eBird ' + String(url).split('?')[0] + ': ' + await response.text());
   return response.json();
 }
 function normalizeName(name) {
-  return String(name || '').replace(/^(?:Eurasian|European)\s+/i, '').replace(/^Gray(?=\s)/i, 'Grey');
+  return String(name || '').replace(/^(?:Eurasian|European)\s+/i, '').replace(/^Gray(?=\s)/i, 'Grey').replace(/^Graylag(?=\s)/i, 'Greylag');
 }
 function distanceSquared(hotspot) {
   const latDelta = Number(hotspot.lat) - target.lat;
@@ -32,9 +32,14 @@ const observationsUrl = new URL(apiRoot + '/data/obs/' + encodeURIComponent(hots
 observationsUrl.search = params;
 const notableUrl = new URL(apiRoot + '/data/obs/' + encodeURIComponent(hotspot.locId) + '/recent/notable');
 notableUrl.search = params;
-const results = await Promise.all([getJson(observationsUrl), getJson(notableUrl)]);
-const observations = results[0];
-const notable = new Set(results[1].map(o => String(o.speciesCode || o.comName) + '|' + String(o.obsDt).slice(0, 10)));
+const observations = await getJson(observationsUrl);
+let notable = new Set();
+try {
+  const notableObservations = await getJson(notableUrl);
+  notable = new Set(notableObservations.map(o => String(o.speciesCode || o.comName) + '|' + String(o.obsDt).slice(0, 10)));
+} catch (error) {
+  console.warn('Notable-record lookup unavailable; continuing with valid hotspot reports: ' + error.message);
+}
 
 const fs = await import('node:fs/promises');
 let feed;
