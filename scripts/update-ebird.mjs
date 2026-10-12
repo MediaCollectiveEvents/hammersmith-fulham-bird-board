@@ -37,6 +37,11 @@ function inBorough(lon, lat, polygons) {
   return polygons.some(polygon => insidePolygon([lon, lat], polygon));
 }
 
+// Keep eBird common names consistent with British English on the board.
+function normalizeCommonName(name) {
+  return String(name || '').replace(/^(?:Eurasian|European)\\s+/i, '').replace(/^Gray(?=\\s)/i, 'Grey');
+}
+
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
 // Discover hotspots with recent activity near the borough, then keep only
 // hotspots whose mapped coordinates fall inside the exact borough boundary.
@@ -93,7 +98,10 @@ catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
 // Use the hotspot ID consistently so old records keyed by hotspot name are
 // normalised and repeated daily runs replace, rather than duplicate, reports.
 const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}|${record.checklistId || ''}`;
-const byId = new Map(feed.records.filter(record => !excludedHotspotIds.has(record.hotspotId) && !/kensal green/i.test(record.hotspot || '')).map(record => [recordKey(record), record]));
+const byId = new Map(feed.records.filter(record => !excludedHotspotIds.has(record.hotspotId) && !/kensal green/i.test(record.hotspot || '')).map(record => {
+  const normalized = {...record, species: normalizeCommonName(record.species)};
+  return [recordKey(normalized), normalized];
+}));
 let accepted = 0;
 
 for (const observation of observations) {
@@ -104,7 +112,7 @@ for (const observation of observations) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
   const notable = notableByLocation.get(observation.locId)?.has(`${observation.comName}|${date}`) === true;
-  const record = {species: observation.comName, latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, notable, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: observation.howMany !== null && observation.howMany !== undefined && observation.howMany !== '' && Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
+  const record = {species: normalizeCommonName(observation.comName), latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, notable, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: observation.howMany !== null && observation.howMany !== undefined && observation.howMany !== '' && Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
   byId.set(recordKey(record), record);
   accepted++;
 }
