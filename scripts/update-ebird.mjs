@@ -39,7 +39,7 @@ function inBorough(lon, lat, polygons) {
 
 // Keep eBird common names consistent with British English on the board.
 function normalizeCommonName(name) {
-  return String(name || '').replace(/^(?:Eurasian|European)\\s+/i, '').replace(/^Gray(?=\\s)/i, 'Grey');
+  return String(name || '').replace(/^(?:Eurasian|European)\s+/i, '').replace(/^Gray(?=\s)/i, 'Grey');
 }
 
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
