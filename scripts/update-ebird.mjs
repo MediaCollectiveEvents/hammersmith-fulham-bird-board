@@ -38,7 +38,8 @@ function inBorough(lon, lat, polygons) {
 }
 
 // Keep eBird common names consistent with British English on the board.
-function normalizeCommonName(name) {
+function normalizeCommonName(name, latin = '') {
+  if (latin === 'Motacilla alba') return 'Pied Wagtail';
   return String(name || '').replace(/^(?:Eurasian|European)\s+/i, '').replace(/^Gray(?=\s)/i, 'Grey');
 }
 
@@ -99,7 +100,7 @@ catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
 // normalised and repeated daily runs replace, rather than duplicate, reports.
 const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}|${record.checklistId || ''}`;
 const byId = new Map(feed.records.filter(record => !excludedHotspotIds.has(record.hotspotId) && !/kensal green/i.test(record.hotspot || '')).map(record => {
-  const normalized = {...record, species: normalizeCommonName(record.species)};
+  const normalized = {...record, species: normalizeCommonName(record.species, record.latin)};
   return [recordKey(normalized), normalized];
 }));
 let accepted = 0;
@@ -112,7 +113,7 @@ for (const observation of observations) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
   const notable = notableByLocation.get(observation.locId)?.has(`${observation.comName}|${date}`) === true;
-  const record = {species: normalizeCommonName(observation.comName), latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, notable, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: observation.howMany !== null && observation.howMany !== undefined && observation.howMany !== '' && Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
+  const record = {species: normalizeCommonName(observation.comName, observation.sciName), latin: observation.sciName || '', speciesCode: observation.speciesCode || '', year, month, date, notable, hotspot: observation.locName, hotspotId: observation.locId, checklistId: observation.subId || null, observer: observation.userDisplayName || null, howMany: observation.howMany !== null && observation.howMany !== undefined && observation.howMany !== '' && Number.isFinite(Number(observation.howMany)) ? Number(observation.howMany) : null};
   byId.set(recordKey(record), record);
   accepted++;
 }
