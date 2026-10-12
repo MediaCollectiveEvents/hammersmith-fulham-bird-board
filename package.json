@@ -2,5 +2,8 @@
   "name": "hammersmith-fulham-bird-board",
   "private": true,
   "type": "module",
-  "scripts": { "update:ebird": "node scripts/update-ebird.mjs" }
+  "scripts": {
+    "update:ebird": "node scripts/update-ebird.mjs",
+    "update:wetland": "node scripts/update-wetland-ebird.mjs"
+  }
 }
