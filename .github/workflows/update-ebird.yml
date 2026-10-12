@@ -29,7 +29,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm run update:ebird && npm run update:wetland
+      - name: Refresh borough eBird records
+        run: npm run update:ebird
+        continue-on-error: true
+        env:
+          EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+      - name: Refresh WWT hotspot records
+        run: npm run update:wetland
         env:
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
       - name: Commit refreshed local reports
