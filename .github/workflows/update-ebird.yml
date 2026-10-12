@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/update-ebird.mjs'
+      - 'scripts/update-wetland-ebird.mjs'
       - 'dist/index.html'
+      - 'dist/wetland-centre.html'
       - '.github/workflows/update-ebird.yml'
   schedule:
     - cron: '23 5 * * *'
@@ -27,14 +29,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm run update:ebird
+      - run: npm run update:ebird && npm run update:wetland
         env:
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
       - name: Commit refreshed local reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/data/observations.json
+          git add dist/data/observations.json dist/data/wetland-centre-observations.json
           git diff --cached --quiet || git commit -m "Refresh eBird hotspot reports"
           git push
       - uses: actions/configure-pages@v5
