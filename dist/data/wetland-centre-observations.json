@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-10-12T08:11:34.396Z",
+  "updatedAt": "2026-10-12T08:31:47.107Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -707,32 +707,6 @@
       "howMany": 1
     },
     {
-      "species": "Graylag Goose",
-      "latin": "Anser anser",
-      "speciesCode": "gragoo",
-      "year": 2026,
-      "month": 10,
-      "date": "2026-10-10",
-      "notable": false,
-      "hotspot": "WWT London Wetland Centre (from 2000)",
-      "hotspotId": "L939896",
-      "checklistId": "S400910945",
-      "howMany": 19
-    },
-    {
-      "species": "Graylag x Canada Goose (hybrid)",
-      "latin": "Anser anser x Branta canadensis",
-      "speciesCode": "x00758",
-      "year": 2026,
-      "month": 10,
-      "date": "2026-10-10",
-      "notable": false,
-      "hotspot": "WWT London Wetland Centre (from 2000)",
-      "hotspotId": "L939896",
-      "checklistId": "S400896838",
-      "howMany": 1
-    },
-    {
       "species": "Great Spotted Woodpecker",
       "latin": "Dendrocopos major",
       "speciesCode": "grswoo",
@@ -782,6 +756,32 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S400942709",
+      "howMany": 1
+    },
+    {
+      "species": "Greylag Goose",
+      "latin": "Anser anser",
+      "speciesCode": "gragoo",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-10",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S400910945",
+      "howMany": 19
+    },
+    {
+      "species": "Greylag x Canada Goose (hybrid)",
+      "latin": "Anser anser x Branta canadensis",
+      "speciesCode": "x00758",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-10",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S400896838",
       "howMany": 1
     },
     {
