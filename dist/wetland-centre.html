@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b32">
+<meta name="description" content="Monthly eBird sightings from WWT London Wetland Centre.">
+<title>WWT London Wetland Centre · Bird dashboard</title>
+<style>
+:root{color-scheme:light;--forest:#123b32;--forest-2:#20594b;--reed:#b3c780;--paper:#f5f4eb;--white:#fff;--ink:#172923;--muted:#66766e;--line:#d7ded2;--accent:#d4e0a4;--max:1360px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.4}
+.shell{max-width:var(--max);margin:0 auto;padding:clamp(16px,3vw,40px)}
+.masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:0 0 16px;border-bottom:1px solid var(--line)}
+.wordmark{color:var(--forest);font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.ebird-link{color:var(--forest-2);font-size:.78rem;font-weight:700;text-decoration:none;border-bottom:1px solid currentColor}
+h1{margin:26px 0 8px;color:var(--forest);font-size:clamp(2rem,5vw,4.4rem);line-height:.98;letter-spacing:-.05em}
+.subtitle{max-width:720px;margin:0;color:var(--muted);font-size:clamp(1rem,1.7vw,1.2rem)}
+.month-line{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 12px}
+.month-line h2{margin:0;color:var(--forest);font-size:1.12rem;letter-spacing:.08em;text-transform:uppercase}
+.updated{color:var(--muted);font-size:.75rem;text-align:right}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.metric{min-width:0;padding:17px;background:var(--forest);color:var(--white);border-radius:4px}
+.metric strong{display:block;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.05;font-variant-numeric:tabular-nums}
+.metric span{display:block;margin-top:7px;color:#d8e4d8;font-size:.68rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.metric:nth-child(2){background:#20594b}.metric:nth-child(3){background:#47705a}.metric:nth-child(4){background:#78875a}
+.note{margin:13px 0 24px;color:var(--muted);font-size:.78rem}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.panel-heading{display:flex;justify-content:space-between;align-items:end;gap:14px;padding:17px 18px;background:#e7ecd9;border-bottom:1px solid var(--line)}
+.panel-heading h2{margin:0;color:var(--forest);font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
+.panel-heading span{color:var(--muted);font-size:.76rem}
+.table-head,.species-row{display:grid;grid-template-columns:minmax(180px,1.35fr) minmax(110px,.72fr) minmax(130px,.8fr) minmax(140px,1fr);gap:14px;align-items:center}
+.table-head{padding:11px 18px;color:var(--muted);font-size:.67rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid var(--forest-2)}
+.species-row{padding:13px 18px;border-bottom:1px solid var(--line)}
+.species-row:nth-child(even){background:#fbfbf7}
+.species-row:last-child{border-bottom:0}
+.species-name{color:var(--forest);font-weight:800}
+.latin{display:block;color:var(--muted);font-size:.76rem;font-style:italic;font-weight:400}
+.value{font-weight:700;font-variant-numeric:tabular-nums}
+.notable{display:inline-block;margin-left:7px;padding:2px 6px;background:#f1e5bb;color:#695519;border-radius:99px;font-size:.59rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;vertical-align:middle}
+.empty{padding:38px 20px;text-align:center;color:var(--muted)}
+.footer{margin-top:18px;color:var(--muted);font-size:.73rem;line-height:1.5}
+.footer a{color:var(--forest-2)}
+@media(max-width:760px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.table-head{display:none}.species-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:13px}.species-row>div:first-child{grid-column:1/-1}.species-row>div::before{content:attr(data-label);display:block;margin-bottom:3px;color:var(--muted);font-size:.59rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.panel-heading{align-items:start;flex-direction:column;gap:3px}}
+@media(max-width:420px){.shell{padding:14px}.metric{padding:12px}.metric span{font-size:.58rem}.month-line{align-items:start;flex-direction:column}.updated{text-align:left}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="masthead"><div class="wordmark">Wetland birds · London</div><a class="ebird-link" id="ebird-link" href="https://ebird.org" target="_blank" rel="noreferrer">eBird source ↗</a></header>
+<h1>WWT London<br>Wetland Centre</h1>
+<p class="subtitle">A monthly snapshot of the birds reported at the reserve, drawn from eBird checklists for the Wetland Centre hotspot.</p>
+<div class="month-line"><h2 id="month-title">Loading this month…</h2><div class="updated" id="updated-at"></div></div>
+<section class="metrics" aria-label="Monthly totals">
+<div class="metric"><strong id="species-total">—</strong><span>Species recorded</span></div>
+<div class="metric"><strong id="report-total">—</strong><span>Species reports</span></div>
+<div class="metric"><strong id="checklist-total">—</strong><span>Checklists</span></div>
+<div class="metric"><strong id="individual-total">—</strong><span>Individuals counted*</span></div>
+</section>
+<p class="note">* Sum of individual counts reported on checklists; birds may be counted on more than one checklist. These are reported observations, not a count of every bird at the reserve.</p>
+<section class="panel" aria-labelledby="species-title">
+<div class="panel-heading"><h2 id="species-title">Species reported this month</h2><span id="hotspot-name">Loading eBird hotspot…</span></div>
+<div class="table-head"><span>Species</span><span>Species reports</span><span>Individuals counted</span><span>Most recent report</span></div>
+<div id="species-rows"><div class="empty">Loading local eBird reports…</div></div>
+</section>
+<footer class="footer">Source: <a href="https://ebird.org" target="_blank" rel="noreferrer">eBird</a>. Only valid reports from the WWT London Wetland Centre hotspot are shown. A species report is one taxon reported on one checklist; report totals are not the number of individual birds.</footer>
+</main>
+<script>
+const monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const dateNow=new Date(), currentMonth=dateNow.getMonth()+1, currentYear=dateNow.getFullYear();
+document.querySelector('#month-title').textContent=monthNames[currentMonth-1]+' '+currentYear;
+function esc(value){return String(value==null?'':value).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]})}
+function render(feed){
+ const records=(feed.records||[]).filter(function(r){return Number(r.year)===currentYear&&Number(r.month)===currentMonth});
+ const species=new Map(), checklists=new Set(); let individuals=0, counted=0;
+ for(const record of records){
+  const key=record.speciesCode||record.latin||record.species;
+  if(!species.has(key))species.set(key,{name:record.species,latin:record.latin||'',reports:0,individuals:0,counted:0,last:'',notable:false});
+  const item=species.get(key); item.reports++;
+  if(record.checklistId)checklists.add(record.checklistId);
+  if(Number.isFinite(Number(record.howMany))&&record.howMany!==null&&record.howMany!==''){item.individuals+=Number(record.howMany);item.counted++;individuals+=Number(record.howMany);counted++}
+  if(String(record.date)>item.last)item.last=String(record.date);
+  if(record.notable)item.notable=true;
+ }
+ document.querySelector('#species-total').textContent=species.size.toLocaleString('en-GB');
+ document.querySelector('#report-total').textContent=records.length.toLocaleString('en-GB');
+ document.querySelector('#checklist-total').textContent=checklists.size.toLocaleString('en-GB');
+ document.querySelector('#individual-total').textContent=counted?individuals.toLocaleString('en-GB'):'—';
+ document.querySelector('#hotspot-name').textContent=feed.hotspotName||'WWT London Wetland Centre eBird hotspot';
+ if(feed.hotspotId)document.querySelector('#ebird-link').href='https://ebird.org/hotspot/'+encodeURIComponent(feed.hotspotId);
+ const items=Array.from(species.values()).sort(function(a,b){return b.reports-a.reports||a.name.localeCompare(b.name)});
+ document.querySelector('#species-rows').innerHTML=items.length?items.map(function(item){return '<div class="species-row"><div class="species-name" data-label="Species">'+esc(item.name)+(item.notable?'<span class="notable">Notable</span>':'')+'<span class="latin">'+esc(item.latin)+'</span></div><div class="value" data-label="Species reports">'+item.reports.toLocaleString('en-GB')+'</div><div class="value" data-label="Individuals counted">'+(item.counted?item.individuals.toLocaleString('en-GB'):'—')+'</div><div class="value" data-label="Most recent report">'+esc(item.last||'—')+'</div></div>'}).join(''):'<div class="empty">No eBird records for '+esc(monthNames[currentMonth-1])+' '+currentYear+' are available yet.</div>';
+ if(feed.updatedAt){const updated=new Date(feed.updatedAt);document.querySelector('#updated-at').textContent='eBird feed updated '+updated.toLocaleString('en-GB',{dateStyle:'medium',timeStyle:'short'})}
+}
+async function load(){try{const response=await fetch('./data/wetland-centre-observations.json',{cache:'no-store'});if(!response.ok)throw new Error('Feed unavailable');render(await response.json())}catch(error){document.querySelector('#hotspot-name').textContent='eBird hotspot feed unavailable';document.querySelector('#species-rows').innerHTML='<div class="empty">The eBird update has not completed yet. Please check back shortly.</div>';document.querySelector('#updated-at').textContent='';for(const id of ['species-total','report-total','checklist-total','individual-total'])document.querySelector('#'+id).textContent='—'}}
+load();
+</script>
+</body>
+</html>
