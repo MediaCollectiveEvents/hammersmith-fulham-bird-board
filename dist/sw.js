@@ -1,4 +1,4 @@
-const CACHE='hf-bird-board-v12';
+const CACHE='hf-bird-board-v13';
 const scopeUrl=new URL(self.registration.scope);
 const shell=[new URL('./',scopeUrl).href,new URL('./index.html',scopeUrl).href,new URL('./manifest.webmanifest',scopeUrl).href,new URL('./icons/bird.svg',scopeUrl).href,new URL('./data/observations.json',scopeUrl).href,new URL('./data/nbn-history.json',scopeUrl).href];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(shell)).then(()=>self.skipWaiting()))});
