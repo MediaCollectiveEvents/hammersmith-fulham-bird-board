@@ -109,6 +109,7 @@ function esc(value){return String(value==null?'':value).replace(/[&<>"']/g,funct
 let wetlandRecords=[];
 function render(feed){
  wetlandRecords=feed.records||[];
+ renderMigrationBoards();
  const records=wetlandRecords.filter(function(r){return Number(r.year)===currentYear&&Number(r.month)===currentMonth});
  const species=new Map(), checklists=new Set(); let individuals=0, counted=0;
  for(const record of records){
