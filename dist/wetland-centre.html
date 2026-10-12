@@ -43,6 +43,30 @@ h1{margin:26px 0 8px;color:var(--forest);font-size:clamp(2rem,5vw,4.4rem);line-h
 .footer a{color:var(--forest-2)}
 @media(max-width:760px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.table-head{display:none}.species-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:13px}.species-row>div:first-child{grid-column:1/-1}.species-row>div::before{content:attr(data-label);display:block;margin-bottom:3px;color:var(--muted);font-size:.59rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.panel-heading{align-items:start;flex-direction:column;gap:3px}}
 @media(max-width:420px){.shell{padding:14px}.metric{padding:12px}.metric span{font-size:.58rem}.month-line{align-items:start;flex-direction:column}.updated{text-align:left}}
+
+.migration-boards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0 0 24px}
+.flight-board{min-width:0;overflow:hidden;background:#080a0d;border:1px solid #394353;box-shadow:0 10px 28px #122a2240}
+.flight-head{display:flex;align-items:center;gap:14px;min-height:82px;padding:14px 16px;background:#f0ed00;color:#10150d}
+.flight-mark{flex:none;width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:#11151b;color:#fff;font-size:26px;line-height:1}
+.flight-head h2{margin:0;font-size:clamp(1.2rem,2.2vw,1.9rem);line-height:1;letter-spacing:-.035em;text-transform:uppercase}
+.flight-head p{margin:5px 0 0;color:#343822;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase}
+.flight-grid,.flight-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.8fr) minmax(0,1.15fr);gap:9px;align-items:center}
+.flight-grid{padding:10px 12px;color:#f2f5fb;font-size:.65rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid #7ea9ff}
+.flight-row{min-height:54px;padding:9px 12px;color:#dce4f2;font-size:.72rem;border-bottom:1px solid #648fff}
+.flight-row:nth-child(odd){background:#0b0e14}
+.flight-row:last-child{border-bottom:2px solid #7ea9ff}
+.flight-species{font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.02em}
+.flight-latin{display:block;margin-top:2px;color:#aeb7c5;font-size:.62rem;font-style:italic;font-weight:400;text-transform:none}
+.flight-destination{color:#e9edcf;font-weight:650}
+.flight-window{color:#d9e4fa;font-weight:750}
+.flight-window a{display:inline-block;margin-top:3px;color:#9dbfff;font-size:.62rem}
+.flight-actual{color:#c2ccda;font-size:.65rem;line-height:1.35}
+.flight-status{display:block;color:#9be39c;font-size:.63rem;font-weight:750;text-transform:uppercase}
+.flight-none{color:#aeb7c5}
+.migration-note{margin:-12px 0 24px;color:#66766e;font-size:.75rem;line-height:1.45}
+@media(max-width:820px){.migration-boards{grid-template-columns:1fr}}
+@media(max-width:560px){.migration-boards{gap:12px}.flight-head{min-height:68px;padding:11px}.flight-mark{width:40px;height:40px;font-size:22px}.flight-grid{display:none}.flight-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;padding:10px}.flight-row>div{min-width:0;overflow-wrap:anywhere}.flight-row>div::before{content:attr(data-label);display:block;margin-bottom:3px;color:#9db9ff;font-size:.54rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.flight-row>.flight-species,.flight-row>.flight-actual{grid-column:1/-1}}
+
 </style>
 </head>
 <body>
@@ -58,6 +82,18 @@ h1{margin:26px 0 8px;color:var(--forest);font-size:clamp(2rem,5vw,4.4rem);line-h
 <div class="metric"><strong id="individual-total">—</strong><span>Individuals counted*</span></div>
 </section>
 <p class="note">* Sum of individual counts reported on checklists; birds may be counted on more than one checklist. These are reported observations, not a count of every bird at the reserve.</p>
+
+<section class="migration-boards" id="migration-boards" aria-label="Expected seasonal arrivals and departures">
+<article class="flight-board" aria-labelledby="arrivals-title">
+<header class="flight-head"><span class="flight-mark" aria-hidden="true">↗</span><div><h2 id="arrivals-title">Bird Arrivals</h2><p>Expected seasonal arrivals at the Wetland Centre</p></div></header>
+<div class="flight-grid"><span>Species</span><span>Likely origin</span><span>Window</span><span>eBird hotspot reports</span></div><div id="arrival-rows"></div>
+</article>
+<article class="flight-board" aria-labelledby="departures-title">
+<header class="flight-head"><span class="flight-mark" aria-hidden="true">↗</span><div><h2 id="departures-title">Bird Departures</h2><p>Expected seasonal departures from the Wetland Centre</p></div></header>
+<div class="flight-grid"><span>Species</span><span>Likely destination</span><span>Window</span><span>eBird hotspot reports</span></div><div id="departure-rows"></div>
+</article>
+</section>
+<p class="migration-note">Seasonal windows and likely countries are indicative summaries from BTO BirdFacts; they are not tracked routes for individual birds. eBird remarks show reports at this hotspot during the current month. Rare or notable sightings do not determine which birds are expected to migrate.</p>
 <section class="panel" aria-labelledby="species-title">
 <div class="panel-heading"><h2 id="species-title">Species reported this month</h2><span id="hotspot-name">Loading eBird hotspot…</span></div>
 <div class="table-head"><span>Species</span><span>Species reports</span><span>Individuals counted</span><span>Most recent report</span></div>
@@ -94,6 +130,31 @@ function render(feed){
 }
 async function load(){try{const response=await fetch('./data/wetland-centre-observations.json',{cache:'no-store'});if(!response.ok)throw new Error('Feed unavailable');render(await response.json())}catch(error){document.querySelector('#hotspot-name').textContent='eBird hotspot feed unavailable';document.querySelector('#species-rows').innerHTML='<div class="empty">The eBird update has not completed yet. Please check back shortly.</div>';document.querySelector('#updated-at').textContent='';for(const id of ['species-total','report-total','checklist-total','individual-total'])document.querySelector('#'+id).textContent='—'}}
 load();
+
+const migrationBirds=[
+{name:'Sand Martin',latin:'Riparia riparia',from:'Senegal · Morocco',to:'Senegal · Morocco',arrive:[3,4],depart:[8,9],arrival:'March–April',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/sand-martin'},
+{name:'Swallow',latin:'Hirundo rustica',from:'South Africa',to:'South Africa',arrive:[4],depart:[9,10],arrival:'April',departure:'September–October',url:'https://www.bto.org/learn/about-birds/birdfacts/swallow'},
+{name:'House Martin',latin:'Delichon urbicum',from:'Senegal · Nigeria',to:'Senegal · Nigeria',arrive:[4,5],depart:[8,9],arrival:'April–May',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/house-martin'},
+{name:'Swift',latin:'Apus apus',from:'Mozambique · DR Congo · South Africa',to:'Mozambique · DR Congo · South Africa',arrive:[4,5],depart:[8],arrival:'Late April–May',departure:'August',url:'https://www.bto.org/learn/about-birds/birdfacts/swift'},
+{name:'Whitethroat',latin:'Curruca communis',from:'Senegal · Mali · Mauritania',to:'Senegal · Mali · Mauritania',arrive:[4,5],depart:[8,9],arrival:'April–May',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/whitethroat'},
+{name:'Blackcap',latin:'Sylvia atricapilla',from:'Germany · Netherlands · Belgium',to:'Spain · France · Morocco',arrive:[4,10,11],depart:[8,9,10],arrival:'April; continental winter visitors October–November',departure:'August–October',url:'https://www.bto.org/learn/about-birds/birdfacts/blackcap'},
+{name:'Chiffchaff',latin:'Phylloscopus collybita',from:'Spain · Portugal · Morocco',to:'Spain · Portugal · Morocco',arrive:[3,4],depart:[8,9,10],arrival:'March–April',departure:'August–October',url:'https://www.bto.org/learn/about-birds/birdfacts/chiffchaff'},
+{name:'Lesser Whitethroat',latin:'Curruca curruca',from:'Chad · Niger · Mali',to:'Chad · Niger · Mali',arrive:[4],depart:[8,9],arrival:'April',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/lesser-whitethroat'},
+{name:'Willow Warbler',latin:'Phylloscopus trochilus',from:'Ghana · Nigeria · Cameroon',to:'Ghana · Nigeria · Cameroon',arrive:[4],depart:[8,9],arrival:'April',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/willow-warbler'},
+{name:'Garden Warbler',latin:'Sylvia borin',from:'Senegal · Ghana · Nigeria',to:'Senegal · Ghana · Nigeria',arrive:[4,5],depart:[8,9],arrival:'April–May',departure:'August–September',url:'https://www.bto.org/learn/about-birds/birdfacts/garden-warbler'},
+{name:'Reed Warbler',latin:'Acrocephalus scirpaceus',from:'Ghana · Nigeria · Cameroon',to:'Ghana · Nigeria · Cameroon',arrive:[4,5],depart:[9,10],arrival:'Mid-April–May',departure:'September–early October',url:'https://www.bto.org/learn/about-birds/birdfacts/reed-warbler'},
+{name:'Sedge Warbler',latin:'Acrocephalus schoenobaenus',from:'Senegal · Ghana · Nigeria',to:'Senegal · Ghana · Nigeria',arrive:[4,5],depart:[8,9],arrival:'April–May',departure:'August–mid-September',url:'https://www.bto.org/learn/about-birds/birdfacts/sedge-warbler'},
+{name:'Redstart',latin:'Phoenicurus phoenicurus',from:'Senegal · Ghana · Nigeria',to:'Senegal · Ghana · Nigeria',arrive:[4,5],depart:[8,9,10],arrival:'April–May',departure:'August–October',url:'https://www.bto.org/learn/about-birds/birdfacts/redstart'},
+{name:'Wheatear',latin:'Oenanthe oenanthe',from:'Senegal · Mali · Mauritania',to:'Senegal · Mali · Mauritania',arrive:[3,4,5],depart:[8,9,10],arrival:'Mid-March–May',departure:'August–October',url:'https://www.bto.org/learn-about-birds/birdfacts/wheatear'},
+{name:'Whinchat',latin:'Saxicola rubetra',from:'Ghana · Nigeria · Cameroon',to:'Ghana · Nigeria · Cameroon',arrive:[4,5],depart:[8,9],arrival:'April–early May',departure:'August–September',url:'https://www.bto.org/learn-about-birds/birdfacts/whinchat'},
+{name:'Redwing',latin:'Turdus iliacus',from:'Iceland · Norway · Sweden',to:'Iceland · Norway · Sweden',arrive:[9,10,11],depart:[3,4],arrival:'September–November',departure:'March–April',url:'https://www.bto.org/learn/about-birds/birdfacts/redwing'},
+{name:'Fieldfare',latin:'Turdus pilaris',from:'Norway · Sweden · Russia',to:'Norway · Sweden · Russia',arrive:[10,11],depart:[3,4],arrival:'October–November',departure:'March–April',url:'https://www.bto.org/learn/about-birds/birdfacts/fieldfare'}
+];
+function migrationReport(bird){const matched=records.filter(r=>r.latin===bird.latin&&Number(r.year)===currentYear&&Number(r.month)===currentMonth);if(!matched.length)return null;const dates=matched.map(r=>String(r.date||'')).sort();const lists=new Set(matched.map(r=>r.checklistId).filter(Boolean));const counts=matched.map(r=>r.howMany).filter(n=>n!==null&&n!==undefined&&Number.isFinite(Number(n))).map(Number);return{first:dates[0],last:dates[dates.length-1],reports:matched.length,checklists:lists.size,individuals:counts.length?counts.reduce((a,b)=>a+b,0):null}}
+function migrationRow(bird,direction){const isArrival=direction==='arrival';const period=isArrival?bird.arrival:bird.departure;const countries=isArrival?bird.from:bird.to;const report=migrationReport(bird);const remark=report?'<span class="flight-status">● Reported '+esc(report.first)+'</span>'+report.checklists+' checklist'+(report.checklists===1?'':'s')+(report.individuals===null?'':' · '+report.individuals+' reported'):'<span class="flight-none">No '+monthNames[currentMonth-1]+' hotspot report logged</span>';return'<div class="flight-row"><div class="flight-species" data-label="Species">'+esc(bird.name)+'<span class="flight-latin">'+esc(bird.latin)+'</span></div><div class="flight-destination" data-label="'+(isArrival?'Likely origin':'Likely destination')+'">'+esc(countries)+'</div><div class="flight-window" data-label="Typical window">'+esc(period)+'<br><a href="'+esc(bird.url)+'" target="_blank" rel="noreferrer">BTO BirdFacts ↗</a></div><div class="flight-actual" data-label="eBird hotspot reports">'+remark+'</div></div>'}
+function renderMigrationBoards(){const arrivals=migrationBirds.filter(b=>b.arrive.includes(currentMonth));const departures=migrationBirds.filter(b=>b.depart.includes(currentMonth));document.querySelector('#arrival-rows').innerHTML=arrivals.length?arrivals.map(b=>migrationRow(b,'arrival')).join():'<div class="empty">No expected seasonal arrivals listed for this month.</div>';document.querySelector('#departure-rows').innerHTML=departures.length?departures.map(b=>migrationRow(b,'departure')).join():'<div class="empty">No expected seasonal departures listed for this month.</div>'}
+renderMigrationBoards();
+
 </script>
 </body>
 </html>
