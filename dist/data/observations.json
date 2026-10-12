@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-12T08:31:46.557Z",
+  "updatedAt": "2026-10-12T09:33:01.512Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -2349,7 +2349,77 @@
       "checklistId": "S401264359",
       "observer": "Barbara Crowther",
       "howMany": 7
+    },
+    {
+      "species": "Blue Tit",
+      "latin": "Cyanistes caeruleus",
+      "speciesCode": "blutit",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401617421",
+      "observer": "Chris Parry",
+      "howMany": 2
+    },
+    {
+      "species": "Common Wood-Pigeon",
+      "latin": "Columba palumbus",
+      "speciesCode": "cowpig1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401617421",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Great Tit",
+      "latin": "Parus major",
+      "speciesCode": "gretit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401617421",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401617421",
+      "observer": "Chris Parry",
+      "howMany": 1
+    },
+    {
+      "species": "Wren",
+      "latin": "Troglodytes troglodytes",
+      "speciesCode": "winwre4",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "Hammersmith (LBC District)",
+      "hotspotId": "L12106160",
+      "checklistId": "S401617421",
+      "observer": "Chris Parry",
+      "howMany": 1
     }
   ],
-  "lastRunNewReports": 137
+  "lastRunNewReports": 140
 }
