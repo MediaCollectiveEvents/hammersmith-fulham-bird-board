@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-12T13:18:18.456Z",
+  "updatedAt": "2026-10-13T12:48:02.788Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -2419,7 +2419,49 @@
       "checklistId": "S401617421",
       "observer": "Chris Parry",
       "howMany": 1
+    },
+    {
+      "species": "Black-headed Gull",
+      "latin": "Chroicocephalus ridibundus",
+      "speciesCode": "bkhgul",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-13",
+      "notable": false,
+      "hotspot": "River Thames at Hammersmith Bridge",
+      "hotspotId": "L8165956",
+      "checklistId": "S401927574",
+      "observer": "Jim Wieland",
+      "howMany": null
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-13",
+      "notable": false,
+      "hotspot": "River Thames at Hammersmith Bridge",
+      "hotspotId": "L8165956",
+      "checklistId": "S401927574",
+      "observer": "Jim Wieland",
+      "howMany": null
+    },
+    {
+      "species": "Herring Gull",
+      "latin": "Larus argentatus",
+      "speciesCode": "euhgul1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-13",
+      "notable": false,
+      "hotspot": "River Thames at Hammersmith Bridge",
+      "hotspotId": "L8165956",
+      "checklistId": "S401927574",
+      "observer": "Jim Wieland",
+      "howMany": null
     }
   ],
-  "lastRunNewReports": 140
+  "lastRunNewReports": 127
 }

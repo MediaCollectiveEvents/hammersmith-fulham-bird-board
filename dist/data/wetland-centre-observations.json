@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-10-12T13:18:19.367Z",
+  "updatedAt": "2026-10-13T12:48:03.511Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -1214,6 +1214,19 @@
       "howMany": 30
     },
     {
+      "species": "Black-headed Gull",
+      "latin": "Chroicocephalus ridibundus",
+      "speciesCode": "bkhgul",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Blackbird",
       "latin": "Turdus merula",
       "speciesCode": "eurbla",
@@ -1240,6 +1253,19 @@
       "howMany": 7
     },
     {
+      "species": "Blue Tit",
+      "latin": "Cyanistes caeruleus",
+      "speciesCode": "blutit",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 2
+    },
+    {
       "species": "Canada Goose",
       "latin": "Branta canadensis",
       "speciesCode": "cangoo",
@@ -1251,6 +1277,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665436",
       "howMany": null
+    },
+    {
+      "species": "Canada Goose",
+      "latin": "Branta canadensis",
+      "speciesCode": "cangoo",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 7
     },
     {
       "species": "Carrion Crow",
@@ -1266,6 +1305,19 @@
       "howMany": 60
     },
     {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Cetti's Warbler",
       "latin": "Cettia cetti",
       "speciesCode": "cetwar1",
@@ -1279,9 +1331,61 @@
       "howMany": 4
     },
     {
+      "species": "Cetti's Warbler",
+      "latin": "Cettia cetti",
+      "speciesCode": "cetwar1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 4
+    },
+    {
       "species": "Common Chiffchaff",
       "latin": "Phylloscopus collybita",
       "speciesCode": "comchi1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401665203",
+      "howMany": 24
+    },
+    {
+      "species": "Common Chiffchaff",
+      "latin": "Phylloscopus collybita",
+      "speciesCode": "comchi1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
+      "species": "Common Gull",
+      "latin": "Larus canus",
+      "speciesCode": "mewgul",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 2
+    },
+    {
+      "species": "Common Pochard",
+      "latin": "Aythya ferina",
+      "speciesCode": "compoc",
       "year": 2026,
       "month": 10,
       "date": "2026-10-12",
@@ -1301,8 +1405,8 @@
       "notable": false,
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
-      "checklistId": "S401665203",
-      "howMany": 24
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Common Snipe",
@@ -1318,6 +1422,19 @@
       "howMany": 1
     },
     {
+      "species": "Common Snipe",
+      "latin": "Gallinago gallinago",
+      "speciesCode": "comsni",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 3
+    },
+    {
       "species": "Common Wood-Pigeon",
       "latin": "Columba palumbus",
       "speciesCode": "cowpig1",
@@ -1329,6 +1446,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 75
+    },
+    {
+      "species": "Common Wood-Pigeon",
+      "latin": "Columba palumbus",
+      "speciesCode": "cowpig1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Coot",
@@ -1344,6 +1474,32 @@
       "howMany": 42
     },
     {
+      "species": "Coot",
+      "latin": "Fulica atra",
+      "speciesCode": "eurcoo",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Egyptian Goose",
+      "latin": "Alopochen aegyptiaca",
+      "speciesCode": "egygoo",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Gadwall",
       "latin": "Mareca strepera",
       "speciesCode": "gadwal",
@@ -1355,6 +1511,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 16
+    },
+    {
+      "species": "Gadwall",
+      "latin": "Mareca strepera",
+      "speciesCode": "gadwal",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
     },
     {
       "species": "Goldcrest",
@@ -1370,6 +1539,32 @@
       "howMany": null
     },
     {
+      "species": "Goldfinch",
+      "latin": "Carduelis carduelis",
+      "speciesCode": "eurgol",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 1
+    },
+    {
+      "species": "Great Black-backed Gull",
+      "latin": "Larus marinus",
+      "speciesCode": "gbbgul",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 1
+    },
+    {
       "species": "Great Cormorant",
       "latin": "Phalacrocorax carbo",
       "speciesCode": "grecor",
@@ -1383,6 +1578,19 @@
       "howMany": 3
     },
     {
+      "species": "Great Cormorant",
+      "latin": "Phalacrocorax carbo",
+      "speciesCode": "grecor",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Great Crested Grebe",
       "latin": "Podiceps cristatus",
       "speciesCode": "grcgre1",
@@ -1394,6 +1602,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 1
+    },
+    {
+      "species": "Great Crested Grebe",
+      "latin": "Podiceps cristatus",
+      "speciesCode": "grcgre1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -1422,6 +1643,19 @@
       "howMany": 1
     },
     {
+      "species": "Great Tit",
+      "latin": "Parus major",
+      "speciesCode": "gretit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
       "species": "Green Woodpecker",
       "latin": "Picus viridis",
       "speciesCode": "eugwoo2",
@@ -1432,6 +1666,19 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S401665203",
+      "howMany": 1
+    },
+    {
+      "species": "Green Woodpecker",
+      "latin": "Picus viridis",
+      "speciesCode": "eugwoo2",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
       "howMany": 1
     },
     {
@@ -1448,6 +1695,19 @@
       "howMany": 6
     },
     {
+      "species": "Green-winged Teal",
+      "latin": "Anas crecca",
+      "speciesCode": "gnwtea",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
       "species": "Grey Heron",
       "latin": "Ardea cinerea",
       "speciesCode": "graher1",
@@ -1459,6 +1719,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 3
+    },
+    {
+      "species": "Grey Heron",
+      "latin": "Ardea cinerea",
+      "speciesCode": "graher1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Herring Gull",
@@ -1474,6 +1747,32 @@
       "howMany": 6
     },
     {
+      "species": "Herring Gull",
+      "latin": "Larus argentatus",
+      "speciesCode": "euhgul1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Jack Snipe",
+      "latin": "Lymnocryptes minimus",
+      "speciesCode": "jacsni",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 2
+    },
+    {
       "species": "Jackdaw",
       "latin": "Coloeus monedula",
       "speciesCode": "eurjac",
@@ -1485,6 +1784,32 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 3
+    },
+    {
+      "species": "Jackdaw",
+      "latin": "Coloeus monedula",
+      "speciesCode": "eurjac",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
+      "species": "Jay",
+      "latin": "Garrulus glandarius",
+      "speciesCode": "eurjay1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 2
     },
     {
       "species": "Lesser Black-backed Gull",
@@ -1500,6 +1825,32 @@
       "howMany": 5
     },
     {
+      "species": "Lesser Black-backed Gull",
+      "latin": "Larus fuscus",
+      "speciesCode": "lbbgul",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 3
+    },
+    {
+      "species": "Little Grebe",
+      "latin": "Tachybaptus ruficollis",
+      "speciesCode": "litgre1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 1
+    },
+    {
       "species": "Long-tailed Tit",
       "latin": "Aegithalos caudatus",
       "speciesCode": "lottit1",
@@ -1513,9 +1864,48 @@
       "howMany": 2
     },
     {
+      "species": "Long-tailed Tit",
+      "latin": "Aegithalos caudatus",
+      "speciesCode": "lottit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
       "species": "Magpie",
       "latin": "Pica pica",
       "speciesCode": "eurmag1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401665203",
+      "howMany": 7
+    },
+    {
+      "species": "Magpie",
+      "latin": "Pica pica",
+      "speciesCode": "eurmag1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Mallard",
+      "latin": "Anas platyrhynchos",
+      "speciesCode": "mallar3",
       "year": 2026,
       "month": 10,
       "date": "2026-10-12",
@@ -1535,8 +1925,34 @@
       "notable": false,
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
-      "checklistId": "S401665203",
-      "howMany": 7
+      "checklistId": "S401750075",
+      "howMany": null
+    },
+    {
+      "species": "Mandarin Duck",
+      "latin": "Aix galericulata",
+      "speciesCode": "manduc",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Mediterranean Gull",
+      "latin": "Ichthyaetus melanocephalus",
+      "speciesCode": "medgul1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 1
     },
     {
       "species": "Moorhen",
@@ -1552,6 +1968,19 @@
       "howMany": 14
     },
     {
+      "species": "Moorhen",
+      "latin": "Gallinula chloropus",
+      "speciesCode": "commoo3",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Mute Swan",
       "latin": "Cygnus olor",
       "speciesCode": "mutswa",
@@ -1563,6 +1992,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 6
+    },
+    {
+      "species": "Mute Swan",
+      "latin": "Cygnus olor",
+      "speciesCode": "mutswa",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Northern Lapwing",
@@ -1578,6 +2020,19 @@
       "howMany": 15
     },
     {
+      "species": "Northern Lapwing",
+      "latin": "Vanellus vanellus",
+      "speciesCode": "norlap",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 36
+    },
+    {
       "species": "Northern Shoveler",
       "latin": "Spatula clypeata",
       "speciesCode": "norsho",
@@ -1589,6 +2044,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 8
+    },
+    {
+      "species": "Northern Shoveler",
+      "latin": "Spatula clypeata",
+      "speciesCode": "norsho",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
     },
     {
       "species": "Robin",
@@ -1604,6 +2072,19 @@
       "howMany": 15
     },
     {
+      "species": "Robin",
+      "latin": "Erithacus rubecula",
+      "speciesCode": "eurrob1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 4
+    },
+    {
       "species": "Rock Pigeon",
       "latin": "Columba livia",
       "speciesCode": "rocpig",
@@ -1614,6 +2095,19 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S401665436",
+      "howMany": null
+    },
+    {
+      "species": "Rock Pigeon",
+      "latin": "Columba livia",
+      "speciesCode": "rocpig",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
       "howMany": null
     },
     {
@@ -1630,6 +2124,19 @@
       "howMany": 7
     },
     {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Sparrowhawk",
       "latin": "Accipiter nisus",
       "speciesCode": "eurspa1",
@@ -1640,6 +2147,19 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S401665203",
+      "howMany": 1
+    },
+    {
+      "species": "Sparrowhawk",
+      "latin": "Accipiter nisus",
+      "speciesCode": "eurspa1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
       "howMany": 1
     },
     {
@@ -1656,6 +2176,32 @@
       "howMany": null
     },
     {
+      "species": "Starling",
+      "latin": "Sturnus vulgaris",
+      "speciesCode": "eursta",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Stock Dove",
+      "latin": "Columba oenas",
+      "speciesCode": "stodov1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Stonechat",
       "latin": "Saxicola rubicola",
       "speciesCode": "stonec4",
@@ -1667,6 +2213,19 @@
       "hotspotId": "L939896",
       "checklistId": "S401665203",
       "howMany": 5
+    },
+    {
+      "species": "Stonechat",
+      "latin": "Saxicola rubicola",
+      "speciesCode": "stonec4",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401750075",
+      "howMany": 2
     },
     {
       "species": "Tufted Duck",
@@ -1682,9 +2241,48 @@
       "howMany": 40
     },
     {
+      "species": "Tufted Duck",
+      "latin": "Aythya fuligula",
+      "speciesCode": "tufduc",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
       "species": "Water Rail",
       "latin": "Rallus aquaticus",
       "speciesCode": "watrai1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401665203",
+      "howMany": 1
+    },
+    {
+      "species": "Wigeon",
+      "latin": "Mareca penelope",
+      "speciesCode": "eurwig",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-12",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S401832149",
+      "howMany": null
+    },
+    {
+      "species": "Wren",
+      "latin": "Troglodytes troglodytes",
+      "speciesCode": "winwre4",
       "year": 2026,
       "month": 10,
       "date": "2026-10-12",
@@ -1704,9 +2302,9 @@
       "notable": false,
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
-      "checklistId": "S401665203",
+      "checklistId": "S401750075",
       "howMany": 1
     }
   ],
-  "lastRunNewReports": 92
+  "lastRunNewReports": 94
 }
