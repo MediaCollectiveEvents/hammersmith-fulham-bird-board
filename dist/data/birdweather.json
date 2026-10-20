@@ -1,6 +1,6 @@
 {
   "source": "BirdWeather",
-  "updatedAt": "2026-10-20T07:47:10.703Z",
+  "updatedAt": "2026-10-20T07:49:03.239Z",
   "periodHours": 24,
   "confidenceThreshold": 0.7,
   "recordCount": 7,
