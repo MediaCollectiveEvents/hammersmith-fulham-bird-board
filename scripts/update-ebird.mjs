@@ -133,7 +133,7 @@ for (const observation of nearbyObservations) {
   if (!observation.locId || boroughHotspotIds.has(observation.locId) || observation.locationPrivate === true || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
   if (observation.obsValid !== true || !inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
-  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(date)) continue;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
   const [year, month] = date.split('-').map(Number);
   const record = {
     species: normalizeCommonName(observation.comName, observation.sciName), latin: observation.sciName || '',
@@ -148,6 +148,6 @@ for (const observation of nearbyObservations) {
 }
 
 const records = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.species.localeCompare(b.species));
-feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted};
+feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby};
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
 console.log(`Saved ${records.length} retained reports: ${accepted} new hotspot reports from ${boroughHotspots.length} borough hotspots and ${acceptedNearby} recent reports from other mapped in-borough locations.`);
