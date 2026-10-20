@@ -6,6 +6,8 @@ on:
     paths:
       - 'scripts/update-ebird.mjs'
       - 'scripts/update-wetland-ebird.mjs'
+      - 'scripts/update-birdweather.mjs'
+      - 'package.json'
       - 'dist/index.html'
       - 'dist/wetland-centre.html'
       - '.github/workflows/update-ebird.yml'
@@ -34,6 +36,9 @@ jobs:
         continue-on-error: true
         env:
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+      - name: Refresh BirdWeather detections
+        run: npm run update:birdweather
+        continue-on-error: true
       - name: Refresh WWT hotspot records
         run: npm run update:wetland
         env:
@@ -42,8 +47,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/data/observations.json dist/data/wetland-centre-observations.json
-          git diff --cached --quiet || git commit -m "Refresh eBird hotspot reports"
+          git add dist/data/observations.json dist/data/birdweather.json dist/data/wetland-centre-observations.json
+          git diff --cached --quiet || git commit -m "Refresh bird observation feeds"
           git push
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
