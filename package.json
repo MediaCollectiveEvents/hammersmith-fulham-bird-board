@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "update:ebird": "node scripts/update-ebird.mjs",
-    "update:wetland": "node scripts/update-wetland-ebird.mjs"
+    "update:wetland": "node scripts/update-wetland-ebird.mjs",
+    "update:birdweather": "node scripts/update-birdweather.mjs"
   }
 }
