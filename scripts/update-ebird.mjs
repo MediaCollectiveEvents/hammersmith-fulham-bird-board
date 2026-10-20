@@ -8,9 +8,20 @@ const excludedHotspotIds = new Set(['L12107155']); // St Mary's Catholic Cemeter
 const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)', 'Furnival Gardens', 'Furnivall Gardens', 'Hammersmith Cemetery / Magravine Cemetery', 'Magravine Cemetery']); // Keep these borough hotspots in refreshes even without a recent checklist; accept common Furnivall spellings.
 
 async function getJson(url, headers = {}) {
-  const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
-  if (!response.ok) throw new Error(`${response.status} from ${String(url).split('?')[0]}: ${await response.text()}`);
-  return response.json();
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
+    if (response.ok) return response.json();
+    const message = await response.text();
+    if (response.status === 429 && attempt < 4) {
+      const retryAfter = Number(response.headers.get('retry-after'));
+      const delay = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : Math.min(16000, 2000 * (2 ** attempt));
+      console.warn(`eBird rate limit; retrying in ${Math.round(delay / 1000)} seconds.`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+      continue;
+    }
+    throw new Error(`${response.status} from ${String(url).split('?')[0]}: ${message}`);
+  }
+  throw new Error(`Repeated rate limiting from ${String(url).split('?')[0]}.`);
 }
 
 function coordinatesFromBoundary(value) {

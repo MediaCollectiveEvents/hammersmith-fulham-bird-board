@@ -7,9 +7,6 @@ on:
       - 'scripts/update-ebird.mjs'
       - 'scripts/update-wetland-ebird.mjs'
       - 'scripts/update-birdweather.mjs'
-      - 'package.json'
-      - 'dist/index.html'
-      - 'dist/wetland-centre.html'
       - '.github/workflows/update-ebird.yml'
   schedule:
     - cron: '23 5 * * *'
