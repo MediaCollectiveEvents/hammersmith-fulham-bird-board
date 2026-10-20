@@ -9,7 +9,7 @@ const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)', 'F
 
 async function getJson(url, headers = {}) {
   const response = await fetch(url, {headers, signal: AbortSignal.timeout(60000)});
-  if (!response.ok) throw new Error(`${response.status} from ${url.split('?')[0]}: ${await response.text()}`);
+  if (!response.ok) throw new Error(`${response.status} from ${String(url).split('?')[0]}: ${await response.text()}`);
   return response.json();
 }
 
