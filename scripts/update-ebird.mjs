@@ -65,15 +65,22 @@ const boroughHotspots = [...hotspotCandidates.values()].filter(h => {
 });
 
 const boroughHotspotIds = new Set(boroughHotspots.map(hotspot => hotspot.locId));
-// Nearby results include recent reports from mapped locations around the borough.
-// Filter them against the same exact boundary, then exclude known borough hotspots
-// because those are already queried in full above.
-const nearbyUrl = new URL(`${apiRoot}/data/obs/geo/recent`);
-nearbyUrl.search = new URLSearchParams({
-  lat: '51.49', lng: '-0.23', dist: '10', back: '30', maxResults: '10000',
-  includeProvisional: 'false', hotspot: 'false', detail: 'full', sppLocale: 'en'
-});
-const nearbyObservations = await getJson(nearbyUrl, headers);
+// Tile the borough with overlapping small-radius requests. The nearby endpoint
+// returns only the latest observation of each species in each search area, so
+// several centres reduce the chance that an outside-borough report hides a local one.
+const nearbyCenters = [
+  {lat: '51.47', lng: '-0.27'}, {lat: '51.47', lng: '-0.23'}, {lat: '51.47', lng: '-0.19'},
+  {lat: '51.51', lng: '-0.27'}, {lat: '51.51', lng: '-0.23'}, {lat: '51.51', lng: '-0.19'},
+  {lat: '51.54', lng: '-0.27'}, {lat: '51.54', lng: '-0.23'}, {lat: '51.54', lng: '-0.19'}
+];
+const nearbyObservations = (await mapLimit(nearbyCenters, 2, async center => {
+  const nearbyUrl = new URL(`${apiRoot}/data/obs/geo/recent`);
+  nearbyUrl.search = new URLSearchParams({
+    ...center, dist: '3', back: '30', maxResults: '10000',
+    includeProvisional: 'false', hotspot: 'false', detail: 'full', sppLocale: 'en'
+  });
+  return getJson(nearbyUrl, headers);
+})).flat();
 
 async function mapLimit(items, limit, callback) {
   const output = new Array(items.length);
@@ -148,6 +155,6 @@ for (const observation of nearbyObservations) {
 }
 
 const records = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.species.localeCompare(b.species));
-feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby};
+feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby, lastRunNearbyCandidates: nearbyObservations.length};
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
 console.log(`Saved ${records.length} retained reports: ${accepted} new hotspot reports from ${boroughHotspots.length} borough hotspots and ${acceptedNearby} recent reports from other mapped in-borough locations.`);
