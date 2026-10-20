@@ -148,7 +148,7 @@ for (const observation of observations) {
 }
 
 for (const observation of nearbyObservations) {
-  if (!observation.locId || boroughHotspotIds.has(observation.locId) || observation.locationPrivate === true || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
+  if (!observation.locId || boroughHotspotIds.has(observation.locId) || excludedHotspotIds.has(observation.locId) || /kensal green/i.test(observation.locName || '') || observation.locationPrivate === true || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
   if (observation.obsValid !== true || !inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
