@@ -19,6 +19,10 @@ For free GitHub Pages on GitHub Free, the repository needs to be public. Do not 
 - eBird does not provide a borough migration calendar from its regional summaries. Expected dates in the page are provisional seasonal guidance, not live predictions. Actual eBird reports are shown for the selected month and year.
 - If Actions stop for more than 30 days, some observations can fall outside the API window before they are archived. Run the workflow regularly.
 
+## BirdWeather acoustic detections
+
+A separate public BirdWeather feed is refreshed daily by the same GitHub Actions workflow. It requests BirdNET detections from the last 24 hours at confidence 0.70 or higher, then checks detection coordinates against the exact Hammersmith & Fulham boundary before writing `dist/data/birdweather.json`. No BirdWeather key is required. The page labels these as automated audio detections: they are not human-verified sightings, proof of species presence, or counts of individual birds. The feed keeps coordinates private and displays the station, timestamp and model confidence.
+
 ## NBN Atlas bird record list
 
 The board includes a source list of bird taxa recorded in the London Borough of Hammersmith & Fulham, based on an NBN Atlas export confirmed by the project owner to cover the borough. The NBN archive is incomplete, so it is used only to list recorded taxa and is not used to determine expected monthly arrivals or departures. A missing record is not evidence that a bird was absent.
