@@ -1,22 +1,11 @@
 {
   "source": "BirdWeather",
-  "updatedAt": "2026-10-20T07:39:00.189Z",
+  "updatedAt": "2026-10-20T07:40:06.119Z",
   "periodHours": 24,
   "confidenceThreshold": 0.7,
-  "recordCount": 38,
-  "truncated": true,
+  "recordCount": 7,
+  "truncated": false,
   "records": [
-    {
-      "id": "11845215536",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T08:08:35+01:00",
-      "confidence": 0.7708,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
     {
       "id": "11845142999",
       "species": "European Robin",
@@ -27,17 +16,6 @@
       "certainty": "almost_certain",
       "station": "BirdNET-Pi - SHBPutney",
       "stationId": "13549"
-    },
-    {
-      "id": "11844904996",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T07:40:35+01:00",
-      "confidence": 0.8263,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
     },
     {
       "id": "11844854994",
@@ -51,226 +29,6 @@
       "stationId": "13549"
     },
     {
-      "id": "11844842661",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T07:35:05+01:00",
-      "confidence": 0.7512,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844819821",
-      "species": "Song Thrush",
-      "latin": "Turdus philomelos",
-      "ebirdCode": "sonthr1",
-      "timestamp": "2026-10-20T07:33:14+01:00",
-      "confidence": 0.7071,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844789027",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T07:30:20+01:00",
-      "confidence": 0.775,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844788954",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T07:30:17+01:00",
-      "confidence": 0.794,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844591817",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T07:13:02+01:00",
-      "confidence": 0.7501,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844589134",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T07:12:59+01:00",
-      "confidence": 0.8952,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844589039",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T07:12:56+01:00",
-      "confidence": 0.7862,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844588934",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T07:12:47+01:00",
-      "confidence": 0.7549,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844586003",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T07:12:44+01:00",
-      "confidence": 0.9243,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844196324",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:37:25+01:00",
-      "confidence": 0.8286,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11844097384",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:27:58+01:00",
-      "confidence": 0.757,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11843934039",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:09:46+01:00",
-      "confidence": 0.7076,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11843921745",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:08:28+01:00",
-      "confidence": 0.8435,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11843921698",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:08:19+01:00",
-      "confidence": 0.7174,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11843921635",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:08:16+01:00",
-      "confidence": 0.7444,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11843912902",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-20T06:07:22+01:00",
-      "confidence": 0.8469,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11842286541",
-      "species": "Song Thrush",
-      "latin": "Turdus philomelos",
-      "ebirdCode": "sonthr1",
-      "timestamp": "2026-10-20T02:10:26+01:00",
-      "confidence": 0.7333,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841886133",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T01:26:08+01:00",
-      "confidence": 0.9397,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841504014",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:48:02+01:00",
-      "confidence": 0.8963,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841426799",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:41:02+01:00",
-      "confidence": 0.9575,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
       "id": "11841333008",
       "species": "Song Thrush",
       "latin": "Turdus philomelos",
@@ -280,116 +38,6 @@
       "certainty": "almost_certain",
       "station": "BirdNET-Pi - SHBPutney",
       "stationId": "13549"
-    },
-    {
-      "id": "11841263448",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:26:29+01:00",
-      "confidence": 0.8109,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841242800",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:24:44+01:00",
-      "confidence": 0.9607,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841116578",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:14:13+01:00",
-      "confidence": 0.8757,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11841088884",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:12:01+01:00",
-      "confidence": 0.9455,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840943908",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:00:43+01:00",
-      "confidence": 0.7951,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840940669",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-20T00:00:34+01:00",
-      "confidence": 0.7782,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840869324",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-19T23:55:22+01:00",
-      "confidence": 0.9244,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840761842",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-19T23:47:40+01:00",
-      "confidence": 0.9034,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840657526",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-19T23:40:37+01:00",
-      "confidence": 0.9712,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
-    },
-    {
-      "id": "11840649828",
-      "species": "Redwing",
-      "latin": "Turdus iliacus",
-      "ebirdCode": "redwin",
-      "timestamp": "2026-10-19T23:40:07+01:00",
-      "confidence": 0.7629,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
     },
     {
       "id": "11833836254",
@@ -403,26 +51,37 @@
       "stationId": "13549"
     },
     {
-      "id": "11829391216",
-      "species": "Eurasian Jay",
-      "latin": "Garrulus glandarius",
-      "ebirdCode": "eurjay1",
-      "timestamp": "2026-10-19T13:16:41+01:00",
-      "confidence": 0.8632,
+      "id": "11827415429",
+      "species": "Great Tit",
+      "latin": "Parus major",
+      "ebirdCode": "gretit1",
+      "timestamp": "2026-10-19T10:47:19+01:00",
+      "confidence": 0.89,
       "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
+      "station": "BirdNET-Pi - SHBPutney",
+      "stationId": "13549"
     },
     {
-      "id": "11828906352",
-      "species": "Eurasian Jay",
-      "latin": "Garrulus glandarius",
-      "ebirdCode": "eurjay1",
-      "timestamp": "2026-10-19T12:52:08+01:00",
-      "confidence": 0.7024,
+      "id": "11827353165",
+      "species": "European Robin",
+      "latin": "Erithacus rubecula",
+      "ebirdCode": "eurrob1",
+      "timestamp": "2026-10-19T10:39:44+01:00",
+      "confidence": 0.89,
       "certainty": "almost_certain",
-      "station": "BirdNET-Pi - CM-WE01",
-      "stationId": "18452"
+      "station": "BirdNET-Pi - SHBPutney",
+      "stationId": "13549"
+    },
+    {
+      "id": "11826420135",
+      "species": "European Robin",
+      "latin": "Erithacus rubecula",
+      "ebirdCode": "eurrob1",
+      "timestamp": "2026-10-19T09:00:19+01:00",
+      "confidence": 0.99,
+      "certainty": "almost_certain",
+      "station": "BirdNET-Pi - SHBPutney",
+      "stationId": "13549"
     }
   ]
 }
