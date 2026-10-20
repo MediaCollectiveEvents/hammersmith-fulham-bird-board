@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-20T07:46:39.367Z",
+  "updatedAt": "2026-10-20T07:47:09.434Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -2639,5 +2639,6 @@
       "howMany": null
     }
   ],
-  "lastRunNewReports": 124
+  "lastRunNewReports": 124,
+  "lastRunNewNearbyReports": 0
 }
