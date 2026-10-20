@@ -1,0 +1,8 @@
+{
+  "source": "BirdWeather",
+  "updatedAt": null,
+  "periodHours": 24,
+  "confidenceThreshold": 0.7,
+  "recordCount": 0,
+  "records": []
+}
