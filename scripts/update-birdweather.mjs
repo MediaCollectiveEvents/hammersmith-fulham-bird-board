@@ -2,7 +2,7 @@ const endpoint = 'https://app.birdweather.com/graphql';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/birdweather.json', import.meta.url);
 const confidenceThreshold = 0.7;
-const maxPages = 10;
+const maxPages = 20;
 
 async function getJson(url, options = {}) {
   const response = await fetch(url, {...options, signal: AbortSignal.timeout(60000)});
@@ -31,6 +31,13 @@ function inBorough(lon, lat, polygons) {
 }
 
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
+const boundaryPoints = polygons.flat(2);
+const bounds = {
+  minLat: Math.min(...boundaryPoints.map(point => point[1])),
+  maxLat: Math.max(...boundaryPoints.map(point => point[1])),
+  minLon: Math.min(...boundaryPoints.map(point => point[0])),
+  maxLon: Math.max(...boundaryPoints.map(point => point[0]))
+};
 const query = `query BoroughDetections($first: Int!, $after: String, $period: InputDuration!, $confidenceGte: Float!, $ne: InputLocation!, $sw: InputLocation!) {
   detections(first: $first, after: $after, period: $period, confidenceGte: $confidenceGte, ne: $ne, sw: $sw) {
     nodes { id confidence certainty timestamp coords { lat lon } species { commonName scientificName ebirdCode } station { id name } }
@@ -42,7 +49,7 @@ let after = null, hasNextPage = true, pages = 0;
 while (hasNextPage && pages < maxPages) {
   const payload = {query, variables: {
     first: 250, after, period: {count: 24, unit: 'hour'}, confidenceGte: confidenceThreshold,
-    ne: {lat: 51.55, lon: -0.14}, sw: {lat: 51.45, lon: -0.32}
+    ne: {lat: bounds.maxLat, lon: bounds.maxLon}, sw: {lat: bounds.minLat, lon: bounds.minLon}
   }};
   const result = await getJson(endpoint, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)});
   if (result.errors?.length) throw new Error('BirdWeather GraphQL error: ' + result.errors.map(e => e.message).join('; '));
