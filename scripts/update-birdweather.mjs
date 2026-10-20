@@ -31,7 +31,7 @@ function inBorough(lon, lat, polygons) {
 }
 
 const polygons = coordinatesFromBoundary(await getJson(boundaryUrl));
-const query = `query BoroughDetections($first: Int!, $after: String, $period: InputDuration!, $confidenceGte: Float!, $ne: CoordinatesInput!, $sw: CoordinatesInput!) {
+const query = `query BoroughDetections($first: Int!, $after: String, $period: InputDuration!, $confidenceGte: Float!, $ne: InputLocation!, $sw: InputLocation!) {
   detections(first: $first, after: $after, period: $period, confidenceGte: $confidenceGte, ne: $ne, sw: $sw) {
     nodes { id confidence certainty timestamp coords { lat lon } species { commonName scientificName ebirdCode } station { id name } }
     pageInfo { hasNextPage endCursor }
