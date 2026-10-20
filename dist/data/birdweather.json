@@ -1,11 +1,22 @@
 {
   "source": "BirdWeather",
-  "updatedAt": "2026-10-20T07:52:27.467Z",
+  "updatedAt": "2026-10-20T10:11:33.641Z",
   "periodHours": 24,
   "confidenceThreshold": 0.7,
-  "recordCount": 7,
+  "recordCount": 5,
   "truncated": false,
   "records": [
+    {
+      "id": "11846459521",
+      "species": "Hooded Crow",
+      "latin": "Corvus cornix",
+      "ebirdCode": "hoocro1",
+      "timestamp": "2026-10-20T10:21:34+01:00",
+      "confidence": 0.77,
+      "certainty": "almost_certain",
+      "station": "BirdNET-Pi - SHBPutney",
+      "stationId": "13549"
+    },
     {
       "id": "11845142999",
       "species": "European Robin",
@@ -46,39 +57,6 @@
       "ebirdCode": "carcro1",
       "timestamp": "2026-10-19T16:50:54+01:00",
       "confidence": 0.77,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - SHBPutney",
-      "stationId": "13549"
-    },
-    {
-      "id": "11827415429",
-      "species": "Great Tit",
-      "latin": "Parus major",
-      "ebirdCode": "gretit1",
-      "timestamp": "2026-10-19T10:47:19+01:00",
-      "confidence": 0.89,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - SHBPutney",
-      "stationId": "13549"
-    },
-    {
-      "id": "11827353165",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-19T10:39:44+01:00",
-      "confidence": 0.89,
-      "certainty": "almost_certain",
-      "station": "BirdNET-Pi - SHBPutney",
-      "stationId": "13549"
-    },
-    {
-      "id": "11826420135",
-      "species": "European Robin",
-      "latin": "Erithacus rubecula",
-      "ebirdCode": "eurrob1",
-      "timestamp": "2026-10-19T09:00:19+01:00",
-      "confidence": 0.99,
       "certainty": "almost_certain",
       "station": "BirdNET-Pi - SHBPutney",
       "stationId": "13549"
