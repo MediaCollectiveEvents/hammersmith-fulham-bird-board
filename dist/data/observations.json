@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-20T07:40:04.632Z",
+  "updatedAt": "2026-10-20T07:46:39.367Z",
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -13,7 +13,8 @@
       "hotspotId": "L8165956",
       "checklistId": "S391517238",
       "observer": "Jim Herkert",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Blackbird",
@@ -27,7 +28,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Carrion Crow",
@@ -41,7 +43,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 6
+      "howMany": 6,
+      "reportType": "hotspot"
     },
     {
       "species": "Common Wood-Pigeon",
@@ -55,7 +58,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 12
+      "howMany": 12,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -69,7 +73,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -82,7 +87,8 @@
       "hotspotId": "L12107769",
       "checklistId": "S393263905",
       "observer": "James Strain",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Tit",
@@ -96,7 +102,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Magpie",
@@ -110,7 +117,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 8
+      "howMany": 8,
+      "reportType": "hotspot"
     },
     {
       "species": "Pied Wagtail",
@@ -124,7 +132,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Robin",
@@ -138,7 +147,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Rock Pigeon",
@@ -152,7 +162,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 7
+      "howMany": 7,
+      "reportType": "hotspot"
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -166,7 +177,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 4
+      "howMany": 4,
+      "reportType": "hotspot"
     },
     {
       "species": "Starling",
@@ -180,7 +192,8 @@
       "hotspotId": "L939893",
       "checklistId": "S391747277",
       "observer": "Luciano Gelfi",
-      "howMany": 5
+      "howMany": 5,
+      "reportType": "hotspot"
     },
     {
       "species": "Black-headed Gull",
@@ -194,7 +207,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 4
+      "howMany": 4,
+      "reportType": "hotspot"
     },
     {
       "species": "Canada Goose",
@@ -208,7 +222,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 6
+      "howMany": 6,
+      "reportType": "hotspot"
     },
     {
       "species": "Carrion Crow",
@@ -222,7 +237,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Common Wood-Pigeon",
@@ -236,7 +252,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Cormorant",
@@ -250,7 +267,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Herring Gull",
@@ -264,7 +282,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Magpie",
@@ -278,7 +297,8 @@
       "hotspotId": "L12106898",
       "checklistId": "S392214563",
       "observer": "Zane Khademi",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Mallard",
@@ -292,7 +312,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Mandarin Duck",
@@ -306,7 +327,8 @@
       "hotspotId": "L12106898",
       "checklistId": "S392214563",
       "observer": "Zane Khademi",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Moorhen",
@@ -320,7 +342,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Peregrine Falcon",
@@ -334,7 +357,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Rock Pigeon",
@@ -348,7 +372,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 4
+      "howMany": 4,
+      "reportType": "hotspot"
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -362,7 +387,8 @@
       "hotspotId": "L12105749",
       "checklistId": "S392255931",
       "observer": "Mark Stanley",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Common Chaffinch",
@@ -376,7 +402,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S394148064",
       "observer": "The Urban Birder",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Greater Whitethroat",
@@ -390,7 +417,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S394148064",
       "observer": "The Urban Birder",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Jay",
@@ -404,7 +432,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S394148064",
       "observer": "The Urban Birder",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Whinchat",
@@ -418,7 +447,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S394148064",
       "observer": "The Urban Birder",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Black-headed Gull",
@@ -428,6 +458,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -442,6 +473,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -456,6 +488,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -470,6 +503,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -484,6 +518,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -498,6 +533,7 @@
       "month": 9,
       "date": "2026-09-20",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Palace",
       "hotspotId": "L12105745",
       "checklistId": "S394577607",
@@ -512,6 +548,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -530,7 +567,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
       "observer": "Magnus Andersson",
-      "howMany": 10
+      "howMany": 10,
+      "reportType": "hotspot"
     },
     {
       "species": "Common Chiffchaff",
@@ -540,6 +578,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -554,6 +593,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S395984569",
@@ -568,6 +608,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S395984569",
@@ -582,6 +623,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Chelsea Harbour",
       "hotspotId": "L12105224",
       "checklistId": "S395990052",
@@ -600,7 +642,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
       "observer": "Magnus Andersson",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Grey Heron",
@@ -610,6 +653,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Chelsea Harbour",
       "hotspotId": "L12105224",
       "checklistId": "S395988646",
@@ -624,6 +668,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -638,6 +683,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -652,6 +698,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S395984569",
@@ -666,6 +713,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -680,6 +728,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -694,6 +743,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -708,6 +758,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -722,6 +773,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -740,7 +792,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
       "observer": "Magnus Andersson",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Sparrowhawk",
@@ -750,6 +803,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -764,6 +818,7 @@
       "month": 9,
       "date": "2026-09-25",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S397745705",
@@ -782,7 +837,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Blackcap",
@@ -792,6 +848,7 @@
       "month": 9,
       "date": "2026-09-26",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
@@ -810,7 +867,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Coal Tit",
@@ -820,6 +878,7 @@
       "month": 9,
       "date": "2026-09-26",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
@@ -838,7 +897,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Dunnock",
@@ -852,7 +912,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 2
+      "howMany": 2,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Spotted Woodpecker",
@@ -866,7 +927,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Great Tit",
@@ -880,7 +942,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Greenfinch",
@@ -894,7 +957,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Kestrel",
@@ -904,6 +968,7 @@
       "month": 9,
       "date": "2026-09-26",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
@@ -922,7 +987,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 3
+      "howMany": 3,
+      "reportType": "hotspot"
     },
     {
       "species": "Magpie",
@@ -936,7 +1002,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Robin",
@@ -950,7 +1017,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -964,7 +1032,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Starling",
@@ -974,6 +1043,7 @@
       "month": 9,
       "date": "2026-09-26",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
@@ -992,7 +1062,8 @@
       "hotspotId": "L1973820",
       "checklistId": "S396764669",
       "observer": "Barry Wilson",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Blackbird",
@@ -1002,6 +1073,7 @@
       "month": 9,
       "date": "2026-09-27",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S396738126",
@@ -1016,6 +1088,7 @@
       "month": 9,
       "date": "2026-09-27",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "East Acton (LBC District)",
       "hotspotId": "L12105508",
       "checklistId": "S396970653",
@@ -1030,6 +1103,7 @@
       "month": 9,
       "date": "2026-09-27",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S396738126",
@@ -1044,6 +1118,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1058,6 +1133,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1072,6 +1148,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1086,6 +1163,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1100,6 +1178,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1114,6 +1193,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1128,6 +1208,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1142,6 +1223,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1156,6 +1238,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1170,6 +1253,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1184,6 +1268,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1198,6 +1283,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1212,6 +1298,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397242300",
@@ -1226,6 +1313,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1240,6 +1328,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1254,6 +1343,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1268,6 +1358,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1282,6 +1373,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1296,6 +1388,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1310,6 +1403,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1324,6 +1418,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1338,6 +1433,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Bishop's Park (Fulham)",
       "hotspotId": "L12106898",
       "checklistId": "S397116238",
@@ -1352,6 +1448,7 @@
       "month": 9,
       "date": "2026-09-28",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Little Wormwood Scrubs",
       "hotspotId": "L4602705",
       "checklistId": "S397083095",
@@ -1366,6 +1463,7 @@
       "month": 10,
       "date": "2026-10-03",
       "notable": true,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S398656699",
@@ -1380,6 +1478,7 @@
       "month": 10,
       "date": "2026-10-03",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S398656699",
@@ -1394,6 +1493,7 @@
       "month": 10,
       "date": "2026-10-03",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S398656699",
@@ -1408,6 +1508,7 @@
       "month": 10,
       "date": "2026-10-03",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Shepherd's Bush (LBC District)",
       "hotspotId": "L12107769",
       "checklistId": "S398548315",
@@ -1422,6 +1523,7 @@
       "month": 10,
       "date": "2026-10-03",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S398656699",
@@ -1440,7 +1542,8 @@
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
       "observer": "Joanna Kubica",
-      "howMany": 8
+      "howMany": 8,
+      "reportType": "hotspot"
     },
     {
       "species": "Blue Tit",
@@ -1450,6 +1553,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1464,6 +1568,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1482,7 +1587,8 @@
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
       "observer": "Joanna Kubica",
-      "howMany": 6
+      "howMany": 6,
+      "reportType": "hotspot"
     },
     {
       "species": "Common Wood-Pigeon",
@@ -1492,6 +1598,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1506,6 +1613,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1520,6 +1628,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1534,6 +1643,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1548,6 +1658,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1562,6 +1673,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1580,7 +1692,8 @@
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
       "observer": "Joanna Kubica",
-      "howMany": 6
+      "howMany": 6,
+      "reportType": "hotspot"
     },
     {
       "species": "Jackdaw",
@@ -1590,6 +1703,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1604,6 +1718,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1618,6 +1733,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1632,6 +1748,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1646,6 +1763,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1660,6 +1778,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1674,6 +1793,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1688,6 +1808,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1702,6 +1823,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1716,6 +1838,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1730,6 +1853,7 @@
       "month": 10,
       "date": "2026-10-06",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S399770799",
@@ -1744,6 +1868,7 @@
       "month": 10,
       "date": "2026-10-08",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Shepherd's Bush Green",
       "hotspotId": "L21101281",
       "checklistId": "S400326668",
@@ -1758,6 +1883,7 @@
       "month": 10,
       "date": "2026-10-08",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Shepherd's Bush Green",
       "hotspotId": "L21101281",
       "checklistId": "S400326874",
@@ -1772,6 +1898,7 @@
       "month": 10,
       "date": "2026-10-09",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S400464626",
@@ -1789,7 +1916,8 @@
       "hotspotId": "L12106160",
       "checklistId": "S400740888",
       "observer": "Chris Parry",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "House Sparrow",
@@ -1802,7 +1930,8 @@
       "hotspotId": "L12106160",
       "checklistId": "S400773786",
       "observer": "Chris Parry",
-      "howMany": null
+      "howMany": null,
+      "reportType": "hotspot"
     },
     {
       "species": "Black-headed Gull",
@@ -1812,6 +1941,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -1826,6 +1956,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1844,7 +1975,8 @@
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
       "observer": "Chris Parry",
-      "howMany": 1
+      "howMany": 1,
+      "reportType": "hotspot"
     },
     {
       "species": "Blue Tit",
@@ -1854,6 +1986,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1868,6 +2001,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -1882,6 +2016,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
@@ -1896,6 +2031,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1910,6 +2046,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -1924,6 +2061,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
@@ -1938,6 +2076,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1952,6 +2091,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -1966,6 +2106,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1980,6 +2121,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -1994,6 +2136,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2008,6 +2151,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2022,6 +2166,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2036,6 +2181,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2050,6 +2196,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2064,6 +2211,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2078,6 +2226,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2092,6 +2241,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
@@ -2106,6 +2256,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401257423",
@@ -2120,6 +2271,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2134,6 +2286,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2148,6 +2301,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2162,6 +2316,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2176,6 +2331,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2190,6 +2346,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2204,6 +2361,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2218,6 +2376,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2232,6 +2391,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2246,6 +2406,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
@@ -2260,6 +2421,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2274,6 +2436,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2292,7 +2455,8 @@
       "hotspotId": "L12106160",
       "checklistId": "S401199476",
       "observer": "Chris Parry",
-      "howMany": 4
+      "howMany": 4,
+      "reportType": "hotspot"
     },
     {
       "species": "Rose-ringed Parakeet",
@@ -2302,6 +2466,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2316,6 +2481,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Fulham Old Cemetery",
       "hotspotId": "L12105744",
       "checklistId": "S401315264",
@@ -2330,6 +2496,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2344,6 +2511,7 @@
       "month": 10,
       "date": "2026-10-11",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Wormwood Scrubs LNR",
       "hotspotId": "L1973820",
       "checklistId": "S401264359",
@@ -2358,6 +2526,7 @@
       "month": 10,
       "date": "2026-10-12",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401617421",
@@ -2372,6 +2541,7 @@
       "month": 10,
       "date": "2026-10-12",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401617421",
@@ -2386,6 +2556,7 @@
       "month": 10,
       "date": "2026-10-12",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401617421",
@@ -2400,6 +2571,7 @@
       "month": 10,
       "date": "2026-10-12",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401617421",
@@ -2414,6 +2586,7 @@
       "month": 10,
       "date": "2026-10-12",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "Hammersmith (LBC District)",
       "hotspotId": "L12106160",
       "checklistId": "S401617421",
@@ -2428,6 +2601,7 @@
       "month": 10,
       "date": "2026-10-13",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S401927574",
@@ -2442,6 +2616,7 @@
       "month": 10,
       "date": "2026-10-13",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S401927574",
@@ -2456,6 +2631,7 @@
       "month": 10,
       "date": "2026-10-13",
       "notable": false,
+      "reportType": "hotspot",
       "hotspot": "River Thames at Hammersmith Bridge",
       "hotspotId": "L8165956",
       "checklistId": "S401927574",
