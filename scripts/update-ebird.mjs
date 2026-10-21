@@ -166,6 +166,12 @@ for (const observation of nearbyObservations) {
 }
 
 const records = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.species.localeCompare(b.species));
-feed = {source: 'eBird', updatedAt: new Date().toISOString(), records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby, lastRunNearbyCandidates: nearbyObservations.length};
+const hotspotDirectory = boroughHotspots.map(hotspot => ({
+  locId: hotspot.locId,
+  name: hotspot.name || hotspot.locName || 'eBird hotspot',
+  lat: Number(hotspot.lat),
+  lng: Number(hotspot.lng)
+}));
+feed = {source: 'eBird', updatedAt: new Date().toISOString(), hotspots: hotspotDirectory, records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby, lastRunNearbyCandidates: nearbyObservations.length};
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
 console.log(`Saved ${records.length} retained reports: ${accepted} new hotspot reports from ${boroughHotspots.length} borough hotspots and ${acceptedNearby} recent reports from other mapped in-borough locations.`);
