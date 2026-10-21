@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-10-20T10:11:34.191Z",
+  "updatedAt": "2026-10-21T10:19:22.891Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -3307,6 +3307,19 @@
       "howMany": null
     },
     {
+      "species": "Collared-Dove",
+      "latin": "Streptopelia decaocto",
+      "speciesCode": "eucdov",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-17",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S403979350",
+      "howMany": 2
+    },
+    {
       "species": "Common Chiffchaff",
       "latin": "Phylloscopus collybita",
       "speciesCode": "comchi1",
@@ -4412,6 +4425,19 @@
       "howMany": 1
     },
     {
+      "species": "Whinchat",
+      "latin": "Saxicola rubetra",
+      "speciesCode": "whinch1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-18",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S403452602",
+      "howMany": 1
+    },
+    {
       "species": "White Wagtail",
       "latin": "Motacilla alba",
       "speciesCode": "whiwag",
@@ -4760,6 +4786,19 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S403700840",
+      "howMany": null
+    },
+    {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-19",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S403679500",
       "howMany": null
     },
     {
