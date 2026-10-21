@@ -1,7 +1,7 @@
 {
-  "name": "Hammersmith & Fulham Bird Board",
-  "short_name": "H&F Birds",
-  "description": "Monthly bird arrivals, departures and actual borough hotspot sightings.",
+  "name": "H&F Bird Sightings",
+  "short_name": "H&F Bird Sightings",
+  "description": "Historic, actual and expected bird sightings in Hammersmith & Fulham.",
   "lang": "en-GB",
   "start_url": "./",
   "scope": "./",
