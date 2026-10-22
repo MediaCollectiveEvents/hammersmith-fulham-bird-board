@@ -19,6 +19,18 @@ For free GitHub Pages on GitHub Free, the repository needs to be public. Do not 
 - eBird does not provide a borough migration calendar from its regional summaries. Expected dates in the page are provisional seasonal guidance, not live predictions. Actual eBird reports are shown for the selected month and year.
 - If Actions stop for more than 30 days, some observations can fall outside the API window before they are archived. Run the workflow regularly.
 
+## Expected board seasonality
+
+Seasonality is a downstream output of the public-layer build. The existing DuckDB step must first create `birds_hf_public.csv` from `hf_ebird_records_final.csv` and apply `excluded_taxa.csv`. Immediately after that step, add this command to `refresh.sh`:
+
+```sh
+npm run build:seasonality -- /path/to/hf_ebird_records_final.csv /path/to/birds_hf_public.csv
+```
+
+The public-layer CSV determines the seasonality species universe and expected row count on every build. The generator rejects blank or duplicate common names, filters the full observation archive to that set, and the validator requires exact species-set equality. There is no fixed species-count setting. Raw eBird source records should stay out of the public site and repository; only the derived calendar and audit outputs belong in `dist/data`.
+
+The calendar includes the modal arrival/departure month, its frequency, and the number of completed years contributing timing evidence. It also emits validation, audit, and change-history CSVs. Timing excludes the current incomplete year; earliest/latest occurrence months include it. Residents, low-evidence species, and irregular species have no board timing.
+
 ## BirdWeather acoustic detections
 
 A separate public BirdWeather feed is refreshed daily by the same GitHub Actions workflow. It requests BirdNET detections from the last 24 hours at confidence 0.70 or higher, then checks detection coordinates against the exact Hammersmith & Fulham boundary before writing `dist/data/birdweather.json`. No BirdWeather key is required. The page labels these as automated audio detections: they are not human-verified sightings, proof of species presence, or counts of individual birds. The feed keeps coordinates private and displays the station, timestamp and model confidence.

@@ -1,0 +1,61 @@
+COMMON NAME,field_changed,old_value,new_value,change_date
+Bank Swallow,arrival_month,4,4,2026-10-22
+Bank Swallow,departure_month,9,9,2026-10-22
+Barn Swallow,arrival_month,4,4,2026-10-22
+Barn Swallow,departure_month,9,9,2026-10-22
+Cetti's Warbler,arrival_month,2,2,2026-10-22
+Cetti's Warbler,departure_month,11,11,2026-10-22
+Common Buzzard,arrival_month,3,3,2026-10-22
+Common Buzzard,departure_month,10,10,2026-10-22
+Common Reed Warbler,arrival_month,5,5,2026-10-22
+Common Reed Warbler,departure_month,9,9,2026-10-22
+Common Snipe,arrival_month,3,3,2026-10-22
+Common Snipe,departure_month,10,10,2026-10-22
+Common Swift,arrival_month,5,5,2026-10-22
+Common Swift,departure_month,8,8,2026-10-22
+Common Tern,arrival_month,6,6,2026-10-22
+Common Tern,departure_month,6,6,2026-10-22
+Eurasian Nuthatch,arrival_month,1,1,2026-10-22
+Eurasian Nuthatch,departure_month,6,6,2026-10-22
+Eurasian Oystercatcher,arrival_month,2,2,2026-10-22
+Eurasian Oystercatcher,departure_month,7,7,2026-10-22
+Eurasian Siskin,arrival_month,3,3,2026-10-22
+Eurasian Siskin,departure_month,12,12,2026-10-22
+Eurasian Skylark,arrival_month,10,10,2026-10-22
+Eurasian Skylark,departure_month,10,10,2026-10-22
+European Stonechat,arrival_month,2,2,2026-10-22
+European Stonechat,departure_month,11,11,2026-10-22
+Fieldfare,arrival_month,1,1,2026-10-22
+Fieldfare,departure_month,11,11,2026-10-22
+Graylag x Canada Goose (hybrid),arrival_month,5,5,2026-10-22
+Graylag x Canada Goose (hybrid),departure_month,12,12,2026-10-22
+Greater Whitethroat,arrival_month,4,4,2026-10-22
+Greater Whitethroat,departure_month,9,9,2026-10-22
+Green-winged Teal,arrival_month,1,1,2026-10-22
+Green-winged Teal,departure_month,12,12,2026-10-22
+Lesser Whitethroat,arrival_month,5,5,2026-10-22
+Lesser Whitethroat,departure_month,9,9,2026-10-22
+Little Grebe,arrival_month,3,3,2026-10-22
+Little Grebe,departure_month,3,3,2026-10-22
+Little Owl,arrival_month,1,1,2026-10-22
+Little Owl,departure_month,9,9,2026-10-22
+Northern Shoveler,arrival_month,1,1,2026-10-22
+Northern Shoveler,departure_month,12,12,2026-10-22
+Northern Wheatear,arrival_month,4,4,2026-10-22
+Northern Wheatear,departure_month,4,4,2026-10-22
+Peregrine Falcon,arrival_month,1,1,2026-10-22
+Peregrine Falcon,departure_month,12,12,2026-10-22
+Red Kite,arrival_month,2,2,2026-10-22
+Red Kite,departure_month,4,4,2026-10-22
+Redwing,arrival_month,1,1,2026-10-22
+Redwing,departure_month,12,12,2026-10-22
+Spotted Flycatcher,arrival_month,8,8,2026-10-22
+Spotted Flycatcher,departure_month,9,9,2026-10-22
+Western House-Martin,arrival_month,7,7,2026-10-22
+Western House-Martin,departure_month,9,9,2026-10-22
+Western Yellow Wagtail,arrival_month,9,9,2026-10-22
+Western Yellow Wagtail,departure_month,9,9,2026-10-22
+Whinchat,arrival_month,4,4,2026-10-22
+Whinchat,departure_month,9,9,2026-10-22
+Willow Warbler,arrival_month,4,4,2026-10-22
+Willow Warbler,departure_month,9,9,2026-10-22

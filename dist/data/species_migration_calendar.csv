@@ -1,0 +1,134 @@
+COMMON NAME,movement_type,arrival_month,arrival_month_frequency,arrival_years,departure_month,departure_month_frequency,departure_years,earliest_month,latest_month,years_used,confidence,last_calculated
+Bank Swallow,Partial Migrant,4,4,7,9,2,7,3,9,7,Medium,2026-10-22
+Barn Swallow,Summer Visitor,4,7,14,9,7,14,4,10,14,High,2026-10-22
+Black Redstart,Scarce / Irregular,,0,2,,0,2,4,7,2,Low,2026-10-22
+Black Swan,Scarce / Irregular,,0,3,,0,3,3,9,3,Low,2026-10-22
+Black-headed Gull,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Bohemian Waxwing,Scarce / Irregular,,0,1,,0,1,2,2,1,Low,2026-10-22
+Brambling,Scarce / Irregular,,0,1,,0,1,4,4,1,Low,2026-10-22
+Canada Goose,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Carrion Crow,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Caspian Gull,Scarce / Irregular,,0,2,,0,2,1,10,2,Low,2026-10-22
+Cetti's Warbler,Partial Migrant,2,1,5,11,1,5,2,11,5,Medium,2026-10-22
+Coal Tit,Resident,,0,11,,0,11,1,12,11,High,2026-10-22
+Common Buzzard,Partial Migrant,3,4,9,10,3,9,1,11,9,Low,2026-10-22
+Common Chaffinch,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Common Chiffchaff,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Common Cuckoo,Scarce / Irregular,,0,0,,0,0,7,7,0,Low,2026-10-22
+Common Firecrest,Scarce / Irregular,,0,2,,0,2,1,2,2,Low,2026-10-22
+Common Goldeneye,Scarce / Irregular,,0,2,,0,2,1,1,2,Low,2026-10-22
+Common Grasshopper Warbler,Scarce / Irregular,,0,2,,0,2,4,5,2,Low,2026-10-22
+Common Gull,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Common Kingfisher,Scarce / Irregular,,0,5,,0,5,2,10,5,Low,2026-10-22
+Common Murre,Scarce / Irregular,,0,1,,0,1,2,2,1,Low,2026-10-22
+Common Nightingale,Scarce / Irregular,,0,3,,0,3,4,5,3,Low,2026-10-22
+Common Pochard,Scarce / Irregular,,0,8,,0,8,1,12,8,Low,2026-10-22
+Common Raven,Scarce / Irregular,,0,2,,0,2,10,12,2,Low,2026-10-22
+Common Redshank,Scarce / Irregular,,0,2,,0,2,4,9,2,Low,2026-10-22
+Common Redstart,Scarce / Irregular,,0,5,,0,5,4,9,5,Low,2026-10-22
+Common Reed Warbler,Passage Migrant,5,2,5,9,2,5,5,9,5,Medium,2026-10-22
+Common Rosefinch,Scarce / Irregular,,0,1,,0,1,9,9,1,Low,2026-10-22
+Common Sandpiper,Scarce / Irregular,,0,3,,0,3,3,7,3,Low,2026-10-22
+Common Shelduck,Scarce / Irregular,,0,8,,0,8,1,8,8,Low,2026-10-22
+Common Snipe,Partial Migrant,3,3,9,10,2,9,1,11,9,Low,2026-10-22
+Common Swift,Summer Visitor,5,14,19,8,9,19,4,10,19,High,2026-10-22
+Common Tern,Passage Migrant,6,2,5,6,2,5,4,7,5,Medium,2026-10-22
+Common Wood-Pigeon,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Dunnock,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Egyptian Goose,Resident,,0,16,,0,16,1,12,16,High,2026-10-22
+Eurasian Bittern,Scarce / Irregular,,0,1,,0,1,4,4,1,Low,2026-10-22
+Eurasian Blackbird,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Eurasian Blackcap,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Eurasian Blue Tit,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Eurasian Bullfinch,Scarce / Irregular,,0,3,,0,3,1,12,3,Low,2026-10-22
+Eurasian Collared-Dove,Resident,,0,11,,0,11,1,12,11,Low,2026-10-22
+Eurasian Coot,Resident,,0,14,,0,14,1,12,14,High,2026-10-22
+Eurasian Green Woodpecker,Resident,,0,16,,0,16,1,12,16,High,2026-10-22
+Eurasian Hobby,Scarce / Irregular,,0,5,,0,5,4,9,5,Low,2026-10-22
+Eurasian Jackdaw,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Eurasian Jay,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Eurasian Kestrel,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Eurasian Linnet,Resident,,0,18,,0,18,2,11,18,High,2026-10-22
+Eurasian Magpie,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Eurasian Moorhen,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Eurasian Nuthatch,Partial Migrant,1,2,10,6,3,10,1,11,10,Low,2026-10-22
+Eurasian Oystercatcher,Partial Migrant,2,1,4,7,2,4,2,8,4,Medium,2026-10-22
+Eurasian Siskin,Summer Visitor,3,2,6,12,2,6,1,12,6,Medium,2026-10-22
+Eurasian Skylark,Partial Migrant,10,3,11,10,5,11,3,11,11,Low,2026-10-22
+Eurasian Sparrowhawk,Resident,,0,16,,0,16,1,12,16,High,2026-10-22
+Eurasian Wigeon,Scarce / Irregular,,0,1,,0,1,7,7,1,Low,2026-10-22
+Eurasian Woodcock,Scarce / Irregular,,0,3,,0,3,1,11,3,Low,2026-10-22
+Eurasian Wren,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+European Goldfinch,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+European Greenfinch,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+European Herring Gull,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+European Herring x Lesser Black-backed Gull (hybrid),Scarce / Irregular,,0,2,,0,2,1,11,2,Low,2026-10-22
+European Pied Flycatcher,Scarce / Irregular,,0,1,,0,1,4,4,1,Low,2026-10-22
+European Robin,Resident,,0,21,,0,21,1,12,21,High,2026-10-22
+European Starling,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+European Stonechat,Partial Migrant,2,6,14,11,5,14,1,12,14,High,2026-10-22
+Fieldfare,Partial Migrant,1,6,13,11,5,13,1,12,13,Low,2026-10-22
+Gadwall,Resident,,0,8,,0,8,1,12,8,High,2026-10-22
+Garden Warbler,Scarce / Irregular,,0,3,,0,3,4,9,3,Low,2026-10-22
+Goldcrest,Resident,,0,14,,0,14,1,12,14,High,2026-10-22
+Gray Heron,Resident,,0,21,,0,21,1,12,21,High,2026-10-22
+Gray Wagtail,Resident,,0,13,,0,13,1,12,13,High,2026-10-22
+Graylag Goose,Resident,,0,12,,0,12,1,11,12,High,2026-10-22
+Graylag x Canada Goose (hybrid),Partial Migrant,5,2,7,12,2,7,3,12,7,Medium,2026-10-22
+Great Black-backed Gull,Resident,,0,15,,0,15,1,12,15,High,2026-10-22
+Great Cormorant,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Great Crested Grebe,Resident,,0,10,,0,10,1,12,10,Low,2026-10-22
+Great Gray Shrike,Scarce / Irregular,,0,1,,0,1,10,10,1,Low,2026-10-22
+Great Spotted Woodpecker,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Great Tit,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Greater Whitethroat,Partial Migrant,4,15,18,9,7,18,2,9,18,High,2026-10-22
+Green-winged Teal,Partial Migrant,1,8,13,12,7,13,1,12,13,High,2026-10-22
+House Sparrow,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Iceland Gull,Scarce / Irregular,,0,2,,0,2,4,12,2,Low,2026-10-22
+Jack Snipe,Scarce / Irregular,,0,1,,0,1,4,9,1,Low,2026-10-22
+Lesser Black-backed Gull,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Lesser Whitethroat,Summer Visitor,5,8,16,9,6,16,4,9,16,High,2026-10-22
+Little Egret,Scarce / Irregular,,0,8,,0,8,4,10,8,Low,2026-10-22
+Little Grebe,Partial Migrant,3,3,8,3,3,8,1,12,8,Low,2026-10-22
+Little Gull,Scarce / Irregular,,0,2,,0,2,3,4,2,Low,2026-10-22
+Little Owl,Partial Migrant,1,1,3,9,1,3,1,9,3,Low,2026-10-22
+Long-tailed Tit,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Mallard,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Mandarin Duck,Resident,,0,9,,0,9,1,11,9,Low,2026-10-22
+Meadow Pipit,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Mediterranean Gull,Scarce / Irregular,,0,3,,0,3,2,11,3,Low,2026-10-22
+Mistle Thrush,Resident,,0,18,,0,18,1,12,18,High,2026-10-22
+Mute Swan,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Northern Lapwing,Scarce / Irregular,,0,5,,0,5,1,11,5,Low,2026-10-22
+Northern Shoveler,Partial Migrant,1,2,7,12,2,7,1,12,7,Medium,2026-10-22
+Northern Wheatear,Passage Migrant,4,5,7,4,5,7,3,9,7,Medium,2026-10-22
+Peregrine Falcon,Partial Migrant,1,5,10,12,3,10,1,12,10,High,2026-10-22
+Red Kite,Partial Migrant,2,2,6,4,2,6,2,12,6,Medium,2026-10-22
+Red-backed Shrike,Scarce / Irregular,,0,1,,0,1,9,9,1,Low,2026-10-22
+Red-crested Pochard,Scarce / Irregular,,0,1,,0,1,5,5,1,Low,2026-10-22
+Redpoll,Scarce / Irregular,,0,4,,0,4,2,11,4,Low,2026-10-22
+Redwing,Partial Migrant,1,14,16,12,8,16,1,12,16,High,2026-10-22
+Reed Bunting,Resident,,0,14,,0,14,1,12,14,High,2026-10-22
+Richard's Pipit,Scarce / Irregular,,0,1,,0,1,9,9,1,Low,2026-10-22
+Ring Ouzel,Scarce / Irregular,,0,5,,0,5,3,4,5,Low,2026-10-22
+Ring-necked Pheasant,Scarce / Irregular,,0,4,,0,4,4,7,4,Low,2026-10-22
+Rock Pigeon,Resident,,0,20,,0,20,1,12,20,High,2026-10-22
+Rook,Scarce / Irregular,,0,4,,0,4,3,10,4,Low,2026-10-22
+Rose-ringed Parakeet,Resident,,0,21,,0,21,1,12,21,High,2026-10-22
+Ruff,Scarce / Irregular,,0,1,,0,1,5,5,1,Low,2026-10-22
+Sandwich Tern,Scarce / Irregular,,0,1,,0,1,4,4,1,Low,2026-10-22
+Sedge Warbler,Scarce / Irregular,,0,4,,0,4,4,9,4,Low,2026-10-22
+Short-eared Owl,Scarce / Irregular,,0,2,,0,2,10,10,2,Low,2026-10-22
+Song Thrush,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Spotted Flycatcher,Passage Migrant,8,2,5,9,2,5,5,9,5,Medium,2026-10-22
+Stock Dove,Resident,,0,17,,0,17,1,12,17,High,2026-10-22
+Tawny Owl,Scarce / Irregular,,0,2,,0,2,4,12,2,Low,2026-10-22
+Tree Pipit,Scarce / Irregular,,0,4,,0,4,4,9,4,Low,2026-10-22
+Tufted Duck,Resident,,0,13,,0,13,1,12,13,High,2026-10-22
+Western House-Martin,Partial Migrant,7,4,14,9,3,14,4,10,14,Low,2026-10-22
+Western Marsh Harrier,Scarce / Irregular,,0,1,,0,1,9,9,1,Low,2026-10-22
+Western Yellow Wagtail,Passage Migrant,9,4,7,9,5,7,4,10,7,Medium,2026-10-22
+Whinchat,Passage Migrant,4,7,13,9,8,13,4,10,13,Low,2026-10-22
+White Wagtail,Resident,,0,19,,0,19,1,12,19,High,2026-10-22
+Willow Warbler,Summer Visitor,4,11,15,9,7,15,3,9,15,High,2026-10-22
+Yellow-legged Gull,Resident,,0,8,,0,8,1,12,8,Low,2026-10-22

@@ -1,0 +1,2 @@
+run_date,species_processed,species_with_arrival_month,species_with_departure_month,resident_species,scarce_irregular_species,high_confidence_species,medium_confidence_species,low_confidence_species,validation_passed,missing_from_calendar,unexpected_in_calendar,reconciliation_passed,changes_detected,arrival_changes,departure_changes,movement_type_changes,confidence_changes,expected_board_status,issues
+2026-10-22,133,30,30,55,48,60,12,61,true,0,0,true,60,30,30,0,0,READY,
