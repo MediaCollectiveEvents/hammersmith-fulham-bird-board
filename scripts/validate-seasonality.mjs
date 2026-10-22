@@ -102,13 +102,18 @@ for (const row of calendar) {
   if (Number(row.arrival_month_frequency) > Number(row.arrival_years)) errors.push(`${name}: arrival frequency exceeds timing years`);
   if (Number(row.departure_month_frequency) > Number(row.departure_years)) errors.push(`${name}: departure frequency exceeds timing years`);
   if (row.movement_type === 'Resident' && (row.arrival_month || row.departure_month)) errors.push(`${name}: Resident has arrival/departure month`);
+  if (row.movement_type === 'Scarce / Irregular' && (row.arrival_month || row.departure_month)) errors.push(`${name}: Scarce / Irregular has arrival/departure month`);
   const evidence = auditByName.get(name);
   if (!evidence) errors.push(`${name}: missing audit row`);
   else if (Number(evidence.records) < 10 || Number(evidence.years_used) < 3) {
     if (row.movement_type !== 'Scarce / Irregular' || row.arrival_month || row.departure_month || row.confidence !== 'Low') errors.push(`${name}: low evidence classification is invalid`);
   }
 }
+const seenChanges = new Set();
 for (const change of changes) {
+  const changeKey = JSON.stringify(['COMMON NAME', 'field_changed', 'old_value', 'new_value', 'change_date'].map(field => change[field]));
+  if (seenChanges.has(changeKey)) errors.push(`Change report contains a duplicate change row for ${change['COMMON NAME']} (${change.field_changed})`);
+  seenChanges.add(changeKey);
   if (change.old_value === change.new_value) {
     errors.push(`Change report contains a no-op record for ${change['COMMON NAME']} (${change.field_changed})`);
   }
