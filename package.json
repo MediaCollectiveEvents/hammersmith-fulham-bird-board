@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "generate:seasonality": "node scripts/generate-seasonality.mjs",
+    "validate:seasonality": "node scripts/validate-seasonality.mjs",
+    "build:seasonality": "node scripts/build-seasonality.mjs",
     "update:ebird": "node scripts/update-ebird.mjs",
     "update:wetland": "node scripts/update-wetland-ebird.mjs",
     "update:birdweather": "node scripts/update-birdweather.mjs"
