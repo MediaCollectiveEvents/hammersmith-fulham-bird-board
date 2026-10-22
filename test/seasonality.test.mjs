@@ -103,3 +103,23 @@ test('validator rejects metadata that violates the JSON Schema', async t => {
   assert.notEqual(validation.status, 0);
   assert.match(validation.stderr, /Metadata schema \/public_species_count: must be integer/);
 });
+
+test('validator rejects no-op rows in the change report', async t => {
+  const paths = await fixture();
+  t.after(() => fs.rm(paths.directory, {recursive: true, force: true}));
+
+  const build = runBuild(paths);
+  assert.equal(build.status, 0, `${build.stdout}\n${build.stderr}`);
+
+  await fs.writeFile(
+    path.join(paths.outputDir, 'seasonality_changes.csv'),
+    'COMMON NAME,field_changed,old_value,new_value,change_date\nTest Bird,arrival_month,3,3,2026-10-22\n'
+  );
+  const validation = spawnSync(process.execPath, [validateScript, paths.publicLayer], {
+    cwd: root,
+    encoding: 'utf8',
+    env: {...process.env, SEASONALITY_OUTPUT_DIR: paths.outputDir}
+  });
+  assert.notEqual(validation.status, 0);
+  assert.match(validation.stderr, /Change report contains a no-op record/);
+});
