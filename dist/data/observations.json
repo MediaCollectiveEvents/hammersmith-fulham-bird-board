@@ -1,6 +1,86 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-21T10:19:20.890Z",
+  "updatedAt": "2026-10-22T10:19:33.444Z",
+  "hotspots": [
+    {
+      "locId": "L12106898",
+      "name": "Bishop's Park (Fulham)",
+      "lat": 51.47221,
+      "lng": -0.2185833
+    },
+    {
+      "locId": "L12105224",
+      "name": "Chelsea Harbour",
+      "lat": 51.4752123,
+      "lng": -0.1809558
+    },
+    {
+      "locId": "L12105508",
+      "name": "East Acton (LBC District)",
+      "lat": 51.5142239,
+      "lng": -0.248918
+    },
+    {
+      "locId": "L12105744",
+      "name": "Fulham Old Cemetery",
+      "lat": 51.4803986,
+      "lng": -0.215731
+    },
+    {
+      "locId": "L12105747",
+      "name": "Fulham Reach",
+      "lat": 51.4854186,
+      "lng": -0.2267154
+    },
+    {
+      "locId": "L12105749",
+      "name": "Furnival Gardens",
+      "lat": 51.4905965,
+      "lng": -0.2331551
+    },
+    {
+      "locId": "L12106160",
+      "name": "Hammersmith (LBC District)",
+      "lat": 51.4924127,
+      "lng": -0.2251701
+    },
+    {
+      "locId": "L3526185",
+      "name": "Hammersmith Cemetery / Magravine Cemetery",
+      "lat": 51.4888122,
+      "lng": -0.2159876
+    },
+    {
+      "locId": "L4602705",
+      "name": "Little Wormwood Scrubs",
+      "lat": 51.5227298,
+      "lng": -0.2285028
+    },
+    {
+      "locId": "L8165956",
+      "name": "River Thames at Hammersmith Bridge",
+      "lat": 51.4884612,
+      "lng": -0.2303628
+    },
+    {
+      "locId": "L12107769",
+      "name": "Shepherd's Bush (LBC District)",
+      "lat": 51.5095775,
+      "lng": -0.2302681
+    },
+    {
+      "locId": "L21101281",
+      "name": "Shepherd's Bush Green",
+      "lat": 51.503901,
+      "lng": -0.2228755
+    },
+    {
+      "locId": "L1973820",
+      "name": "Wormwood Scrubs LNR",
+      "lat": 51.5219888,
+      "lng": -0.2379227
+    }
+  ],
   "records": [
     {
       "species": "Western Yellow Wagtail",
@@ -3031,91 +3111,5 @@
   ],
   "lastRunNewReports": 144,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 631,
-  "hotspots": [
-    {
-      "locId": "L8165956",
-      "name": "River Thames at Hammersmith Bridge",
-      "lat": 51.4884612,
-      "lng": -0.2303628
-    },
-    {
-      "locId": "L939893",
-      "name": "Ravenscourt Park",
-      "lat": 51.4966678,
-      "lng": -0.2383518
-    },
-    {
-      "locId": "L12107769",
-      "name": "Shepherd's Bush (LBC District)",
-      "lat": 51.5095775,
-      "lng": -0.2302681
-    },
-    {
-      "locId": "L12105749",
-      "name": "Furnival Gardens",
-      "lat": 51.4905965,
-      "lng": -0.2331551
-    },
-    {
-      "locId": "L12106898",
-      "name": "Bishop's Park (Fulham)",
-      "lat": 51.47221,
-      "lng": -0.2185833
-    },
-    {
-      "locId": "L1973820",
-      "name": "Wormwood Scrubs LNR",
-      "lat": 51.5219888,
-      "lng": -0.2379227
-    },
-    {
-      "locId": "L12105745",
-      "name": "Fulham Palace",
-      "lat": 51.4700716,
-      "lng": -0.2153402
-    },
-    {
-      "locId": "L4602705",
-      "name": "Little Wormwood Scrubs",
-      "lat": 51.5227298,
-      "lng": -0.2285028
-    },
-    {
-      "locId": "L12105224",
-      "name": "Chelsea Harbour",
-      "lat": 51.4752123,
-      "lng": -0.1809558
-    },
-    {
-      "locId": "L12105508",
-      "name": "East Acton (LBC District)",
-      "lat": 51.5142239,
-      "lng": -0.248918
-    },
-    {
-      "locId": "L21101281",
-      "name": "Shepherd's Bush Green",
-      "lat": 51.503901,
-      "lng": -0.2228755
-    },
-    {
-      "locId": "L12106160",
-      "name": "Hammersmith (LBC District)",
-      "lat": 51.4924127,
-      "lng": -0.2251701
-    },
-    {
-      "locId": "L12105744",
-      "name": "Fulham Old Cemetery",
-      "lat": 51.4803986,
-      "lng": -0.215731
-    },
-    {
-      "locId": "L12105747",
-      "name": "Fulham Reach",
-      "lat": 51.4854186,
-      "lng": -0.2267154
-    }
-  ]
+  "lastRunNearbyCandidates": 626
 }
