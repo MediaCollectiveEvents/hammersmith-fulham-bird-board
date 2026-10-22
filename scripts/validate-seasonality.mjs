@@ -52,10 +52,11 @@ const expectedNames = [...new Set(rawPublicNames)];
 if (rawPublicNames.length !== expectedNames.length) throw new Error('Public classification layer contains duplicate COMMON NAME values');
 if (!expectedNames.length) throw new Error('Public classification layer contains no species');
 
-const [calendar, summary, audit] = await Promise.all([
+const [calendar, summary, audit, changes] = await Promise.all([
   table('species_migration_calendar.csv'),
   table('seasonality_validation.csv'),
-  table('seasonality_audit.csv')
+  table('seasonality_audit.csv'),
+  table('seasonality_changes.csv')
 ]);
 const errors = [];
 let metadata;
@@ -105,6 +106,11 @@ for (const row of calendar) {
   if (!evidence) errors.push(`${name}: missing audit row`);
   else if (Number(evidence.records) < 10 || Number(evidence.years_used) < 3) {
     if (row.movement_type !== 'Scarce / Irregular' || row.arrival_month || row.departure_month || row.confidence !== 'Low') errors.push(`${name}: low evidence classification is invalid`);
+  }
+}
+for (const change of changes) {
+  if (change.old_value === change.new_value) {
+    errors.push(`Change report contains a no-op record for ${change['COMMON NAME']} (${change.field_changed})`);
   }
 }
 if (summary.length !== 1 || summary[0]?.validation_passed !== 'true') errors.push('Seasonality validation summary did not pass');
