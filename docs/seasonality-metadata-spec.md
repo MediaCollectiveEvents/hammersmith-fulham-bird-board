@@ -21,7 +21,7 @@ The metadata records the calendar and methodology versions; archive and public-l
 
 ## Cross-field validation
 
-JSON Schema checks the shape and primitive types. The seasonality validator must additionally check these business rules and record the outcome in `seasonality_validation.csv`; species-specific review items belong in `seasonality_audit.csv`.
+The seasonality validator checks the metadata against the JSON Schema and applies the cross-field business rules below. It must record the outcome in `seasonality_validation.csv`; species-specific review items belong in `seasonality_audit.csv`.
 
 Keep the existing summary columns in `seasonality_validation.csv` and add the metadata reconciliation counts, change counts, quality flags, `expected_board_status`, and a semicolon-separated `issues` field. Keep the species-level audit fields and add a reserved `COMMON NAME=__BUILD__` row for build-level cross-field issues. This records both the result and the species or build condition requiring review.
 

@@ -1,10 +1,13 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import Ajv2020 from 'ajv/dist/2020.js';
+import addFormats from 'ajv-formats';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = path.resolve(process.env.SEASONALITY_OUTPUT_DIR || path.join(root, 'dist/data'));
 const publicLayer = path.resolve(process.argv[2] || path.join(root, 'data/source/birds_hf_public.csv'));
+const schemaPath = path.join(root, 'schemas/seasonality_metadata.schema.json');
 
 function parseCsv(text) {
   const rows = [];
@@ -37,6 +40,8 @@ async function table(filename) {
 
 const required = ['species_migration_calendar.csv', 'seasonality_validation.csv', 'seasonality_audit.csv', 'seasonality_changes.csv'];
 for (const filename of required) await fs.access(path.join(dataDir, filename));
+await fs.access(path.join(dataDir, 'seasonality_metadata.json'));
+await fs.access(path.join(dataDir, 'seasonality_metadata.csv'));
 const publicText = (await fs.readFile(publicLayer, 'utf8')).replace(/^\uFEFF/, '');
 const [publicHeaders, ...publicRows] = parseCsv(publicText);
 const publicNameColumn = publicHeaders.findIndex(value => ['COMMON NAME', 'common_name', 'commonName'].includes(value.trim()));
@@ -53,6 +58,24 @@ const [calendar, summary, audit] = await Promise.all([
   table('seasonality_audit.csv')
 ]);
 const errors = [];
+let metadata;
+let metadataCsv;
+let schema;
+try {
+  metadata = JSON.parse(await fs.readFile(path.join(dataDir, 'seasonality_metadata.json'), 'utf8'));
+} catch (error) {
+  errors.push(`Metadata JSON is invalid: ${error.message}`);
+}
+try {
+  metadataCsv = await table('seasonality_metadata.csv');
+} catch (error) {
+  errors.push(`Metadata CSV is invalid: ${error.message}`);
+}
+try {
+  schema = JSON.parse(await fs.readFile(schemaPath, 'utf8'));
+} catch (error) {
+  errors.push(`Metadata schema is invalid: ${error.message}`);
+}
 const names = calendar.map(row => row['COMMON NAME']);
 const validMovement = new Set(['Resident', 'Partial Migrant', 'Summer Visitor', 'Winter Visitor', 'Passage Migrant', 'Scarce / Irregular']);
 const validConfidence = new Set(['High', 'Medium', 'Low']);
@@ -85,5 +108,37 @@ for (const row of calendar) {
   }
 }
 if (summary.length !== 1 || summary[0]?.validation_passed !== 'true') errors.push('Seasonality validation summary did not pass');
+if (metadata && schema) {
+  const ajv = new Ajv2020({allErrors: true});
+  addFormats(ajv);
+  const validateMetadata = ajv.compile(schema);
+  if (!validateMetadata(metadata)) {
+    for (const issue of validateMetadata.errors || []) {
+      errors.push(`Metadata schema ${issue.instancePath || '/'}: ${issue.message}`);
+    }
+  }
+  if (metadata.validation_passed !== true) errors.push('Metadata validation_passed is not true');
+  if (metadata.reconciliation_passed !== true) errors.push('Metadata reconciliation failed');
+  if (metadata.expected_board_status !== 'READY') errors.push(`Expected board status is ${metadata.expected_board_status}`);
+  if (metadata.expected_board_status === 'READY' && metadata.validation_passed !== true) errors.push('READY status dependency violated');
+  if (metadata.missing_from_calendar !== 0 || metadata.unexpected_in_calendar !== 0) errors.push('Metadata reconciliation counts are non-zero');
+  if (metadata.duplicate_species_found !== false || metadata.invalid_months_found !== false || metadata.invalid_movement_types_found !== false || metadata.invalid_confidence_values_found !== false) {
+    errors.push('Metadata reports a duplicate species or invalid calendar value');
+  }
+  if (metadata.public_species_count !== metadata.calendar_species_count || metadata.calendar_species_count !== calendar.length) errors.push('Metadata species counts do not match generated calendar');
+  if (metadata.changes_detected !== metadata.arrival_changes + metadata.departure_changes + metadata.movement_type_changes + metadata.confidence_changes) errors.push('Metadata change counts do not reconcile');
+  if (!Number.isFinite(Date.parse(metadata.generated_at))) errors.push('Metadata generated_at is not a valid timestamp');
+  if (metadataCsv?.length !== 1) errors.push('Metadata CSV must contain exactly one data row');
+  else {
+    for (const [key, value] of Object.entries(metadata)) {
+      const csvValue = metadataCsv[0][key];
+      if (String(value) !== String(csvValue)) errors.push(`Metadata CSV value differs from JSON for ${key}`);
+    }
+  }
+  if (summary.length === 1) {
+    if (summary[0].expected_board_status !== metadata.expected_board_status) errors.push('Validation summary status differs from metadata');
+    if (summary[0].reconciliation_passed !== String(metadata.reconciliation_passed)) errors.push('Validation summary reconciliation differs from metadata');
+  }
+}
 if (errors.length) throw new Error(`Seasonality validation failed:\n${errors.join('\n')}`);
 console.log(`Species reconciliation passed: public=${expectedNames.length}, calendar=${calendar.length}, PUBLIC_SPECIES minus CALENDAR_SPECIES=0, CALENDAR_SPECIES minus PUBLIC_SPECIES=0.`);

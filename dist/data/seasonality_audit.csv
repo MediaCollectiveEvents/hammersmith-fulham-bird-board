@@ -1,0 +1,134 @@
+COMMON NAME,records,years_used,confidence,issues
+Bank Swallow,28,7,Medium,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Barn Swallow,56,14,High,Outlier influence (departure)
+Black Redstart,16,2,Low,Insufficient years; Arrival tie detected; Departure tie detected
+Black Swan,11,3,Low,Arrival tie detected; Weak seasonal signal
+Black-headed Gull,995,20,High,Weak seasonal signal
+Bohemian Waxwing,1,1,Low,Low record count; Insufficient years
+Brambling,1,1,Low,Low record count; Insufficient years
+Canada Goose,479,17,High,Weak seasonal signal
+Carrion Crow,1660,19,High,Weak seasonal signal
+Caspian Gull,9,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Cetti's Warbler,41,5,Medium,Arrival tie detected; Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Coal Tit,90,11,High,Arrival tie detected; Departure tie detected; Weak seasonal signal
+Common Buzzard,34,9,Low,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Common Chaffinch,278,18,High,Weak seasonal signal
+Common Chiffchaff,491,18,High,Weak seasonal signal
+Common Cuckoo,1,0,Low,Low record count; Insufficient years
+Common Firecrest,3,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Common Goldeneye,2,2,Low,Low record count; Insufficient years
+Common Grasshopper Warbler,2,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Common Gull,264,20,High,Weak seasonal signal
+Common Kingfisher,9,5,Low,Low record count; Weak seasonal signal
+Common Murre,1,1,Low,Low record count; Insufficient years
+Common Nightingale,3,3,Low,Low record count; Weak seasonal signal
+Common Pochard,9,8,Low,Low record count; Arrival tie detected; Departure tie detected; Weak seasonal signal
+Common Raven,2,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Common Redshank,6,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Common Redstart,7,5,Low,Low record count; Weak seasonal signal
+Common Reed Warbler,11,5,Medium,Arrival tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Common Rosefinch,3,1,Low,Low record count; Insufficient years
+Common Sandpiper,4,3,Low,Low record count; Arrival tie detected; Departure tie detected; Weak seasonal signal
+Common Shelduck,13,8,Low,Arrival tie detected; Departure tie detected; Weak seasonal signal
+Common Snipe,13,9,Low,Departure tie detected; Weak seasonal signal; Outlier influence (arrival)
+Common Swift,294,19,High,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Common Tern,11,5,Medium,Departure tie detected; Weak seasonal signal; Outlier influence (arrival)
+Common Wood-Pigeon,1467,19,High,Weak seasonal signal
+Dunnock,673,18,High,Weak seasonal signal
+Egyptian Goose,377,16,High,Weak seasonal signal
+Eurasian Bittern,1,1,Low,Low record count; Insufficient years
+Eurasian Blackbird,1084,20,High,Weak seasonal signal
+Eurasian Blackcap,436,18,High,Weak seasonal signal
+Eurasian Blue Tit,996,19,High,Weak seasonal signal
+Eurasian Bullfinch,6,3,Low,Low record count; Weak seasonal signal
+Eurasian Collared-Dove,30,11,Low,Departure tie detected; Weak seasonal signal
+Eurasian Coot,255,14,High,Weak seasonal signal
+Eurasian Green Woodpecker,128,16,High,Departure tie detected; Weak seasonal signal
+Eurasian Hobby,6,5,Low,Low record count; Departure tie detected; Weak seasonal signal
+Eurasian Jackdaw,153,17,High,Departure tie detected; Weak seasonal signal
+Eurasian Jay,268,18,High,Weak seasonal signal
+Eurasian Kestrel,201,19,High,Weak seasonal signal
+Eurasian Linnet,242,18,High,Weak seasonal signal
+Eurasian Magpie,1395,19,High,Weak seasonal signal
+Eurasian Moorhen,361,17,High,Weak seasonal signal
+Eurasian Nuthatch,21,10,Low,Arrival tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Eurasian Oystercatcher,16,4,Medium,Arrival tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Eurasian Siskin,15,6,Medium,Arrival tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Eurasian Skylark,24,11,Low,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Eurasian Sparrowhawk,143,16,High,Weak seasonal signal
+Eurasian Wigeon,1,1,Low,Low record count; Insufficient years
+Eurasian Woodcock,3,3,Low,Low record count; Arrival tie detected; Departure tie detected; Weak seasonal signal
+Eurasian Wren,983,18,High,Weak seasonal signal
+European Goldfinch,781,19,High,Weak seasonal signal
+European Greenfinch,553,17,High,Weak seasonal signal
+European Herring Gull,1018,19,High,Weak seasonal signal
+European Herring x Lesser Black-backed Gull (hybrid),4,2,Low,Low record count; Insufficient years; Arrival tie detected
+European Pied Flycatcher,2,1,Low,Low record count; Insufficient years
+European Robin,1235,21,High,Weak seasonal signal
+European Starling,866,20,High,Weak seasonal signal
+European Stonechat,74,14,High,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Fieldfare,40,13,Low,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Gadwall,111,8,High,Weak seasonal signal
+Garden Warbler,14,3,Low,Arrival tie detected; Weak seasonal signal
+Goldcrest,85,14,High,Weak seasonal signal
+Gray Heron,332,21,High,Weak seasonal signal
+Gray Wagtail,162,13,High,Weak seasonal signal
+Graylag Goose,98,12,High,Weak seasonal signal
+Graylag x Canada Goose (hybrid),26,7,Medium,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Great Black-backed Gull,161,15,High,Weak seasonal signal
+Great Cormorant,450,19,High,Weak seasonal signal
+Great Crested Grebe,47,10,Low,Arrival tie detected; Departure tie detected; Weak seasonal signal
+Great Gray Shrike,2,1,Low,Low record count; Insufficient years
+Great Spotted Woodpecker,387,18,High,Weak seasonal signal
+Great Tit,983,20,High,Weak seasonal signal
+Greater Whitethroat,255,18,High,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Green-winged Teal,124,13,High,Outlier influence (arrival); Outlier influence (departure)
+House Sparrow,496,18,High,Weak seasonal signal
+Iceland Gull,2,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Jack Snipe,2,1,Low,Low record count; Insufficient years
+Lesser Black-backed Gull,785,17,High,Weak seasonal signal
+Lesser Whitethroat,96,16,High,Weak seasonal signal; Outlier influence (arrival)
+Little Egret,19,8,Low,Weak seasonal signal
+Little Grebe,25,8,Low,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Little Gull,2,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Little Owl,15,3,Low,Arrival tie detected; Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Long-tailed Tit,588,17,High,Weak seasonal signal
+Mallard,695,20,High,Weak seasonal signal
+Mandarin Duck,48,9,Low,Departure tie detected; Weak seasonal signal
+Meadow Pipit,326,18,High,Weak seasonal signal
+Mediterranean Gull,8,3,Low,Low record count; Arrival tie detected; Departure tie detected; Weak seasonal signal
+Mistle Thrush,63,18,High,Weak seasonal signal
+Mute Swan,305,17,High,Weak seasonal signal
+Northern Lapwing,6,5,Low,Low record count; Arrival tie detected; Departure tie detected; Weak seasonal signal
+Northern Shoveler,20,7,Medium,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Northern Wheatear,18,7,Medium,Outlier influence (arrival)
+Peregrine Falcon,63,10,High,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Red Kite,21,6,Medium,Arrival tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Red-backed Shrike,1,1,Low,Low record count; Insufficient years
+Red-crested Pochard,1,1,Low,Low record count; Insufficient years
+Redpoll,6,4,Low,Low record count; Departure tie detected; Weak seasonal signal
+Redwing,190,16,High,
+Reed Bunting,76,14,High,Departure tie detected; Weak seasonal signal
+Richard's Pipit,3,1,Low,Low record count; Insufficient years
+Ring Ouzel,6,5,Low,Low record count; Weak seasonal signal
+Ring-necked Pheasant,4,4,Low,Low record count; Weak seasonal signal
+Rock Pigeon,1675,20,High,Weak seasonal signal
+Rook,4,4,Low,Low record count; Weak seasonal signal
+Rose-ringed Parakeet,1206,21,High,Weak seasonal signal
+Ruff,1,1,Low,Low record count; Insufficient years
+Sandwich Tern,1,1,Low,Low record count; Insufficient years
+Sedge Warbler,9,4,Low,Low record count; Departure tie detected; Weak seasonal signal
+Short-eared Owl,3,2,Low,Low record count; Insufficient years
+Song Thrush,533,17,High,Weak seasonal signal
+Spotted Flycatcher,10,5,Medium,Arrival tie detected; Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Stock Dove,155,17,High,Arrival tie detected; Weak seasonal signal
+Tawny Owl,3,2,Low,Low record count; Insufficient years; Arrival tie detected; Departure tie detected
+Tree Pipit,6,4,Low,Low record count; Weak seasonal signal
+Tufted Duck,119,13,High,Weak seasonal signal
+Western House-Martin,27,14,Low,Departure tie detected; Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Western Marsh Harrier,1,1,Low,Low record count; Insufficient years
+Western Yellow Wagtail,11,7,Medium,
+Whinchat,40,13,Low,Outlier influence (arrival)
+White Wagtail,558,19,High,Weak seasonal signal
+Willow Warbler,59,15,High,Weak seasonal signal; Outlier influence (arrival); Outlier influence (departure)
+Yellow-legged Gull,34,8,Low,Departure tie detected; Weak seasonal signal

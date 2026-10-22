@@ -13,6 +13,8 @@ const runDate = `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
 const runYear = Number(runDate.slice(0, 4));
 const previousCalendarPath = path.join(outputDir, 'species_migration_calendar.csv');
 const previousChangesPath = path.join(outputDir, 'seasonality_changes.csv');
+const metadataJsonPath = path.join(outputDir, 'seasonality_metadata.json');
+const metadataCsvPath = path.join(outputDir, 'seasonality_metadata.csv');
 
 function parseCsv(text) {
   const rows = [];
@@ -243,6 +245,7 @@ const validationIssues = validateCalendar(calendarRows, auditRows);
 if (calendarRows.length !== publicNames.length) validationIssues.push('Calendar species count does not match validated public layer');
 if (new Set(calendarRows.map(row => row['COMMON NAME'])).size !== new Set(publicNames).size || publicNames.some(name => !calendarRows.some(row => row['COMMON NAME'] === name))) validationIssues.push('Calendar species do not match validated public layer');
 const changes = [...previousChanges];
+const runChanges = [];
 const oldByName = new Map(previousCalendar.map(row => [row['COMMON NAME'], row]));
 if (previousCalendar.length) {
   const newByName = new Map(calendarRows.map(row => [row['COMMON NAME'], row]));
@@ -253,7 +256,9 @@ if (previousCalendar.length) {
       const oldValue = oldRow?.[field] || '';
       const newValue = newRow?.[field] || '';
       if (oldValue === newValue) continue;
-      changes.push({'COMMON NAME': name, field_changed: field, old_value: oldValue, new_value: newValue, change_date: runDate});
+      const change = {'COMMON NAME': name, field_changed: field, old_value: oldValue, new_value: newValue, change_date: runDate};
+      changes.push(change);
+      runChanges.push(change);
     }
   }
 }
@@ -274,6 +279,75 @@ const validationRow = {
   validation_passed: validationIssues.length === 0 ? 'true' : 'false'
 };
 
+const publicNameSet = new Set(publicNames);
+const calendarNames = calendarRows.map(row => row['COMMON NAME']);
+const calendarNameSet = new Set(calendarNames);
+const missingFromCalendar = publicNames.filter(name => !calendarNameSet.has(name));
+const unexpectedInCalendar = calendarNames.filter(name => !publicNameSet.has(name));
+const invalidMonthValues = calendarRows.some(row =>
+  ['arrival_month', 'departure_month', 'earliest_month', 'latest_month']
+    .some(field => row[field] !== '' && monthNumber(row[field]) === null)
+);
+const movementTypes = new Set(['Resident', 'Partial Migrant', 'Summer Visitor', 'Winter Visitor', 'Passage Migrant', 'Scarce / Irregular']);
+const confidenceTypes = new Set(['High', 'Medium', 'Low']);
+const duplicateSpeciesFound = new Set(calendarNames).size !== calendarNames.length;
+const invalidMovementTypesFound = calendarRows.some(row => !movementTypes.has(row.movement_type));
+const invalidConfidenceValuesFound = calendarRows.some(row => !confidenceTypes.has(row.confidence));
+const reconciliationPassed = missingFromCalendar.length === 0 && unexpectedInCalendar.length === 0;
+const countChanges = field => runChanges.filter(change => change.field_changed === field).length;
+const metadata = {
+  calendar_version: '1.0.0',
+  generated_at: new Date().toISOString(),
+  source_archive: path.basename(inputPath),
+  public_species_source: path.basename(publicSpeciesPath),
+  public_species_count: publicNames.length,
+  calendar_species_count: calendarRows.length,
+  reconciliation_passed: reconciliationPassed,
+  missing_from_calendar: missingFromCalendar.length,
+  unexpected_in_calendar: unexpectedInCalendar.length,
+  species_with_arrivals: validationRow.species_with_arrival_month,
+  species_with_departures: validationRow.species_with_departure_month,
+  resident_species: validationRow.resident_species,
+  scarce_irregular_species: validationRow.scarce_irregular_species,
+  high_confidence_species: validationRow.high_confidence_species,
+  medium_confidence_species: validationRow.medium_confidence_species,
+  low_confidence_species: validationRow.low_confidence_species,
+  duplicate_species_found: duplicateSpeciesFound,
+  invalid_months_found: invalidMonthValues,
+  invalid_movement_types_found: invalidMovementTypesFound,
+  invalid_confidence_values_found: invalidConfidenceValuesFound,
+  changes_detected: runChanges.length,
+  arrival_changes: countChanges('arrival_month'),
+  departure_changes: countChanges('departure_month'),
+  movement_type_changes: countChanges('movement_type'),
+  confidence_changes: countChanges('confidence'),
+  methodology_version: '1.0',
+  calculation_basis: 'public-layer-filtered archive analysis',
+  validation_passed: validationIssues.length === 0
+};
+metadata.expected_board_status =
+  metadata.validation_passed &&
+  metadata.reconciliation_passed &&
+  !metadata.duplicate_species_found &&
+  !metadata.invalid_months_found &&
+  !metadata.invalid_movement_types_found &&
+  !metadata.invalid_confidence_values_found
+    ? 'READY'
+    : 'FAILED';
+
+Object.assign(validationRow, {
+  missing_from_calendar: metadata.missing_from_calendar,
+  unexpected_in_calendar: metadata.unexpected_in_calendar,
+  reconciliation_passed: String(metadata.reconciliation_passed),
+  changes_detected: metadata.changes_detected,
+  arrival_changes: metadata.arrival_changes,
+  departure_changes: metadata.departure_changes,
+  movement_type_changes: metadata.movement_type_changes,
+  confidence_changes: metadata.confidence_changes,
+  expected_board_status: metadata.expected_board_status,
+  issues: validationIssues.join('; ')
+});
+
 const outputFiles = [
   ['species_migration_calendar.csv', ['COMMON NAME', 'movement_type', 'arrival_month', 'arrival_month_frequency', 'arrival_years', 'departure_month', 'departure_month_frequency', 'departure_years', 'earliest_month', 'latest_month', 'years_used', 'confidence', 'last_calculated'], calendarRows],
   ['seasonality_validation.csv', Object.keys(validationRow), [validationRow]],
@@ -283,6 +357,8 @@ const outputFiles = [
 for (const [filename, headers, rows] of outputFiles) {
   await fs.writeFile(path.join(outputDir, filename), csvText(headers, rows));
 }
+await fs.writeFile(metadataJsonPath, `${JSON.stringify(metadata, null, 2)}\n`);
+await fs.writeFile(metadataCsvPath, csvText(Object.keys(metadata), [metadata]));
 if (validationIssues.length) throw new Error(`Seasonality validation failed:\n${validationIssues.join('\n')}`);
 console.log(`Generated seasonality for ${calendarRows.length} public species using ${[...parsed.species.values()].reduce((sum, item) => sum + item.records, 0)} source records; timing uses years before ${runYear}.`);
 console.log(`Joined archive rows to the validated public species set; excluded ${parsed.skippedOutsidePublicSet} rows outside that set, skipped ${parsed.skippedInvalid} invalid rows, ${parsed.skippedUnapproved} unapproved rows, and ${parsed.duplicateIds} duplicate identifiers.`);
