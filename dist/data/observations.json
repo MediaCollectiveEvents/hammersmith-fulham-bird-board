@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-22T10:19:33.444Z",
+  "updatedAt": "2026-10-23T10:14:27.379Z",
   "hotspots": [
     {
       "locId": "L12106898",
@@ -3111,5 +3111,5 @@
   ],
   "lastRunNewReports": 144,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 626
+  "lastRunNearbyCandidates": 624
 }
