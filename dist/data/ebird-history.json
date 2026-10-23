@@ -1,0 +1,817 @@
+{
+  "source": "eBird borough archive",
+  "taxonCount": 133,
+  "recordCount": 30288,
+  "dataDateRange": {
+    "first": "1963-01-12",
+    "last": "2026-09-28"
+  },
+  "attribution": [
+    "Source: eBird Basic Dataset borough archive, using the validated public species layer."
+  ],
+  "notes": [
+    "Species-level aggregates only; no observer details, checklist identifiers or coordinates.",
+    "Counts are archive records, not individual birds. Last recorded means the latest observation date in this archive, not a live or complete borough sighting history.",
+    "taxonCount counts named entries in the validated public layer, which includes hybrid entries; it is not a strict species total."
+  ],
+  "species": [
+    {
+      "commonName": "Bank Swallow",
+      "scientificName": "Riparia riparia",
+      "records": 28,
+      "lastRecorded": "2026-05-28"
+    },
+    {
+      "commonName": "Barn Swallow",
+      "scientificName": "Hirundo rustica",
+      "records": 56,
+      "lastRecorded": "2026-04-22"
+    },
+    {
+      "commonName": "Black Redstart",
+      "scientificName": "Phoenicurus ochruros",
+      "records": 16,
+      "lastRecorded": "2026-06-21"
+    },
+    {
+      "commonName": "Black Swan",
+      "scientificName": "Cygnus atratus",
+      "records": 11,
+      "lastRecorded": "2025-05-15"
+    },
+    {
+      "commonName": "Black-headed Gull",
+      "scientificName": "Chroicocephalus ridibundus",
+      "records": 995,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Bohemian Waxwing",
+      "scientificName": "Bombycilla garrulus",
+      "records": 1,
+      "lastRecorded": "2017-02-06"
+    },
+    {
+      "commonName": "Brambling",
+      "scientificName": "Fringilla montifringilla",
+      "records": 1,
+      "lastRecorded": "2020-04-09"
+    },
+    {
+      "commonName": "Canada Goose",
+      "scientificName": "Branta canadensis",
+      "records": 479,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Carrion Crow",
+      "scientificName": "Corvus corone",
+      "records": 1660,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Caspian Gull",
+      "scientificName": "Larus cachinnans",
+      "records": 9,
+      "lastRecorded": "2018-09-01"
+    },
+    {
+      "commonName": "Cetti's Warbler",
+      "scientificName": "Cettia cetti",
+      "records": 41,
+      "lastRecorded": "2026-05-18"
+    },
+    {
+      "commonName": "Coal Tit",
+      "scientificName": "Periparus ater",
+      "records": 90,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Common Buzzard",
+      "scientificName": "Buteo buteo",
+      "records": 34,
+      "lastRecorded": "2026-05-02"
+    },
+    {
+      "commonName": "Common Chaffinch",
+      "scientificName": "Fringilla coelebs",
+      "records": 278,
+      "lastRecorded": "2026-09-19"
+    },
+    {
+      "commonName": "Common Chiffchaff",
+      "scientificName": "Phylloscopus collybita",
+      "records": 491,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Common Cuckoo",
+      "scientificName": "Cuculus canorus",
+      "records": 1,
+      "lastRecorded": "2026-07-21"
+    },
+    {
+      "commonName": "Common Firecrest",
+      "scientificName": "Regulus ignicapilla",
+      "records": 3,
+      "lastRecorded": "2025-02-28"
+    },
+    {
+      "commonName": "Common Goldeneye",
+      "scientificName": "Bucephala clangula",
+      "records": 2,
+      "lastRecorded": "1985-01-19"
+    },
+    {
+      "commonName": "Common Grasshopper Warbler",
+      "scientificName": "Locustella naevia",
+      "records": 2,
+      "lastRecorded": "2021-05-07"
+    },
+    {
+      "commonName": "Common Gull",
+      "scientificName": "Larus canus",
+      "records": 264,
+      "lastRecorded": "2026-03-17"
+    },
+    {
+      "commonName": "Common Kingfisher",
+      "scientificName": "Alcedo atthis",
+      "records": 9,
+      "lastRecorded": "2022-09-06"
+    },
+    {
+      "commonName": "Common Murre",
+      "scientificName": "Uria aalge",
+      "records": 1,
+      "lastRecorded": "1986-02-16"
+    },
+    {
+      "commonName": "Common Nightingale",
+      "scientificName": "Luscinia megarhynchos",
+      "records": 3,
+      "lastRecorded": "2023-04-17"
+    },
+    {
+      "commonName": "Common Pochard",
+      "scientificName": "Aythya ferina",
+      "records": 9,
+      "lastRecorded": "2025-12-14"
+    },
+    {
+      "commonName": "Common Raven",
+      "scientificName": "Corvus corax",
+      "records": 2,
+      "lastRecorded": "2025-10-17"
+    },
+    {
+      "commonName": "Common Redshank",
+      "scientificName": "Tringa totanus",
+      "records": 6,
+      "lastRecorded": "2020-04-18"
+    },
+    {
+      "commonName": "Common Redstart",
+      "scientificName": "Phoenicurus phoenicurus",
+      "records": 7,
+      "lastRecorded": "2024-04-16"
+    },
+    {
+      "commonName": "Common Reed Warbler",
+      "scientificName": "Acrocephalus scirpaceus",
+      "records": 11,
+      "lastRecorded": "2026-05-17"
+    },
+    {
+      "commonName": "Common Rosefinch",
+      "scientificName": "Carpodacus erythrinus",
+      "records": 3,
+      "lastRecorded": "2013-09-09"
+    },
+    {
+      "commonName": "Common Sandpiper",
+      "scientificName": "Actitis hypoleucos",
+      "records": 4,
+      "lastRecorded": "2026-04-16"
+    },
+    {
+      "commonName": "Common Shelduck",
+      "scientificName": "Tadorna tadorna",
+      "records": 13,
+      "lastRecorded": "2024-03-02"
+    },
+    {
+      "commonName": "Common Snipe",
+      "scientificName": "Gallinago gallinago",
+      "records": 13,
+      "lastRecorded": "2025-03-24"
+    },
+    {
+      "commonName": "Common Swift",
+      "scientificName": "Apus apus",
+      "records": 294,
+      "lastRecorded": "2026-07-27"
+    },
+    {
+      "commonName": "Common Tern",
+      "scientificName": "Sterna hirundo",
+      "records": 11,
+      "lastRecorded": "2024-05-18"
+    },
+    {
+      "commonName": "Common Wood-Pigeon",
+      "scientificName": "Columba palumbus",
+      "records": 1467,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Dunnock",
+      "scientificName": "Prunella modularis",
+      "records": 673,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Egyptian Goose",
+      "scientificName": "Alopochen aegyptiaca",
+      "records": 377,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Eurasian Bittern",
+      "scientificName": "Botaurus stellaris",
+      "records": 1,
+      "lastRecorded": "2020-04-09"
+    },
+    {
+      "commonName": "Eurasian Blackbird",
+      "scientificName": "Turdus merula",
+      "records": 1084,
+      "lastRecorded": "2026-09-27"
+    },
+    {
+      "commonName": "Eurasian Blackcap",
+      "scientificName": "Sylvia atricapilla",
+      "records": 436,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Eurasian Blue Tit",
+      "scientificName": "Cyanistes caeruleus",
+      "records": 996,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Eurasian Bullfinch",
+      "scientificName": "Pyrrhula pyrrhula",
+      "records": 6,
+      "lastRecorded": "2022-11-07"
+    },
+    {
+      "commonName": "Eurasian Collared-Dove",
+      "scientificName": "Streptopelia decaocto",
+      "records": 30,
+      "lastRecorded": "2026-01-24"
+    },
+    {
+      "commonName": "Eurasian Coot",
+      "scientificName": "Fulica atra",
+      "records": 255,
+      "lastRecorded": "2026-08-07"
+    },
+    {
+      "commonName": "Eurasian Green Woodpecker",
+      "scientificName": "Picus viridis",
+      "records": 128,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Eurasian Hobby",
+      "scientificName": "Falco subbuteo",
+      "records": 6,
+      "lastRecorded": "2025-04-30"
+    },
+    {
+      "commonName": "Eurasian Jackdaw",
+      "scientificName": "Coloeus monedula",
+      "records": 153,
+      "lastRecorded": "2026-08-07"
+    },
+    {
+      "commonName": "Eurasian Jay",
+      "scientificName": "Garrulus glandarius",
+      "records": 268,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Eurasian Kestrel",
+      "scientificName": "Falco tinnunculus",
+      "records": 201,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Eurasian Linnet",
+      "scientificName": "Linaria cannabina",
+      "records": 242,
+      "lastRecorded": "2026-07-21"
+    },
+    {
+      "commonName": "Eurasian Magpie",
+      "scientificName": "Pica pica",
+      "records": 1395,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Eurasian Moorhen",
+      "scientificName": "Gallinula chloropus",
+      "records": 361,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Eurasian Nuthatch",
+      "scientificName": "Sitta europaea",
+      "records": 21,
+      "lastRecorded": "2025-06-19"
+    },
+    {
+      "commonName": "Eurasian Oystercatcher",
+      "scientificName": "Haematopus ostralegus",
+      "records": 16,
+      "lastRecorded": "2026-07-13"
+    },
+    {
+      "commonName": "Eurasian Siskin",
+      "scientificName": "Spinus spinus",
+      "records": 15,
+      "lastRecorded": "2026-03-28"
+    },
+    {
+      "commonName": "Eurasian Skylark",
+      "scientificName": "Alauda arvensis",
+      "records": 24,
+      "lastRecorded": "2025-10-17"
+    },
+    {
+      "commonName": "Eurasian Sparrowhawk",
+      "scientificName": "Accipiter nisus",
+      "records": 143,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Eurasian Wigeon",
+      "scientificName": "Mareca penelope",
+      "records": 1,
+      "lastRecorded": "2022-07-03"
+    },
+    {
+      "commonName": "Eurasian Woodcock",
+      "scientificName": "Scolopax rusticola",
+      "records": 3,
+      "lastRecorded": "2024-11-06"
+    },
+    {
+      "commonName": "Eurasian Wren",
+      "scientificName": "Troglodytes troglodytes",
+      "records": 983,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "European Goldfinch",
+      "scientificName": "Carduelis carduelis",
+      "records": 781,
+      "lastRecorded": "2026-07-22"
+    },
+    {
+      "commonName": "European Greenfinch",
+      "scientificName": "Chloris chloris",
+      "records": 553,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "European Herring Gull",
+      "scientificName": "Larus argentatus",
+      "records": 1018,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "European Herring x Lesser Black-backed Gull (hybrid)",
+      "scientificName": "Larus argentatus x fuscus",
+      "records": 4,
+      "lastRecorded": "2020-11-14"
+    },
+    {
+      "commonName": "European Pied Flycatcher",
+      "scientificName": "Ficedula hypoleuca",
+      "records": 2,
+      "lastRecorded": "2013-04-29"
+    },
+    {
+      "commonName": "European Robin",
+      "scientificName": "Erithacus rubecula",
+      "records": 1235,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "European Starling",
+      "scientificName": "Sturnus vulgaris",
+      "records": 866,
+      "lastRecorded": "2026-09-27"
+    },
+    {
+      "commonName": "European Stonechat",
+      "scientificName": "Saxicola rubicola",
+      "records": 74,
+      "lastRecorded": "2026-08-23"
+    },
+    {
+      "commonName": "Fieldfare",
+      "scientificName": "Turdus pilaris",
+      "records": 40,
+      "lastRecorded": "2026-01-14"
+    },
+    {
+      "commonName": "Gadwall",
+      "scientificName": "Mareca strepera",
+      "records": 111,
+      "lastRecorded": "2026-06-13"
+    },
+    {
+      "commonName": "Garden Warbler",
+      "scientificName": "Sylvia borin",
+      "records": 14,
+      "lastRecorded": "2026-07-21"
+    },
+    {
+      "commonName": "Goldcrest",
+      "scientificName": "Regulus regulus",
+      "records": 85,
+      "lastRecorded": "2026-04-16"
+    },
+    {
+      "commonName": "Gray Heron",
+      "scientificName": "Ardea cinerea",
+      "records": 332,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Gray Wagtail",
+      "scientificName": "Motacilla cinerea",
+      "records": 162,
+      "lastRecorded": "2026-07-10"
+    },
+    {
+      "commonName": "Graylag Goose",
+      "scientificName": "Anser anser",
+      "records": 98,
+      "lastRecorded": "2026-06-25"
+    },
+    {
+      "commonName": "Graylag x Canada Goose (hybrid)",
+      "scientificName": "Anser anser x Branta canadensis",
+      "records": 26,
+      "lastRecorded": "2026-05-18"
+    },
+    {
+      "commonName": "Great Black-backed Gull",
+      "scientificName": "Larus marinus",
+      "records": 161,
+      "lastRecorded": "2026-08-23"
+    },
+    {
+      "commonName": "Great Cormorant",
+      "scientificName": "Phalacrocorax carbo",
+      "records": 450,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Great Crested Grebe",
+      "scientificName": "Podiceps cristatus",
+      "records": 47,
+      "lastRecorded": "2026-05-18"
+    },
+    {
+      "commonName": "Great Gray Shrike",
+      "scientificName": "Lanius excubitor",
+      "records": 2,
+      "lastRecorded": "2010-10-11"
+    },
+    {
+      "commonName": "Great Spotted Woodpecker",
+      "scientificName": "Dendrocopos major",
+      "records": 387,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Great Tit",
+      "scientificName": "Parus major",
+      "records": 983,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Greater Whitethroat",
+      "scientificName": "Curruca communis",
+      "records": 255,
+      "lastRecorded": "2026-09-19"
+    },
+    {
+      "commonName": "Green-winged Teal",
+      "scientificName": "Anas crecca",
+      "records": 124,
+      "lastRecorded": "2026-03-27"
+    },
+    {
+      "commonName": "House Sparrow",
+      "scientificName": "Passer domesticus",
+      "records": 496,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Iceland Gull",
+      "scientificName": "Larus glaucoides",
+      "records": 2,
+      "lastRecorded": "2020-04-15"
+    },
+    {
+      "commonName": "Jack Snipe",
+      "scientificName": "Lymnocryptes minimus",
+      "records": 2,
+      "lastRecorded": "2020-09-29"
+    },
+    {
+      "commonName": "Lesser Black-backed Gull",
+      "scientificName": "Larus fuscus",
+      "records": 785,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Lesser Whitethroat",
+      "scientificName": "Curruca curruca",
+      "records": 96,
+      "lastRecorded": "2026-07-07"
+    },
+    {
+      "commonName": "Little Egret",
+      "scientificName": "Egretta garzetta",
+      "records": 19,
+      "lastRecorded": "2026-06-21"
+    },
+    {
+      "commonName": "Little Grebe",
+      "scientificName": "Tachybaptus ruficollis",
+      "records": 25,
+      "lastRecorded": "2026-03-12"
+    },
+    {
+      "commonName": "Little Gull",
+      "scientificName": "Hydrocoloeus minutus",
+      "records": 2,
+      "lastRecorded": "2020-04-06"
+    },
+    {
+      "commonName": "Little Owl",
+      "scientificName": "Athene noctua",
+      "records": 15,
+      "lastRecorded": "2026-01-07"
+    },
+    {
+      "commonName": "Long-tailed Tit",
+      "scientificName": "Aegithalos caudatus",
+      "records": 588,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Mallard",
+      "scientificName": "Anas platyrhynchos",
+      "records": 695,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Mandarin Duck",
+      "scientificName": "Aix galericulata",
+      "records": 48,
+      "lastRecorded": "2026-09-12"
+    },
+    {
+      "commonName": "Meadow Pipit",
+      "scientificName": "Anthus pratensis",
+      "records": 326,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Mediterranean Gull",
+      "scientificName": "Ichthyaetus melanocephalus",
+      "records": 8,
+      "lastRecorded": "2022-11-07"
+    },
+    {
+      "commonName": "Mistle Thrush",
+      "scientificName": "Turdus viscivorus",
+      "records": 63,
+      "lastRecorded": "2026-05-08"
+    },
+    {
+      "commonName": "Mute Swan",
+      "scientificName": "Cygnus olor",
+      "records": 305,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Northern Lapwing",
+      "scientificName": "Vanellus vanellus",
+      "records": 6,
+      "lastRecorded": "2024-01-07"
+    },
+    {
+      "commonName": "Northern Shoveler",
+      "scientificName": "Spatula clypeata",
+      "records": 20,
+      "lastRecorded": "2026-01-24"
+    },
+    {
+      "commonName": "Northern Wheatear",
+      "scientificName": "Oenanthe oenanthe",
+      "records": 18,
+      "lastRecorded": "2024-04-19"
+    },
+    {
+      "commonName": "Peregrine Falcon",
+      "scientificName": "Falco peregrinus",
+      "records": 63,
+      "lastRecorded": "2026-09-26"
+    },
+    {
+      "commonName": "Red Kite",
+      "scientificName": "Milvus milvus",
+      "records": 21,
+      "lastRecorded": "2026-06-16"
+    },
+    {
+      "commonName": "Red-backed Shrike",
+      "scientificName": "Lanius collurio",
+      "records": 1,
+      "lastRecorded": "2017-09-23"
+    },
+    {
+      "commonName": "Red-crested Pochard",
+      "scientificName": "Netta rufina",
+      "records": 1,
+      "lastRecorded": "2014-05-15"
+    },
+    {
+      "commonName": "Redpoll",
+      "scientificName": "Acanthis flammea",
+      "records": 6,
+      "lastRecorded": "2025-02-02"
+    },
+    {
+      "commonName": "Redwing",
+      "scientificName": "Turdus iliacus",
+      "records": 190,
+      "lastRecorded": "2026-03-12"
+    },
+    {
+      "commonName": "Reed Bunting",
+      "scientificName": "Emberiza schoeniclus",
+      "records": 76,
+      "lastRecorded": "2026-07-21"
+    },
+    {
+      "commonName": "Richard's Pipit",
+      "scientificName": "Anthus richardi",
+      "records": 3,
+      "lastRecorded": "2007-09-23"
+    },
+    {
+      "commonName": "Ring Ouzel",
+      "scientificName": "Turdus torquatus",
+      "records": 6,
+      "lastRecorded": "2024-04-15"
+    },
+    {
+      "commonName": "Ring-necked Pheasant",
+      "scientificName": "Phasianus colchicus",
+      "records": 4,
+      "lastRecorded": "2022-06-26"
+    },
+    {
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "records": 1675,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Rook",
+      "scientificName": "Corvus frugilegus",
+      "records": 4,
+      "lastRecorded": "2024-08-04"
+    },
+    {
+      "commonName": "Rose-ringed Parakeet",
+      "scientificName": "Psittacula krameri",
+      "records": 1206,
+      "lastRecorded": "2026-09-28"
+    },
+    {
+      "commonName": "Ruff",
+      "scientificName": "Calidris pugnax",
+      "records": 1,
+      "lastRecorded": "2017-05-07"
+    },
+    {
+      "commonName": "Sandwich Tern",
+      "scientificName": "Thalasseus sandvicensis",
+      "records": 1,
+      "lastRecorded": "2020-04-12"
+    },
+    {
+      "commonName": "Sedge Warbler",
+      "scientificName": "Acrocephalus schoenobaenus",
+      "records": 9,
+      "lastRecorded": "2026-05-07"
+    },
+    {
+      "commonName": "Short-eared Owl",
+      "scientificName": "Asio flammeus",
+      "records": 3,
+      "lastRecorded": "2022-10-29"
+    },
+    {
+      "commonName": "Song Thrush",
+      "scientificName": "Turdus philomelos",
+      "records": 533,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Spotted Flycatcher",
+      "scientificName": "Muscicapa striata",
+      "records": 10,
+      "lastRecorded": "2025-09-06"
+    },
+    {
+      "commonName": "Stock Dove",
+      "scientificName": "Columba oenas",
+      "records": 155,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Tawny Owl",
+      "scientificName": "Strix aluco",
+      "records": 3,
+      "lastRecorded": "2026-04-27"
+    },
+    {
+      "commonName": "Tree Pipit",
+      "scientificName": "Anthus trivialis",
+      "records": 6,
+      "lastRecorded": "2024-09-07"
+    },
+    {
+      "commonName": "Tufted Duck",
+      "scientificName": "Aythya fuligula",
+      "records": 119,
+      "lastRecorded": "2026-06-25"
+    },
+    {
+      "commonName": "Western House-Martin",
+      "scientificName": "Delichon urbicum",
+      "records": 27,
+      "lastRecorded": "2026-08-07"
+    },
+    {
+      "commonName": "Western Marsh Harrier",
+      "scientificName": "Circus aeruginosus",
+      "records": 1,
+      "lastRecorded": "2022-09-20"
+    },
+    {
+      "commonName": "Western Yellow Wagtail",
+      "scientificName": "Motacilla flava",
+      "records": 11,
+      "lastRecorded": "2026-09-10"
+    },
+    {
+      "commonName": "Whinchat",
+      "scientificName": "Saxicola rubetra",
+      "records": 40,
+      "lastRecorded": "2026-09-19"
+    },
+    {
+      "commonName": "White Wagtail",
+      "scientificName": "Motacilla alba",
+      "records": 558,
+      "lastRecorded": "2026-09-25"
+    },
+    {
+      "commonName": "Willow Warbler",
+      "scientificName": "Phylloscopus trochilus",
+      "records": 59,
+      "lastRecorded": "2026-08-25"
+    },
+    {
+      "commonName": "Yellow-legged Gull",
+      "scientificName": "Larus michahellis",
+      "records": 34,
+      "lastRecorded": "2025-11-27"
+    }
+  ]
+}
