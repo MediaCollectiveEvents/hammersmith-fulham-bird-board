@@ -35,19 +35,19 @@ The calendar includes the modal arrival/departure month, its frequency, and the 
 
 A separate public BirdWeather feed is refreshed daily by the same GitHub Actions workflow. It requests BirdNET detections from the last 24 hours at confidence 0.70 or higher, then checks detection coordinates against the exact Hammersmith & Fulham boundary before writing `dist/data/birdweather.json`. No BirdWeather key is required. The page labels these as automated audio detections: they are not human-verified sightings, proof of species presence, or counts of individual birds. The feed keeps coordinates private and displays the station, timestamp and model confidence.
 
-## NBN Atlas bird record list
+## Recorded species: eBird archive
 
-The board includes a source list of bird taxa recorded in the London Borough of Hammersmith & Fulham, based on an NBN Atlas export confirmed by the project owner to cover the borough. The NBN archive is incomplete, so it is used only to list recorded taxa and is not used to determine expected monthly arrivals or departures. A missing record is not evidence that a bird was absent.
+This is an explicit source switch from NBN Atlas to eBird archive aggregates, not a display-only change. The 133 public-layer entries include two hybrids; the displayed entry count is not a strict species count. Membership changes and provenance are detailed in `docs/recorded-species-source-switch-review.md`.
 
-The public aggregate keeps bird names, taxonomic rank and overall occurrence-record totals only. Counts are records, not individual birds. It excludes dates, recorder names and coordinates. Provider, dataset, licence and attribution details are retained in `dist/data/nbn-history.json` and shown on the page. The export contains records under CC-BY-NC, Open Government Licence and CC-BY terms; keep this project and the derived list non-commercial and preserve the source credits.
+The Recorded species panel uses `dist/data/ebird-history.json`, generated from the validated `birds_hf_public.csv` and matching borough eBird archive. It publishes only species names, scientific names, archive record counts and the latest observation date per species. Dates mean **last recorded in the supplied archive**, not the latest sighting anywhere in the borough. The recent API feed remains separate; it does not automatically refresh these historical aggregates. Missing records do not establish absence.
 
-To rebuild the list after downloading a fresh NBN Atlas CSV export:
+Regenerate manually after obtaining updated, validated inputs:
 
 ```sh
-node scripts/import-nbn.mjs path/to/nbn-export.csv
+python3 scripts/import-ebird-history.py /private/path/birds_hf_public.csv /private/path/hf_ebird_records_final.csv dist/data/ebird-history.json
 ```
 
-Do not commit the downloaded source CSV or publish record-level exports. The importer outputs only the borough bird list and aggregate occurrence totals.
+The exporter checks public-layer uniqueness and reconciles each species' count and date range against the archive. Keep raw source data, observers, checklist IDs and coordinates private. This display change does not adopt API archive ingestion or alter the Expected board pipeline. The legacy NBN importer and credited JSON remain available in the repository, but the Recorded species panel no longer uses them.
 
 ## Local validation
 
