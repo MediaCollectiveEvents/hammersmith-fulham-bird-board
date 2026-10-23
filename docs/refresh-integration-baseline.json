@@ -1,0 +1,22 @@
+{
+  "source": "/Users/cdparry/Desktop/birds-hf",
+  "snapshot": "/private/tmp/hf-refresh-baseline-20261023",
+  "files": {
+    "refresh.sh": {
+      "bytes": 708,
+      "sha256": "1f1a5def065614b8b3bbdc66858028877102302e3bf2458e9e9d626dbad68f88"
+    },
+    "rebuild_public_layer.sql": {
+      "bytes": 5782,
+      "sha256": "d6f143a3c7fd01623722f06d3935fc33e498992d51c40d0cb152fef9a1b2d984"
+    },
+    "rebuild_public_layer_v1.sql": {
+      "bytes": 327,
+      "sha256": "ce6c2aba73e6603650d65cdc3874aaca2174c394ddbe592219e24215a54c0de7"
+    },
+    "birds.db": {
+      "bytes": 12288,
+      "sha256": "fffbb08db9a7c600cca0244313c091a4380975d2fcd4b42755ba6b6b73c53d9e"
+    }
+  }
+}

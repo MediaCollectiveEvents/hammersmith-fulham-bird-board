@@ -253,8 +253,8 @@ if (previousCalendar.length) {
   for (const name of names) {
     const oldRow = oldByName.get(name), newRow = newByName.get(name);
     for (const field of ['arrival_month', 'departure_month', 'movement_type', 'confidence']) {
-      const oldValue = oldRow?.[field] || '';
-      const newValue = newRow?.[field] || '';
+      const oldValue = String(oldRow?.[field] ?? '');
+      const newValue = String(newRow?.[field] ?? '');
       if (oldValue === newValue) continue;
       const change = {'COMMON NAME': name, field_changed: field, old_value: oldValue, new_value: newValue, change_date: runDate};
       changes.push(change);
