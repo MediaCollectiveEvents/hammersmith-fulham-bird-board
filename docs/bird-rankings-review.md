@@ -209,3 +209,16 @@ highest-record sort → Least Recorded now starts at position 1, Bohemian Waxwin
 with one record. The generated dataset and canonical positions are unchanged.
 A regression test covers the carried-sort scenario, manual override and return to
 Borough Rankings. Full suite: **101/101 passing**.
+
+## Navigation and combined movements follow-up
+
+Renamed visible navigation Actual → This Month and Expected → Movements, retaining
+internal category keys. One Arrivals & Departures entry now opens a combined panel
+containing the existing arrival and departure tables. Both retain their original
+row IDs and TV screen targets. An introductory migration overview explains the
+movement types and shows full-archive classification totals from the already
+READY-gated calendar, explicitly separate from birds present/moving this month.
+Unavailable calendar data suppresses these totals. No new source, generated data,
+classification, timing calculation, API or publication change is involved.
+Browser checks at 390px and 1440px found no page overflow or console errors.
+All **103/103 tests pass**, including combined-panel and unavailable-overview tests.
