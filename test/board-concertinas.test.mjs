@@ -90,3 +90,32 @@ test('ranking views use exclusive native concertinas instead of a dropdown',asyn
   for(const title of ['Borough Rankings','Recent Rankings','Rising Species','Least Recorded','Seasonal Rankings'])assert.ok(ui.includes(title));
   for(const [,script]of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(script);
 });
+
+test('opening a ranking resets a carried display sort and restores fewest-first ordering',async()=>{
+  const {views,selectRows}=await import('../dist/bird-rankings-data.mjs');
+  const data=JSON.parse(await fs.readFile(new URL('../dist/data/bird-rankings.json',import.meta.url),'utf8'));
+  const ui=await fs.readFile(new URL('../dist/bird-rankings.mjs',import.meta.url),'utf8');
+  const controls=new Map();
+  const sections=views.map(view=>({open:false,dataset:{rankingView:view},querySelector:()=>({append(){}}),addEventListener(name,handler){this[name]=handler;}}));
+  const control=id=>{
+    if(!controls.has(id))controls.set(id,{value:id==='sort'?'rank':id==='month'?'10':'',innerHTML:'',textContent:'',querySelectorAll:()=>sections,addEventListener(){}});
+    return controls.get(id);
+  };
+  const context=vm.createContext({document:{querySelector:()=>({querySelector:selector=>control(selector.slice('#rankings-'.length))})},views,selectRows,validateRankings:value=>value,verifyRelease:async()=>{},fetch:async()=>({ok:true,text:async()=>JSON.stringify(data)}),Intl,Date});
+  vm.runInContext(ui.replace(/^import[^\n]+\n/,'').replace(/load\(\);\s*$/,''),context);
+  await vm.runInContext('load()',context);
+  control('sort').value='records';
+  const least=sections.find(s=>s.dataset.rankingView==='leastRecorded');
+  least.open=true;least.toggle();
+  assert.equal(control('sort').value,'rank');
+  assert.match(control('rows').innerHTML,/^<tr><td class="rankings-number">1<\/td><td><span class="rankings-name">Bohemian Waxwing/);
+  assert.doesNotMatch(control('explanation').textContent,/Display override/);
+  control('sort').value='records';vm.runInContext('render()',context);
+  assert.match(control('rows').innerHTML,/^<tr><td class="rankings-number">133<\/td><td><span class="rankings-name">Rock Pigeon/);
+  assert.match(control('explanation').textContent,/Display override: records, highest first/);
+  const borough=sections.find(s=>s.dataset.rankingView==='borough');
+  borough.open=true;borough.toggle();
+  assert.equal(least.open,false);
+  assert.equal(control('sort').value,'rank');
+  assert.match(control('rows').innerHTML,/^<tr><td class="rankings-number">1<\/td><td><span class="rankings-name">Rock Pigeon/);
+});

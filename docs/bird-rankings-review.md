@@ -197,3 +197,15 @@ keyboard and popup activation, stable-ID joins, duplicate directory entries,
 exclusive lists, map-unavailable fallback and ranking concertina structure.
 All **100/100 tests pass**. Browser checks confirm one open ranking/hotspot/
 contributor list at a time, correct marker targets and mobile behaviour at 390px.
+
+## Least Recorded ordering correction
+
+A manually selected display sort could carry between concertina views, causing
+Least Recorded to display highest counts first while its definition described
+fewest-first ranking. Opening any ranking now resets the shared sort to canonical
+ranking order. Manual alphabetical/highest-record sorts explicitly identify the
+display override in the explanation. Browser reproduction confirms Borough →
+highest-record sort → Least Recorded now starts at position 1, Bohemian Waxwing,
+with one record. The generated dataset and canonical positions are unchanged.
+A regression test covers the carried-sort scenario, manual override and return to
+Borough Rankings. Full suite: **101/101 passing**.

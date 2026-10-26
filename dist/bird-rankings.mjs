@@ -24,7 +24,9 @@ function render() {
     leastRecorded:'Historical archive records, fewest first. Equal counts use alphabetical common names. “Least recorded” does not establish biological rarity; existing classifications are retained.',
     seasonal:`${months[month - 1]} observations across all historical years in this archive, including partial years. Records and years with records measure reporting frequency, not abundance or detection probability.`
   };
-  control('explanation').textContent = explanations[view];
+  const sort = control('sort').value;
+  const displayOrder = sort === 'records' ? ' Display override: records, highest first.' : sort === 'name' ? ' Display override: common name A–Z.' : '';
+  control('explanation').textContent = explanations[view] + displayOrder;
   const headers = view === 'borough' ? ['Borough rank', 'Taxon', 'Historical records', 'First recorded', 'Last recorded', 'Existing category']
     : view === 'leastRecorded' ? ['Least-recorded position', 'Taxon', 'Historical records', 'Last recorded', 'Existing category']
     : view === 'seasonal' ? ['Month rank', 'Taxon', `${months[month - 1]} records`, 'Years with records', 'Seasonal classification']
@@ -78,6 +80,9 @@ async function load() {
       // explicitly for browsers without exclusive details-name support.
       for (const other of sections) if (other !== section) other.open = false;
       activeView = section.dataset.rankingView;
+      // A shared control must not carry a previous view's display sort into
+      // a newly opened ranking (especially fewest-first Least Recorded).
+      control('sort').value = 'rank';
       page = 0;
       section.querySelector('.rankings-view-body').append(control('workspace'));
       control('workspace').hidden = false;
