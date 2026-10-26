@@ -119,7 +119,7 @@ ingestion changes, identity changes or deployment-time gate are included.
 ## Interface and regression boundaries
 
 The Historical category has a Bird Rankings bento tile opening an existing-style
-accordion. Five native-select views, month selection, common/scientific search,
+accordion. Five exclusive native concertina views, month selection, common/scientific search,
 display sorting and 25-row pagination use semantic tables, labelled controls,
 live result counts and visible keyboard focus. Canonical ranks remain unchanged
 when sorting/searching. Narrow screens scroll the table within its labelled
@@ -159,12 +159,41 @@ Verification completed on 26 October 2026:
   month selection, rising/least-recorded views and next/previous pagination work.
 - A separate disposable FAILED-metadata preview hides the table and displays the
   unavailable message. Unit tests cover INCOMPLETE and fingerprint mismatches too.
-- An existing Leaflet `_leaflet_pos` animation error was observed during browser
-  testing and independently reproduced on an unchanged base-page preview. This
-  feature does not touch the map implementation. It remains a separate known issue;
-  a completely error-free browser console is not claimed.
+- Initial ranking validation observed a Leaflet `_leaflet_pos` animation error
+  and reproduced it on the unchanged base page. The interaction follow-up below
+  addresses the map lifecycle/animation path; this was not a ranking-data defect.
 
 There is no generic frontend build command or branch-preview deployment workflow
 in this static repository. Offline generation, syntax checks, the full test suite
 and a localhost preview provide the feature verification; no hosted staging or
 production deployment was made.
+
+## Requested interaction follow-up
+
+The five ranking views now start collapsed and use native `details`/`summary`
+concertinas: opening another closes the previous view. Search, sorting, month
+selection and pagination move into the active view; the dataset/definitions and
+READY gate are unchanged.
+
+Each recent hotspot and contributor species list is also a native concertina.
+Sibling lists close on expansion, including a fallback for browsers without
+exclusive `details name` support. Counts remain visible when closed. Species
+and report totals still describe the same recent feed; no historical hotspot
+ranking or new source is introduced.
+
+Map markers directly open and focus the matching hotspot list. They have
+descriptive accessible names, `aria-controls`, expanded state, Enter/Space support
+and a selected colour. The popup's link uses the same opening function. Empty
+hotspots open a truthful no-reports message. Location IDs, rather than display
+names, link map markers/reports/lists and avoid duplicating renamed locations.
+
+Map teardown occurs before its DOM is replaced, zoom animation is disabled and
+the map refits once its parent panel becomes visible. These changes address the
+previously observed hidden-map/zoom-transition problem. Existing API, data,
+ranking-generation, seasonality, classification and publication logic are untouched.
+
+Eight additional interaction regression tests cover marker selection/focus,
+keyboard and popup activation, stable-ID joins, duplicate directory entries,
+exclusive lists, map-unavailable fallback and ranking concertina structure.
+All **100/100 tests pass**. Browser checks confirm one open ranking/hotspot/
+contributor list at a time, correct marker targets and mobile behaviour at 390px.

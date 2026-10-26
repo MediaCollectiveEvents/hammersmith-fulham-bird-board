@@ -6,12 +6,12 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const labels = {borough:'Borough Rankings', recent:'Recent Rankings', rising:'Rising Species', leastRecorded:'Least Recorded', seasonal:'Seasonal Rankings'};
 const number = n => n.toLocaleString('en-GB');
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
-let data, page = 0;
+let data, page = 0, activeView = 'borough';
 const pageSize = 25;
 const formatDate = value => new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'short', year:'numeric', timeZone:'UTC'}).format(new Date(`${value}T00:00:00Z`));
 
 function render() {
-  const view = control('view').value;
+  const view = activeView;
   const month = Number(control('month').value);
   control('month-label').hidden = view !== 'seasonal';
   const rows = selectRows(data, {view, month, search:control('search').value, sort:control('sort').value});
@@ -70,13 +70,24 @@ async function load() {
     ];
     control('overview').innerHTML = overview.map(([term, value]) => `<div><dt>${escape(term)}</dt><dd>${escape(value)}</dd></div>`).join('');
     control('coverage').textContent = `${data.source}: ${formatDate(data.archiveRange.first)}–${formatDate(data.archiveRange.last)}. Counts are observation records, not individual birds. Historical coverage and recording effort vary. Source release: ${data.generatedAt}.`;
-    control('view').innerHTML = views.map(key => `<option value="${key}">${labels[key]}</option>`).join('');
+    control('views').innerHTML = views.map(key => `<details class="rankings-view" name="bird-ranking-views" data-ranking-view="${key}"><summary>${labels[key]}</summary><div class="rankings-view-body"></div></details>`).join('');
+    const sections = [...control('views').querySelectorAll('details')];
+    for (const section of sections) section.addEventListener('toggle', () => {
+      if (!section.open) return;
+      // Native details/summary provides keyboard support; also close siblings
+      // explicitly for browsers without exclusive details-name support.
+      for (const other of sections) if (other !== section) other.open = false;
+      activeView = section.dataset.rankingView;
+      page = 0;
+      section.querySelector('.rankings-view-body').append(control('workspace'));
+      control('workspace').hidden = false;
+      render();
+    });
     control('month').innerHTML = months.map((m, i) => `<option value="${i + 1}">${m}</option>`).join('');
     control('month').value = String(new Date().getMonth() + 1);
     control('controls').disabled = false;
     control('display').hidden = false;
     control('error').hidden = true;
-    render();
   } catch {
     control('controls').disabled = true;
     control('display').hidden = true;
@@ -84,7 +95,7 @@ async function load() {
     control('error').textContent = 'Bird rankings are temporarily unavailable. A matching, validated archive release is required.';
   }
 }
-for (const id of ['view', 'month', 'sort']) control(id).addEventListener('change', () => {page = 0; render();});
+for (const id of ['month', 'sort']) control(id).addEventListener('change', () => {page = 0; render();});
 control('search').addEventListener('input', () => {page = 0; render();});
 control('previous').addEventListener('click', () => {page--; render();});
 control('next').addEventListener('click', () => {page++; render();});
