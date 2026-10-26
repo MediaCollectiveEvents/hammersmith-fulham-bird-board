@@ -222,3 +222,15 @@ Unavailable calendar data suppresses these totals. No new source, generated data
 classification, timing calculation, API or publication change is involved.
 Browser checks at 390px and 1440px found no page overflow or console errors.
 All **103/103 tests pass**, including combined-panel and unavailable-overview tests.
+
+## Withdrawal of classification totals
+
+The category-total summary introduced above has been removed: its zero Winter
+Visitor count reflects the generator's classifications and is unsuitable as a
+public ecological summary. Redwing is labelled Partial Migrant in the existing
+calendar, demonstrating the need for a separate classification review. The general
+migration explanation and combined timing tables remain. No classifications,
+calendar timings or generated datasets were changed. Regression coverage prevents
+reintroducing the unreviewed totals; **103/103 tests pass**. Local browser verified
+the category-total panel is absent. This supersedes the category-total presentation
+described in the preceding navigation follow-up.
