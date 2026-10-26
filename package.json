@@ -6,6 +6,8 @@
     "generate:seasonality": "node scripts/generate-seasonality.mjs",
     "validate:seasonality": "node scripts/validate-seasonality.mjs",
     "build:seasonality": "node scripts/build-seasonality.mjs",
+    "build:rankings": "node scripts/build-bird-rankings.mjs",
+    "build:archive-boards": "node scripts/build-archive-boards.mjs",
     "test": "node --test",
     "update:ebird": "node scripts/update-ebird.mjs",
     "update:wetland": "node scripts/update-wetland-ebird.mjs",

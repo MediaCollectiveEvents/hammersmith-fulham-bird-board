@@ -1,4 +1,4 @@
-const CACHE='hf-bird-board-v19';
+const CACHE='hf-bird-board-v24';
 const scopeUrl=new URL(self.registration.scope);
 const shell=[new URL('./',scopeUrl).href,new URL('./index.html',scopeUrl).href,new URL('./manifest.webmanifest',scopeUrl).href,new URL('./icons/bird.svg',scopeUrl).href,new URL('./data/observations.json',scopeUrl).href,new URL('./data/birdweather.json',scopeUrl).href,new URL('./data/nbn-history.json',scopeUrl).href];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(shell)).then(()=>self.skipWaiting()))});
@@ -9,7 +9,8 @@ self.addEventListener('fetch',event=>{
  const url=new URL(request.url);
  if(url.origin!==location.origin)return;
  const isFeed=url.pathname.endsWith('/data/observations.json')||url.pathname.endsWith('/data/birdweather.json');
- if(isFeed){
+ const isRankingAsset=['/data/bird-rankings.json','/bird-rankings.mjs','/bird-rankings-data.mjs','/bird-rankings.css'].some(suffix=>url.pathname.endsWith(suffix));
+ if(isFeed||isRankingAsset){
   event.respondWith(fetch(request,{cache:'no-store'}).then(response=>{if(response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy))}return response}).catch(async()=>await caches.match(request)||new Response(JSON.stringify({source:'offline',records:[]}),{headers:{'Content-Type':'application/json'}})));
   return;
  }

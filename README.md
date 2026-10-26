@@ -49,6 +49,16 @@ python3 scripts/import-ebird-history.py /private/path/birds_hf_public.csv /priva
 
 The exporter checks public-layer uniqueness and reconciles each species' count and date range against the archive. Keep raw source data, observers, checklist IDs and coordinates private. This display change does not adopt API archive ingestion or alter the Expected board pipeline. The legacy NBN importer and credited JSON remain available in the repository, but the Recorded species panel no longer uses them.
 
+## Bird Rankings (feature candidate)
+
+The Historical category includes five archive-derived ranking views. Generation,
+coverage, privacy limits and the explicit downstream managed-refresh command are
+documented in [the Bird Rankings review](docs/bird-rankings-review.md).
+`npm run build:archive-boards` prepares a new private review bundle; it never
+publishes. Daily API updates remain separate. Historical hotspot rankings are
+deferred pending location validation. ADR-001 remains operational; ADR-002 is
+not adopted by this feature.
+
 ## Local validation
 
 ```sh
