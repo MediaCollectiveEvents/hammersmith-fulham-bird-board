@@ -1,18 +1,12 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-25T09:55:34.791Z",
+  "updatedAt": "2026-10-27T10:42:20.542Z",
   "hotspots": [
     {
       "locId": "L12106898",
       "name": "Bishop's Park (Fulham)",
       "lat": 51.47221,
       "lng": -0.2185833
-    },
-    {
-      "locId": "L12105224",
-      "name": "Chelsea Harbour",
-      "lat": 51.4752123,
-      "lng": -0.1809558
     },
     {
       "locId": "L12105508",
@@ -3107,9 +3101,129 @@
       "checklistId": "S403860480",
       "observer": "Magnus Andersson",
       "howMany": 1
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Common Wood-Pigeon",
+      "latin": "Columba palumbus",
+      "speciesCode": "cowpig1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Great Spotted Woodpecker",
+      "latin": "Dendrocopos major",
+      "speciesCode": "grswoo",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Jay",
+      "latin": "Garrulus glandarius",
+      "speciesCode": "eurjay1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Long-tailed Tit",
+      "latin": "Aegithalos caudatus",
+      "speciesCode": "lottit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Magpie",
+      "latin": "Pica pica",
+      "speciesCode": "eurmag1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Rock Pigeon",
+      "latin": "Columba livia",
+      "speciesCode": "rocpig",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
+    },
+    {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-25",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Fulham Old Cemetery",
+      "hotspotId": "L12105744",
+      "checklistId": "S405286769",
+      "observer": "Paul Barrett",
+      "howMany": null
     }
   ],
-  "lastRunNewReports": 143,
+  "lastRunNewReports": 125,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 614
+  "lastRunNearbyCandidates": 586
 }
