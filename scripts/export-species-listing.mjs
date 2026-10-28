@@ -1,0 +1,16 @@
+import {publicSpeciesPlaces,workbookNicknames} from '../dist/bird-places.mjs';
+import fs from 'node:fs/promises';
+import {createSpeciesLookup} from '../dist/bird-cards-data.mjs';
+import {validateFacts} from '../dist/bird-facts.mjs';
+import {latestPublicReports,reconcileCardRankings} from '../dist/bird-card-context.mjs';
+import {validateRankings,verifyRelease} from '../dist/bird-rankings-data.mjs';
+import {completeSpeciesListing,listingCSV} from '../dist/species-listing-data.mjs';
+const read=name=>fs.readFile(new URL(`../dist/data/${name}`,import.meta.url),'utf8');
+const lookup=createSpeciesLookup(JSON.parse(await read('ebird-history.json')));
+const [raw,meta,calendar]=await Promise.all(['bird-rankings.json','seasonality_metadata.json','species_migration_calendar.csv'].map(read));
+const ranking=validateRankings(JSON.parse(raw));await verifyRelease(ranking,meta,calendar);
+const facts=validateFacts(JSON.parse(await read('bird-facts.json')),lookup);
+const feeds=await Promise.all(['observations.json','wetland-centre-observations.json'].map(async name=>JSON.parse(await read(name))));
+const rows=completeSpeciesListing(lookup,facts,latestPublicReports(feeds,lookup),reconcileCardRankings(ranking,lookup),publicSpeciesPlaces(feeds,lookup),workbookNicknames(JSON.parse(await read('bird-nicknames.json')),lookup));
+const target=process.argv[2];if(!target)throw Error('Provide output CSV path');await fs.writeFile(target,listingCSV(rows),{flag:'wx'});
+console.log(JSON.stringify({taxa:rows.length,withPublicLocation:rows.filter(r=>r.latestPublicLocations.length).length,suppliedOrVerifiedNicknames:rows.filter(r=>r.historicalNicknames.length).length,verifiedFactfiles:rows.filter(r=>r.identification).length}));

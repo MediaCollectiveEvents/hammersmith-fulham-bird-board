@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "scope": "Five-taxon proof of concept",
+  "workbook": {
+    "filename": "HF_Bird_Top_Trumps_133_Rarity_Bird_Facts_Working.xlsx",
+    "sha256": "6553e0e39f956305bbd53aa24dfbef13034fdba8f75febd197e577aeec602ff0",
+    "sheet": "All 133 species"
+  },
+  "profiles": [
+    {
+      "scientificName": "Erithacus rubecula",
+      "commonName": "European Robin",
+      "workbookSheet": "All 133 species",
+      "workbookRow": 6,
+      "fields": {
+        "weightGrams": {
+          "value": 19,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+          "sourceTitle": "BTO BirdFacts: Robin",
+          "sourceSection": "Key Stats: Weight; Biology: Biometrics where available",
+          "checkedOn": "2026-10-28"
+        },
+        "typicalLifespanYears": {
+          "value": 2,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+          "sourceTitle": "BTO BirdFacts: Robin",
+          "sourceSection": "Biology: Survival and Longevity; life expectancy for birds reaching breeding age",
+          "checkedOn": "2026-10-28"
+        },
+        "ringedLongevity": {
+          "value": "8 years, 4 months, 30 days",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+          "sourceTitle": "BTO BirdFacts: Robin",
+          "sourceSection": "Biology: Survival and Longevity; maximum age from a ringed bird",
+          "checkedOn": "2026-10-28"
+        },
+        "historicalNames": {
+          "value": [
+            "Ruddock",
+            "Robin Redbreast"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://archive.org/details/dictionaryofengl00swanrich",
+          "sourceTitle": "H. Kirke Swann (1913), A dictionary of English and folk-names of British birds",
+          "sourceSection": "Entries: RUDDOCK, ROBIN",
+          "checkedOn": "2026-10-28"
+        },
+        "identification": {
+          "value": "Orange-red face and breast with a brown back. Adults look alike; juveniles are speckled brown without a red breast.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "diet": {
+          "value": "Invertebrates, fruit and seeds.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "habitat": {
+          "value": "Gardens, parks, farmland and woodland (general UK habitats).",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "memorableFact": {
+          "value": "Street lighting can prompt Robins to sing after dark.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "bodyLength": {
+          "value": "14 cm",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Key facts: length",
+          "checkedOn": "2026-10-28"
+        },
+        "wingspan": {
+          "value": "20–22 cm",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Key facts: wingspan",
+          "checkedOn": "2026-10-28"
+        },
+        "breeding": {
+          "value": "Often uses sheltered cavities or unusual objects for nesting.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "clutchSize": {
+          "value": "4–5 eggs",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "Biology: Productivity and Nesting, typical clutch",
+          "checkedOn": "2026-10-28"
+        },
+        "call": {
+          "value": "A varied, flowing song with short phrases and pauses.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "conservation": {
+          "value": "Green",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "UK Birds of Conservation Concern; BoCC5 (2021)",
+          "checkedOn": "2026-10-28",
+          "assessment": "BoCC5 (2021)",
+          "assessmentUrl": "https://www.bto.org/sites/default/files/publications/bocc-5-a5-4pp-single-pages.pdf"
+        }
+      },
+      "reviewNotes": [
+        "Workbook game weight: 19 g; AVONET mass: 17.7 g. BTO reference is independently checked, not substituted into workbook.",
+        "Only nicknames checked in the dictionary are included; typography normalized. Other workbook names remain unpublished."
+      ],
+      "referenceGuide": {
+        "url": "https://www.rspb.org.uk/birds-and-wildlife/robin",
+        "title": "RSPB species guide"
+      },
+      "soundGuide": {
+        "url": "https://www.bto.org/learn/about-birds/birdfacts/robin",
+        "title": "BTO call recordings and identification"
+      }
+    },
+    {
+      "scientificName": "Hirundo rustica",
+      "commonName": "Barn Swallow",
+      "workbookSheet": "All 133 species",
+      "workbookRow": 61,
+      "fields": {
+        "weightGrams": {
+          "value": 19.9,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+          "sourceTitle": "BTO BirdFacts: Swallow",
+          "sourceSection": "Key Stats: Weight; Biology: Biometrics where available",
+          "checkedOn": "2026-10-28"
+        },
+        "typicalLifespanYears": {
+          "value": 2,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+          "sourceTitle": "BTO BirdFacts: Swallow",
+          "sourceSection": "Biology: Survival and Longevity; life expectancy for birds reaching breeding age",
+          "checkedOn": "2026-10-28"
+        },
+        "ringedLongevity": {
+          "value": "11 years, 1 month, 11 days",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+          "sourceTitle": "BTO BirdFacts: Swallow",
+          "sourceSection": "Biology: Survival and Longevity; maximum age from a ringed bird",
+          "checkedOn": "2026-10-28"
+        },
+        "historicalNames": {
+          "value": [
+            "Chimney Swallow"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://archive.org/details/dictionaryofengl00swanrich",
+          "sourceTitle": "H. Kirke Swann (1913), A dictionary of English and folk-names of British birds",
+          "sourceSection": "Entries: CHIMNEY SWALLOW",
+          "checkedOn": "2026-10-28"
+        },
+        "identification": {
+          "value": "Red throat, dark glossy back, pale belly and deeply forked tail. Juveniles lack long streamers. House Martins have a white rump; Swallows do not.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "diet": {
+          "value": "Flying insects, caught on the wing.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "habitat": {
+          "value": "Open countryside and areas around water (general UK habitats).",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "memorableFact": {
+          "value": "Swallows can drink while skimming the surface of water.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "breeding": {
+          "value": "Builds a mud cup on a sheltered ledge or beam, often inside outbuildings.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "clutchSize": {
+          "value": "4–5 eggs",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "Biology: Productivity and Nesting, typical clutch",
+          "checkedOn": "2026-10-28"
+        },
+        "call": {
+          "value": "Twittering and trilling, unlike the screaming calls of Swifts.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "conservation": {
+          "value": "Green",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "UK Birds of Conservation Concern; BoCC5 (2021)",
+          "checkedOn": "2026-10-28",
+          "assessment": "BoCC5 (2021)",
+          "assessmentUrl": "https://www.bto.org/sites/default/files/publications/bocc-5-a5-4pp-single-pages.pdf"
+        }
+      },
+      "reviewNotes": [
+        "Workbook game weight: 19.9 g; AVONET mass: 17.9 g. BTO reference is independently checked, not substituted into workbook.",
+        "Only nicknames checked in the dictionary are included; typography normalized. Other workbook names remain unpublished."
+      ],
+      "referenceGuide": {
+        "url": "https://www.rspb.org.uk/birds-and-wildlife/swallow",
+        "title": "RSPB species guide"
+      },
+      "soundGuide": {
+        "url": "https://www.bto.org/learn/about-birds/birdfacts/swallow",
+        "title": "BTO call recordings and identification"
+      }
+    },
+    {
+      "scientificName": "Anas platyrhynchos",
+      "commonName": "Mallard",
+      "workbookSheet": "All 133 species",
+      "workbookRow": 17,
+      "fields": {
+        "weightGrams": {
+          "value": 1210,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+          "sourceTitle": "BTO BirdFacts: Mallard",
+          "sourceSection": "Key Stats: Weight; Biology: Biometrics where available",
+          "checkedOn": "2026-10-28"
+        },
+        "typicalLifespanYears": {
+          "value": 3,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+          "sourceTitle": "BTO BirdFacts: Mallard",
+          "sourceSection": "Biology: Survival and Longevity; life expectancy for birds reaching breeding age",
+          "checkedOn": "2026-10-28"
+        },
+        "ringedLongevity": {
+          "value": "20 years, 5 months, 17 days",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+          "sourceTitle": "BTO BirdFacts: Mallard",
+          "sourceSection": "Biology: Survival and Longevity; maximum age from a ringed bird",
+          "checkedOn": "2026-10-28"
+        },
+        "historicalNames": {
+          "value": [
+            "Mire Duck"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://archive.org/details/dictionaryofengl00swanrich",
+          "sourceTitle": "H. Kirke Swann (1913), A dictionary of English and folk-names of British birds",
+          "sourceSection": "Entries: MIRE DUCK",
+          "checkedOn": "2026-10-28"
+        },
+        "identification": {
+          "value": "Males have a green head and yellow bill; females are mottled brown. Both show a purple wing patch.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "diet": {
+          "value": "Plant material, seeds and small invertebrates.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "habitat": {
+          "value": "Ponds, lakes and other wetland habitats (general UK habitats).",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "memorableFact": {
+          "value": "The female raises the ducklings without help from the male.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "bodyLength": {
+          "value": "51–62 cm",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Key facts: length",
+          "checkedOn": "2026-10-28"
+        },
+        "wingspan": {
+          "value": "81–98 cm",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Key facts: wingspan",
+          "checkedOn": "2026-10-28"
+        },
+        "clutchSize": {
+          "value": "11–14 eggs",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "Biology: Productivity and Nesting, typical clutch",
+          "checkedOn": "2026-10-28"
+        },
+        "conservation": {
+          "value": "Amber",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "UK Birds of Conservation Concern; BoCC5 (2021)",
+          "checkedOn": "2026-10-28",
+          "assessment": "BoCC5 (2021)",
+          "assessmentUrl": "https://www.bto.org/sites/default/files/publications/bocc-5-a5-4pp-single-pages.pdf"
+        }
+      },
+      "reviewNotes": [
+        "Workbook game weight: 1210 g; AVONET mass: 843.4 g. BTO reference is independently checked, not substituted into workbook.",
+        "Only nicknames checked in the dictionary are included; typography normalized. Other workbook names remain unpublished.",
+        "RSPB currently says Not assessed; BTO and the published BoCC5 Amber list agree. Card explicitly names BoCC5 (2021), not an undated current-status claim."
+      ],
+      "referenceGuide": {
+        "url": "https://www.rspb.org.uk/birds-and-wildlife/mallard",
+        "title": "RSPB species guide"
+      },
+      "soundGuide": {
+        "url": "https://www.bto.org/learn/about-birds/birdfacts/mallard",
+        "title": "BTO call recordings and identification"
+      }
+    },
+    {
+      "scientificName": "Falco peregrinus",
+      "commonName": "Peregrine Falcon",
+      "workbookSheet": "All 133 species",
+      "workbookRow": 59,
+      "fields": {
+        "weightGrams": {
+          "value": 889.3,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+          "sourceTitle": "BTO BirdFacts: Peregrine",
+          "sourceSection": "Key Stats: Weight; Biology: Biometrics where available",
+          "checkedOn": "2026-10-28"
+        },
+        "typicalLifespanYears": {
+          "value": 7,
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+          "sourceTitle": "BTO BirdFacts: Peregrine",
+          "sourceSection": "Biology: Survival and Longevity; life expectancy for birds reaching breeding age",
+          "checkedOn": "2026-10-28"
+        },
+        "ringedLongevity": {
+          "value": "21 years, 10 months, 24 days",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+          "sourceTitle": "BTO BirdFacts: Peregrine",
+          "sourceSection": "Biology: Survival and Longevity; maximum age from a ringed bird",
+          "checkedOn": "2026-10-28"
+        },
+        "historicalNames": {
+          "value": [
+            "Cliff Hawk"
+          ],
+          "status": "verified",
+          "sourceUrl": "https://archive.org/details/dictionaryofengl00swanrich",
+          "sourceTitle": "H. Kirke Swann (1913), A dictionary of English and folk-names of British birds",
+          "sourceSection": "Entries: CLIFF HAWK",
+          "checkedOn": "2026-10-28"
+        },
+        "identification": {
+          "value": "Pointed wings, short tail and a dark moustache against pale cheeks. Females are larger; young birds have streaked, buff underparts.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/peregrine-falcon",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "diet": {
+          "value": "Mainly birds, including pigeons and waders.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/peregrine-falcon",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "habitat": {
+          "value": "Rocky coasts, uplands and urban areas (general UK habitats).",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/peregrine-falcon",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "memorableFact": {
+          "value": "A semi-transparent third eyelid protects its eyes during high-speed pursuit.",
+          "status": "verified",
+          "sourceUrl": "https://www.rspb.org.uk/birds-and-wildlife/peregrine-falcon",
+          "sourceTitle": "RSPB species guide",
+          "sourceSection": "Identification, behaviour, call/song and habitat sections",
+          "checkedOn": "2026-10-28"
+        },
+        "clutchSize": {
+          "value": "3–4 eggs",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "Biology: Productivity and Nesting, typical clutch",
+          "checkedOn": "2026-10-28"
+        },
+        "conservation": {
+          "value": "Green",
+          "status": "verified",
+          "sourceUrl": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+          "sourceTitle": "BTO BirdFacts",
+          "sourceSection": "UK Birds of Conservation Concern; BoCC5 (2021)",
+          "checkedOn": "2026-10-28",
+          "assessment": "BoCC5 (2021)",
+          "assessmentUrl": "https://www.bto.org/sites/default/files/publications/bocc-5-a5-4pp-single-pages.pdf"
+        }
+      },
+      "reviewNotes": [
+        "Workbook game weight: 760 g; AVONET mass: 760 g. BTO reference is independently checked, not substituted into workbook.",
+        "Only nicknames checked in the dictionary are included; typography normalized. Other workbook names remain unpublished."
+      ],
+      "referenceGuide": {
+        "url": "https://www.rspb.org.uk/birds-and-wildlife/peregrine-falcon",
+        "title": "RSPB species guide"
+      },
+      "soundGuide": {
+        "url": "https://www.bto.org/learn/about-birds/birdfacts/peregrine",
+        "title": "BTO call recordings and identification"
+      }
+    },
+    {
+      "scientificName": "Larus argentatus x fuscus",
+      "commonName": "European Herring x Lesser Black-backed Gull (hybrid)",
+      "fields": {},
+      "reviewNotes": [
+        "Workbook hybrid has no scientific name; exact unique common-name reconciliation only. No parental measurements assigned."
+      ]
+    }
+  ]
+}

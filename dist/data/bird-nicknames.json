@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "status": "workbook-supplied",
+  "source": "HF_Bird_Top_Trumps_133_Rarity_Bird_Facts_Working.xlsx",
+  "sourceSha256": "6553e0e39f956305bbd53aa24dfbef13034fdba8f75febd197e577aeec602ff0",
+  "notes": "Historical names supplied in the workbook; not independently source-checked. Not evidence of borough usage.",
+  "taxa": [
+    {
+      "scientificName": "Columba livia",
+      "commonName": "Rock Pigeon",
+      "names": [
+        "Rock-dove",
+        "Rocker",
+        "Doof",
+        "Blue Rock",
+        "Wild Pigeon"
+      ]
+    },
+    {
+      "scientificName": "Corvus corone",
+      "commonName": "Carrion Crow",
+      "names": [
+        "Corbie",
+        "Gore-Crow",
+        "Black-neb",
+        "Flesh-crow",
+        "Ket-crow",
+        "Double-crow"
+      ]
+    },
+    {
+      "scientificName": "Columba palumbus",
+      "commonName": "Common Wood-Pigeon",
+      "names": [
+        "Cushat",
+        "Quest",
+        "Quist",
+        "Ring-dove",
+        "Wood-quest",
+        "Clatter-dove"
+      ]
+    },
+    {
+      "scientificName": "Pica pica",
+      "commonName": "Eurasian Magpie",
+      "names": [
+        "Pianet",
+        "Chatterpie",
+        "Madge",
+        "Mag",
+        "Pye",
+        "Margaret"
+      ]
+    },
+    {
+      "scientificName": "Erithacus rubecula",
+      "commonName": "European Robin",
+      "names": [
+        "Ruddock",
+        "Robin Redbreast",
+        "Bob-robin",
+        "Robinet"
+      ]
+    },
+    {
+      "scientificName": "Psittacula krameri",
+      "commonName": "Rose-ringed Parakeet",
+      "names": [
+        "None historical (Introduced to UK wild post-1960s)"
+      ]
+    },
+    {
+      "scientificName": "Turdus merula",
+      "commonName": "Eurasian Blackbird",
+      "names": [
+        "Black Ouzel",
+        "Merle",
+        "Blackie",
+        "Garden Ouzel",
+        "Velvet-jacket"
+      ]
+    },
+    {
+      "scientificName": "Larus argentatus",
+      "commonName": "European Herring Gull",
+      "names": [
+        "Herring-gull",
+        "Silvery Gull}",
+        "Whited Gull",
+        "Cat-gull"
+      ]
+    },
+    {
+      "scientificName": "Cyanistes caeruleus",
+      "commonName": "Eurasian Blue Tit",
+      "names": [
+        "Blue Billy",
+        "Nun",
+        "Tomtit",
+        "Pick-cheese",
+        "Blue-cap",
+        "Billy-biter"
+      ]
+    },
+    {
+      "scientificName": "Chroicocephalus ridibundus",
+      "commonName": "Black-headed Gull",
+      "names": [
+        "Peewit Gull",
+        "Sea-Crow",
+        "Laughing Gull",
+        "Hooded Crow",
+        "Crocker",
+        "Pick-mire"
+      ]
+    },
+    {
+      "scientificName": "Troglodytes troglodytes",
+      "commonName": "Eurasian Wren",
+      "names": [
+        "Jenny Wren",
+        "Kitty Wren",
+        "Chitty Wren",
+        "Bobby Wren",
+        "Stag-wren"
+      ]
+    },
+    {
+      "scientificName": "Parus major",
+      "commonName": "Great Tit",
+      "names": [
+        "Saw-whetter",
+        "Sharp-saw",
+        "Ox-eye",
+        "Black-cap",
+        "Joe-bent",
+        "Big Tomtit"
+      ]
+    },
+    {
+      "scientificName": "Sturnus vulgaris",
+      "commonName": "European Starling",
+      "names": [
+        "Stare",
+        "Chepster",
+        "Shepster",
+        "Jacob",
+        "Gyp"
+      ]
+    },
+    {
+      "scientificName": "Larus fuscus",
+      "commonName": "Lesser Black-backed Gull",
+      "names": [
+        "Dark-backed Gull",
+        "Yellow-legged Gull",
+        "Ounsel Gull"
+      ]
+    },
+    {
+      "scientificName": "Carduelis carduelis",
+      "commonName": "European Goldfinch",
+      "names": [
+        "Thistle-finch",
+        "Goldie",
+        "King Harry",
+        "Proud Tail",
+        "Red-front",
+        "Gold Linnet"
+      ]
+    },
+    {
+      "scientificName": "Anas platyrhynchos",
+      "commonName": "Mallard",
+      "names": [
+        "Wild Duck",
+        "Stock-duck",
+        "Mire-duck",
+        "Moss-duck",
+        "Green-head"
+      ]
+    },
+    {
+      "scientificName": "Prunella modularis",
+      "commonName": "Dunnock",
+      "names": [
+        "Dunnock",
+        "Shuffle-wing",
+        "Creepic",
+        "Hedge-sparrow",
+        "Hempie",
+        "Dicky-dunnock"
+      ]
+    },
+    {
+      "scientificName": "Aegithalos caudatus",
+      "commonName": "Long-tailed Tit",
+      "names": [
+        "Bumbarrel",
+        "Hedge Mumruffin",
+        "Bottle-Tom",
+        "Long-tailed Mag",
+        "Pokepudding",
+        "Feather-poke"
+      ]
+    },
+    {
+      "scientificName": "Motacilla alba",
+      "commonName": "White Wagtail",
+      "names": [
+        "Peggy Dishwasher",
+        "Water Wagtail",
+        "Deviling"
+      ]
+    },
+    {
+      "scientificName": "Chloris chloris",
+      "commonName": "European Greenfinch",
+      "names": [
+        "Green Linnet",
+        "Green bird",
+        "Greeney",
+        "Pea-finch"
+      ]
+    },
+    {
+      "scientificName": "Turdus philomelos",
+      "commonName": "Song Thrush",
+      "names": [
+        "Throstle",
+        "Mavis",
+        "Grey Thrush",
+        "Storm-cock (rarely used for Song)"
+      ]
+    },
+    {
+      "scientificName": "Passer domesticus",
+      "commonName": "House Sparrow",
+      "names": [
+        "Spug",
+        "Spadger",
+        "Philip",
+        "Eave-sparrow",
+        "Craff"
+      ]
+    },
+    {
+      "scientificName": "Phylloscopus collybita",
+      "commonName": "Common Chiffchaff",
+      "names": [
+        "Chiffy",
+        "Lesser Pettychaps",
+        "Choice-chief",
+        "Chip-chop"
+      ]
+    },
+    {
+      "scientificName": "Branta canadensis",
+      "commonName": "Canada Goose",
+      "names": [
+        "None historical (Not treated as wild British folk bird in 1913)"
+      ]
+    },
+    {
+      "scientificName": "Phalacrocorax carbo",
+      "commonName": "Great Cormorant",
+      "names": [
+        "Sea-Raven",
+        "Scart",
+        "Shag (often used interchangeably historically)",
+        "Coal-goose"
+      ]
+    },
+    {
+      "scientificName": "Sylvia atricapilla",
+      "commonName": "Eurasian Blackcap",
+      "names": [
+        "Mock-Nightingale",
+        "Coal-hood",
+        "Black-headed Warbler"
+      ]
+    },
+    {
+      "scientificName": "Dendrocopos major",
+      "commonName": "Great Spotted Woodpecker",
+      "names": [
+        "French Pie",
+        "Wood-nacker",
+        "Witwall",
+        "Pied Woodpecker"
+      ]
+    },
+    {
+      "scientificName": "Alopochen aegyptiaca",
+      "commonName": "Egyptian Goose",
+      "names": [
+        "None historical (Introduced exotic)"
+      ]
+    },
+    {
+      "scientificName": "Gallinula chloropus",
+      "commonName": "Eurasian Moorhen",
+      "names": [
+        "Water-hen",
+        "Moat-hen",
+        "Cuddy",
+        "Gallinule"
+      ]
+    },
+    {
+      "scientificName": "Ardea cinerea",
+      "commonName": "Gray Heron",
+      "names": [
+        "Harnser",
+        "Mire-Drudge",
+        "Crane",
+        "Frank",
+        "Long-neck",
+        "Hern",
+        "Moll Heron"
+      ]
+    },
+    {
+      "scientificName": "Anthus pratensis",
+      "commonName": "Meadow Pipit",
+      "names": [
+        "Titlark",
+        "Ling-bird",
+        "Moss-cheeper",
+        "Teeting",
+        "Winder",
+        "Meadow-lark"
+      ]
+    },
+    {
+      "scientificName": "Cygnus olor",
+      "commonName": "Mute Swan",
+      "names": [
+        "Cob (Male)",
+        "Pen (Female)",
+        "Elk (Wild/Trumpeter confusion historically)"
+      ]
+    },
+    {
+      "scientificName": "Apus apus",
+      "commonName": "Common Swift",
+      "names": [
+        "Devil Bird",
+        "Devil Screamer",
+        "Screecher",
+        "Jack-squealer",
+        "Deviling",
+        "Cran"
+      ]
+    },
+    {
+      "scientificName": "Fringilla coelebs",
+      "commonName": "Common Chaffinch",
+      "names": [
+        "Spink",
+        "Pink",
+        "Twink",
+        "Shilfa",
+        "Sheely",
+        "Copperfinch",
+        "Wet-bird"
+      ]
+    },
+    {
+      "scientificName": "Garrulus glandarius",
+      "commonName": "Eurasian Jay",
+      "names": [
+        "Devil Bird",
+        "Devil Scritch",
+        "Jay-pie",
+        "Screech-bird"
+      ]
+    },
+    {
+      "scientificName": "Larus canus",
+      "commonName": "Common Gull",
+      "names": [
+        "Sea-mew",
+        "Winter Mew",
+        "Sea-mall",
+        "Cob"
+      ]
+    },
+    {
+      "scientificName": "Fulica atra",
+      "commonName": "Eurasian Coot",
+      "names": [
+        "Bald Coot",
+        "Bell-kite",
+        "Queet",
+        "Water-crow"
+      ]
+    },
+    {
+      "scientificName": "Curruca communis",
+      "commonName": "Greater Whitethroat",
+      "names": [
+        "Peggy",
+        "Nettle-creeper",
+        "Hay-jack",
+        "Jack-straw",
+        "Miller",
+        "Churr"
+      ]
+    },
+    {
+      "scientificName": "Linaria cannabina",
+      "commonName": "Eurasian Linnet",
+      "names": [
+        "Lintwhite",
+        "Whin-linnet",
+        "Grey Linnet",
+        "Brown Linnet"
+      ]
+    },
+    {
+      "scientificName": "Falco tinnunculus",
+      "commonName": "Eurasian Kestrel",
+      "names": [
+        "Wind-fanner",
+        "Hoverhawk",
+        "Criss-hawk",
+        "Windhover",
+        "Castrel",
+        "Kestril"
+      ]
+    },
+    {
+      "scientificName": "Turdus iliacus",
+      "commonName": "Redwing",
+      "names": [
+        "Wind Thrush",
+        "Swinepipe",
+        "Red-sided Thrush",
+        "Felt"
+      ]
+    },
+    {
+      "scientificName": "Motacilla cinerea",
+      "commonName": "Gray Wagtail",
+      "names": [
+        "Yellow Wagtail (often confused in dialect)",
+        "Winter Wagtail",
+        "Oatseed-bird"
+      ]
+    },
+    {
+      "scientificName": "Larus marinus",
+      "commonName": "Great Black-backed Gull",
+      "names": [
+        "Black-back",
+        "Cobb",
+        "Great Grey Gull (immature)"
+      ]
+    },
+    {
+      "scientificName": "Columba oenas",
+      "commonName": "Stock Dove",
+      "names": [
+        "Stock-dove",
+        "Wood-pigeon",
+        "Blue-backed Dove",
+        "Stock-piper"
+      ]
+    },
+    {
+      "scientificName": "Coloeus monedula",
+      "commonName": "Eurasian Jackdaw",
+      "names": [
+        "Daw",
+        "Jack",
+        "Kae",
+        "Caddow",
+        "Chauk",
+        "Western Jackdaw"
+      ]
+    },
+    {
+      "scientificName": "Accipiter nisus",
+      "commonName": "Eurasian Sparrowhawk",
+      "names": [
+        "Blue Hawk",
+        "Spur-hawk",
+        "Mauser",
+        "Bush-hawk"
+      ]
+    },
+    {
+      "scientificName": "Picus viridis",
+      "commonName": "Eurasian Green Woodpecker",
+      "names": [
+        "Yaffle",
+        "Yaffil",
+        "Rain-bird",
+        "Wet-bird",
+        "Wood-spite",
+        "Hewhole",
+        "Popinjay"
+      ]
+    },
+    {
+      "scientificName": "Anas crecca",
+      "commonName": "Green-winged Teal",
+      "names": [
+        "Common Teal",
+        "Half-duck",
+        "Cricket-teal"
+      ]
+    },
+    {
+      "scientificName": "Aythya fuligula",
+      "commonName": "Tufted Duck",
+      "names": [
+        "Tufted Pochard",
+        "Golden-eye (local misnomer)",
+        "Black-poker",
+        "Crested Coot"
+      ]
+    },
+    {
+      "scientificName": "Mareca strepera",
+      "commonName": "Gadwall",
+      "names": [
+        "Gray Duck",
+        "Rodge",
+        "Speckled-belly"
+      ]
+    },
+    {
+      "scientificName": "Anser anser",
+      "commonName": "Graylag Goose",
+      "names": [
+        "Wild Goose",
+        "Lag-goose",
+        "Grey-goose"
+      ]
+    },
+    {
+      "scientificName": "Curruca curruca",
+      "commonName": "Lesser Whitethroat",
+      "names": [
+        "Brake-hopper",
+        "Chit-chat",
+        "Hazel-linnet"
+      ]
+    },
+    {
+      "scientificName": "Periparus ater",
+      "commonName": "Coal Tit",
+      "names": [
+        "Cole-mouse",
+        "Coal-hood",
+        "Black-cap",
+        "Grimy tit"
+      ]
+    },
+    {
+      "scientificName": "Regulus regulus",
+      "commonName": "Goldcrest",
+      "names": [
+        "Woodcock Pilot",
+        "Kinglet",
+        "Golden-crowned Wren",
+        "Golden-crested Wren"
+      ]
+    },
+    {
+      "scientificName": "Falco peregrinus",
+      "commonName": "Peregrine Falcon",
+      "names": [
+        "Hunting Hawk",
+        "Falcon",
+        "Peregrine",
+        "Cliff Hawk"
+      ]
+    },
+    {
+      "scientificName": "Hirundo rustica",
+      "commonName": "Barn Swallow",
+      "names": [
+        "Barn Swallow",
+        "Chimney Swallow",
+        "Witch-chaser",
+        "Common Swallow"
+      ]
+    },
+    {
+      "scientificName": "Aix galericulata",
+      "commonName": "Mandarin Duck",
+      "names": [
+        "Chinese Teal (historical aviary references only)"
+      ]
+    },
+    {
+      "scientificName": "Cettia cetti",
+      "commonName": "Cetti's Warbler",
+      "names": [
+        "Bush-warbler (No old specific UK folk name due to late arrival)"
+      ]
+    },
+    {
+      "scientificName": "Turdus pilaris",
+      "commonName": "Fieldfare",
+      "names": [
+        "Felt",
+        "Feldfit",
+        "Blue-tail",
+        "Pigeon-felt",
+        "Storm-bird"
+      ]
+    },
+    {
+      "scientificName": "Buteo buteo",
+      "commonName": "Common Buzzard",
+      "names": [
+        "Puddock",
+        "Glead",
+        "Shreik-hawk",
+        "Common Buzzard"
+      ]
+    }
+  ]
+}

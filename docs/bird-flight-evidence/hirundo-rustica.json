@@ -1,0 +1,105 @@
+{
+  "pageid": 7915344,
+  "ns": 6,
+  "title": "File:Hirundorusticaflightcropped.svg",
+  "imagerepository": "local",
+  "imageinfo": [
+    {
+      "size": 7451,
+      "width": 275,
+      "height": 251,
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hirundorusticaflightcropped.svg/500px-Hirundorusticaflightcropped.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 500,
+      "thumbheight": 456,
+      "responsiveUrls": {
+        "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hirundorusticaflightcropped.svg/1280px-Hirundorusticaflightcropped.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hirundorusticaflightcropped.svg/500px-Hirundorusticaflightcropped.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "decoding": "async",
+        "loading": "lazy",
+        "width": 500,
+        "height": 456,
+        "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hirundorusticaflightcropped.svg/1280px-Hirundorusticaflightcropped.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hirundorusticaflightcropped.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Hirundorusticaflightcropped.svg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=7915344",
+      "extmetadata": {
+        "DateTime": {
+          "value": "2009-09-28 11:58:03",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Hirundorusticaflightcropped",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "GFDL|CC-BY-SA-3.0,2.5,2.0,1.0|License migration redundant|Self-published work|Nevit Dilmen SVG|Uploaded with derivativeFX|Hirundo rustica in flight|Solid black images|Plain black SVG bird icons|SVG silhouettes of birds|Valid SVG created with Inkscape:Birds",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Silhouette of <i>Hirundo rustica</i> in flight, SVG file format",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2009-09-28",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "Own work based on: <a href=\"//commons.wikimedia.org/wiki/File:800px-hirundorusticaflightcropped.jpg\" class=\"mw-redirect\" title=\"File:800px-hirundorusticaflightcropped.jpg\">800px-hirundorusticaflightcropped.jpg</a>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<ul><li><a href=\"//commons.wikimedia.org/wiki/File:800px-hirundorusticaflightcropped.jpg\" class=\"mw-redirect\" title=\"File:800px-hirundorusticaflightcropped.jpg\">800px-hirundorusticaflightcropped.jpg</a>: The author of the original photo <a href=\"//commons.wikimedia.org/wiki/File:HirundoRusticaFlight.jpg\" title=\"File:HirundoRusticaFlight.jpg\">HirundoRusticaFlight.jpg</a> is <a href=\"//commons.wikimedia.org/wiki/User:Thermos\" title=\"User:Thermos\">Thermos</a></li></ul>\n<p>The original uploader of the cropped version was <a href=\"https://en.wikipedia.org/wiki/User:Jimfbleak\" class=\"extiw\" title=\"en:User:Jimfbleak\">Jimfbleak</a> at <a class=\"external text\" data-mw-original-href=\"http://en.wikipedia.org\" href=\"https://en.wikipedia.org\">en.wikipedia</a>\n</p>\nderivative work: <a href=\"//commons.wikimedia.org/wiki/User:Nevit\" title=\"User:Nevit\">Nevit</a> Dilmen",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY-SA 3.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution-Share Alike 3.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-sa-3.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      }
+    }
+  ]
+}
