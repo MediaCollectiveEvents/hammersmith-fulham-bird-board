@@ -1,0 +1,984 @@
+{
+  "schemaVersion": 1,
+  "catalogueDate": "2026-10-28",
+  "approved": [
+    {
+      "scientificName": "Riparia riparia",
+      "commonName": "Bank Swallow",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Riparia_riparia_-Markinch,_Fife,_Scotland_-flying-8-4c.jpg",
+      "sourceTitle": "File:Riparia riparia -Markinch, Fife, Scotland -flying-8-4c.jpg",
+      "reviewedAt": "2026-10-28T18:32:16.370Z"
+    },
+    {
+      "scientificName": "Phoenicurus ochruros",
+      "commonName": "Black Redstart",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rougequeue_noir_Douga006.jpg",
+      "sourceTitle": "File:Rougequeue noir Douga006.jpg",
+      "reviewedAt": "2026-10-28T18:32:21.002Z"
+    },
+    {
+      "scientificName": "Cygnus atratus",
+      "commonName": "Black Swan",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Swans_and_cygnets_(landscape).jpg",
+      "sourceTitle": "File:Swans and cygnets (landscape).jpg",
+      "reviewedAt": "2026-10-28T18:32:23.886Z"
+    },
+    {
+      "scientificName": "Chroicocephalus ridibundus",
+      "commonName": "Black-headed Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Black-headed_Gull_-_St_James%27s_Park,_London_-_Nov_2006.jpg",
+      "sourceTitle": "File:Black-headed Gull - St James's Park, London - Nov 2006.jpg",
+      "reviewedAt": "2026-10-28T18:32:26.452Z"
+    },
+    {
+      "scientificName": "Bombycilla garrulus",
+      "commonName": "Bohemian Waxwing",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bombycilla_garrulus,_Novosibirsk_1.jpg",
+      "sourceTitle": "File:Bombycilla garrulus, Novosibirsk 1.jpg",
+      "reviewedAt": "2026-10-28T18:32:28.102Z"
+    },
+    {
+      "scientificName": "Fringilla montifringilla",
+      "commonName": "Brambling",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fringilla_montifringilla_2_(Marek_Szczepanek).jpg",
+      "sourceTitle": "File:Fringilla montifringilla 2 (Marek Szczepanek).jpg",
+      "reviewedAt": "2026-10-28T18:32:34.602Z"
+    },
+    {
+      "scientificName": "Branta canadensis",
+      "commonName": "Canada Goose",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bernache_du_Canada,_%C3%A0_l%27%C3%8Ele_Paton_(2).jpg",
+      "sourceTitle": "File:Bernache du Canada, à l'Île Paton (2).jpg",
+      "reviewedAt": "2026-10-28T18:32:35.952Z"
+    },
+    {
+      "scientificName": "Corvus corone",
+      "commonName": "Carrion Crow",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Corvus_corone_-near_Canford_Cliffs,_Poole,_England-8.jpg",
+      "sourceTitle": "File:Corvus corone -near Canford Cliffs, Poole, England-8.jpg",
+      "reviewedAt": "2026-10-28T18:32:36.836Z"
+    },
+    {
+      "scientificName": "Larus cachinnans",
+      "commonName": "Caspian Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Larus_cachinnans_3_(Marek_Szczepanek).jpg",
+      "sourceTitle": "File:Larus cachinnans 3 (Marek Szczepanek).jpg",
+      "reviewedAt": "2026-10-28T18:32:39.285Z"
+    },
+    {
+      "scientificName": "Cettia cetti",
+      "commonName": "Cetti's Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:37-090505-cettis-warbler-at-Kalloni-east-river.jpg",
+      "sourceTitle": "File:37-090505-cettis-warbler-at-Kalloni-east-river.jpg",
+      "reviewedAt": "2026-10-28T18:32:40.535Z"
+    },
+    {
+      "scientificName": "Periparus ater",
+      "commonName": "Coal Tit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Svartmeis.JPG",
+      "sourceTitle": "File:Svartmeis.JPG",
+      "reviewedAt": "2026-10-28T18:32:42.119Z"
+    },
+    {
+      "scientificName": "Buteo buteo",
+      "commonName": "Common Buzzard",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_Buzzard_by_caroline_legg_(cropped).jpg",
+      "sourceTitle": "File:Common Buzzard by caroline legg (cropped).jpg",
+      "reviewedAt": "2026-10-28T18:32:43.552Z"
+    },
+    {
+      "scientificName": "Fringilla coelebs",
+      "commonName": "Common Chaffinch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fringilla_coelebs_chaffinch_male_edit2.jpg",
+      "sourceTitle": "File:Fringilla coelebs chaffinch male edit2.jpg",
+      "reviewedAt": "2026-10-28T18:32:45.484Z"
+    },
+    {
+      "scientificName": "Phylloscopus collybita",
+      "commonName": "Common Chiffchaff",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chiffchaff_-_Phylloscopus_collybita.jpg",
+      "sourceTitle": "File:Chiffchaff - Phylloscopus collybita.jpg",
+      "reviewedAt": "2026-10-28T18:32:46.952Z"
+    },
+    {
+      "scientificName": "Cuculus canorus",
+      "commonName": "Common Cuckoo",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cuculus_canorus2.jpg",
+      "sourceTitle": "File:Cuculus canorus2.jpg",
+      "reviewedAt": "2026-10-28T18:32:48.569Z"
+    },
+    {
+      "scientificName": "Regulus ignicapilla",
+      "commonName": "Common Firecrest",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Regulus_ignicapilla_Frank_Vassen.jpg",
+      "sourceTitle": "File:Regulus ignicapilla Frank Vassen.jpg",
+      "reviewedAt": "2026-10-28T18:32:49.917Z"
+    },
+    {
+      "scientificName": "Bucephala clangula",
+      "commonName": "Common Goldeneye",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_Goldeneye_(Bucephala_clangula).jpg",
+      "sourceTitle": "File:Common Goldeneye (Bucephala clangula).jpg",
+      "reviewedAt": "2026-10-28T18:32:52.151Z"
+    },
+    {
+      "scientificName": "Locustella naevia",
+      "commonName": "Common Grasshopper Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grashoppsangare-070512.jpg",
+      "sourceTitle": "File:Grashoppsangare-070512.jpg",
+      "reviewedAt": "2026-10-28T18:32:53.669Z"
+    },
+    {
+      "scientificName": "Larus canus",
+      "commonName": "Common Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sturmm%C3%B6we_-_Auenlandschaft_Hohenrode_HA_222_Landkreis_Schaumburg.jpg",
+      "sourceTitle": "File:Sturmmöwe - Auenlandschaft Hohenrode HA 222 Landkreis Schaumburg.jpg",
+      "reviewedAt": "2026-10-28T18:32:54.985Z"
+    },
+    {
+      "scientificName": "Alcedo atthis",
+      "commonName": "Common Kingfisher",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg",
+      "sourceTitle": "File:Alcedo atthis - Riserve naturali e aree contigue della fascia fluviale del Po.jpg",
+      "reviewedAt": "2026-10-28T18:32:56.169Z"
+    },
+    {
+      "scientificName": "Luscinia megarhynchos",
+      "commonName": "Common Nightingale",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nachtigall_(Luscinia_megarhynchos)-2.jpg",
+      "sourceTitle": "File:Nachtigall (Luscinia megarhynchos)-2.jpg",
+      "reviewedAt": "2026-10-28T18:33:07.885Z"
+    },
+    {
+      "scientificName": "Aythya ferina",
+      "commonName": "Common Pochard",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aythya_ferina_Sandwell_2.jpg",
+      "sourceTitle": "File:Aythya ferina Sandwell 2.jpg",
+      "reviewedAt": "2026-10-28T18:33:10.085Z"
+    },
+    {
+      "scientificName": "Corvus corax",
+      "commonName": "Common Raven",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Corvus_corax_ad_berlin_090516.jpg",
+      "sourceTitle": "File:Corvus corax ad berlin 090516.jpg",
+      "reviewedAt": "2026-10-28T18:33:11.502Z"
+    },
+    {
+      "scientificName": "Tringa totanus",
+      "commonName": "Common Redshank",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_Redshank_Tringa_totanus.jpg",
+      "sourceTitle": "File:Common Redshank Tringa totanus.jpg",
+      "reviewedAt": "2026-10-28T18:33:12.735Z"
+    },
+    {
+      "scientificName": "Phoenicurus phoenicurus",
+      "commonName": "Common Redstart",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gartenrotschwanz_1.jpg",
+      "sourceTitle": "File:Gartenrotschwanz 1.jpg",
+      "reviewedAt": "2026-10-28T18:33:14.118Z"
+    },
+    {
+      "scientificName": "Acrocephalus scirpaceus",
+      "commonName": "Common Reed Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_Reed_Warbler.jpg",
+      "sourceTitle": "File:Eurasian Reed Warbler.jpg",
+      "reviewedAt": "2026-10-28T18:33:15.319Z"
+    },
+    {
+      "scientificName": "Carpodacus erythrinus",
+      "commonName": "Common Rosefinch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carpodacus_erythrinus_20060623.jpg",
+      "sourceTitle": "File:Carpodacus erythrinus 20060623.jpg",
+      "reviewedAt": "2026-10-28T18:33:17.335Z"
+    },
+    {
+      "scientificName": "Actitis hypoleucos",
+      "commonName": "Common Sandpiper",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Actitis_hypoleucos_-_Laem_Pak_Bia.jpg",
+      "sourceTitle": "File:Actitis hypoleucos - Laem Pak Bia.jpg",
+      "reviewedAt": "2026-10-28T18:33:20.518Z"
+    },
+    {
+      "scientificName": "Tadorna tadorna",
+      "commonName": "Common Shelduck",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2014-04-18_Tadorna_tadorna_pair,_Swallow_Pond.jpg",
+      "sourceTitle": "File:2014-04-18 Tadorna tadorna pair, Swallow Pond.jpg",
+      "reviewedAt": "2026-10-28T18:33:21.702Z"
+    },
+    {
+      "scientificName": "Gallinago gallinago",
+      "commonName": "Common Snipe",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gallinago_gallinago_a1.JPG",
+      "sourceTitle": "File:Gallinago gallinago a1.JPG",
+      "reviewedAt": "2026-10-28T18:33:22.702Z"
+    },
+    {
+      "scientificName": "Apus apus",
+      "commonName": "Common Swift",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Apus_apus_-Barcelona,_Spain-8_(1).jpg",
+      "sourceTitle": "File:Apus apus -Barcelona, Spain-8 (1).jpg",
+      "reviewedAt": "2026-10-28T18:33:23.785Z"
+    },
+    {
+      "scientificName": "Sterna hirundo",
+      "commonName": "Common Tern",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sterne_pierre-garin_lac_de_Tunis011.jpg",
+      "sourceTitle": "File:Sterne pierre-garin lac de Tunis011.jpg",
+      "reviewedAt": "2026-10-28T18:33:25.385Z"
+    },
+    {
+      "scientificName": "Columba palumbus",
+      "commonName": "Common Wood-Pigeon",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Columba_palumbus_-garden_post-8.jpg",
+      "sourceTitle": "File:Columba palumbus -garden post-8.jpg",
+      "reviewedAt": "2026-10-28T18:33:26.352Z"
+    },
+    {
+      "scientificName": "Prunella modularis",
+      "commonName": "Dunnock",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunnock_crop2.jpg",
+      "sourceTitle": "File:Dunnock crop2.jpg",
+      "reviewedAt": "2026-10-28T18:33:27.402Z"
+    },
+    {
+      "scientificName": "Alopochen aegyptiaca",
+      "commonName": "Egyptian Goose",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alopochen_aegyptiaca,_Masai_Mara,_Kenya.jpg",
+      "sourceTitle": "File:Alopochen aegyptiaca, Masai Mara, Kenya.jpg",
+      "reviewedAt": "2026-10-28T18:33:28.602Z"
+    },
+    {
+      "scientificName": "Botaurus stellaris",
+      "commonName": "Eurasian Bittern",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2015-10-19_Botaurus_stellaris,_Gosforth_Park_5.jpg",
+      "sourceTitle": "File:2015-10-19 Botaurus stellaris, Gosforth Park 5.jpg",
+      "reviewedAt": "2026-10-28T18:33:29.835Z"
+    },
+    {
+      "scientificName": "Turdus merula",
+      "commonName": "Eurasian Blackbird",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20190722_Turdus_Merula_02.jpg",
+      "sourceTitle": "File:20190722 Turdus Merula 02.jpg",
+      "reviewedAt": "2026-10-28T18:33:31.368Z"
+    },
+    {
+      "scientificName": "Sylvia atricapilla",
+      "commonName": "Eurasian Blackcap",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sylvia_atricapilla_-Lullington_Heath,_East_Sussex,_England_-male-8.jpg",
+      "sourceTitle": "File:Sylvia atricapilla -Lullington Heath, East Sussex, England -male-8.jpg",
+      "reviewedAt": "2026-10-28T18:33:32.569Z"
+    },
+    {
+      "scientificName": "Cyanistes caeruleus",
+      "commonName": "Eurasian Blue Tit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ParusCaeruleus.jpg",
+      "sourceTitle": "File:ParusCaeruleus.jpg",
+      "reviewedAt": "2026-10-28T18:33:33.818Z"
+    },
+    {
+      "scientificName": "Pyrrhula pyrrhula",
+      "commonName": "Eurasian Bullfinch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bullfinch_male.jpg",
+      "sourceTitle": "File:Bullfinch male.jpg",
+      "reviewedAt": "2026-10-28T18:33:35.135Z"
+    },
+    {
+      "scientificName": "Streptopelia decaocto",
+      "commonName": "Eurasian Collared-Dove",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Streptopelia_decaocto,_H%C4%83rman,_Rom%C3%A2nia_(34881606270).jpg",
+      "sourceTitle": "File:Streptopelia decaocto, Hărman, România (34881606270).jpg",
+      "reviewedAt": "2026-10-28T18:33:36.002Z"
+    },
+    {
+      "scientificName": "Fulica atra",
+      "commonName": "Eurasian Coot",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_Coot.jpg",
+      "sourceTitle": "File:Eurasian Coot.jpg",
+      "reviewedAt": "2026-10-28T18:33:36.935Z"
+    },
+    {
+      "scientificName": "Picus viridis",
+      "commonName": "Eurasian Green Woodpecker",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Green_woodpecker_Franconville_2022_01_21_2.jpg",
+      "sourceTitle": "File:Green woodpecker Franconville 2022 01 21 2.jpg",
+      "reviewedAt": "2026-10-28T18:33:37.768Z"
+    },
+    {
+      "scientificName": "Falco subbuteo",
+      "commonName": "Eurasian Hobby",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_Hobby_(14574008925)_(cropped).jpg",
+      "sourceTitle": "File:Eurasian Hobby (14574008925) (cropped).jpg",
+      "reviewedAt": "2026-10-28T18:33:39.585Z"
+    },
+    {
+      "scientificName": "Coloeus monedula",
+      "commonName": "Eurasian Jackdaw",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:CROP._Corvus_monedula,_naakka,_Naantalin_hautausmaa,_Naantali,_8.11.2011..jpg",
+      "sourceTitle": "File:CROP. Corvus monedula, naakka, Naantalin hautausmaa, Naantali, 8.11.2011..jpg",
+      "reviewedAt": "2026-10-28T18:33:40.635Z"
+    },
+    {
+      "scientificName": "Garrulus glandarius",
+      "commonName": "Eurasian Jay",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Garrulus_glandarius_1_Luc_Viatour.jpg",
+      "sourceTitle": "File:Garrulus glandarius 1 Luc Viatour.jpg",
+      "reviewedAt": "2026-10-28T18:33:41.734Z"
+    },
+    {
+      "scientificName": "Falco tinnunculus",
+      "commonName": "Eurasian Kestrel",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_kestrel_falco_tinnunculus.jpg",
+      "sourceTitle": "File:Common kestrel falco tinnunculus.jpg",
+      "reviewedAt": "2026-10-28T18:33:42.868Z"
+    },
+    {
+      "scientificName": "Linaria cannabina",
+      "commonName": "Eurasian Linnet",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carduelis_cannabina_-England_-male-8.jpg",
+      "sourceTitle": "File:Carduelis cannabina -England -male-8.jpg",
+      "reviewedAt": "2026-10-28T18:33:43.968Z"
+    },
+    {
+      "scientificName": "Pica pica",
+      "commonName": "Eurasian Magpie",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg",
+      "sourceTitle": "File:Eurasian magpie 2024 03 03 02.jpg",
+      "reviewedAt": "2026-10-28T18:33:45.118Z"
+    },
+    {
+      "scientificName": "Gallinula chloropus",
+      "commonName": "Eurasian Moorhen",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Common_moorhen_(Gallinula_chloropus)_France.jpg",
+      "sourceTitle": "File:Common moorhen (Gallinula chloropus) France.jpg",
+      "reviewedAt": "2026-10-28T18:33:45.868Z"
+    },
+    {
+      "scientificName": "Sitta europaea",
+      "commonName": "Eurasian Nuthatch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kleiber_(Sitta_europaea_caesia)_Val_Roseg.jpg",
+      "sourceTitle": "File:Kleiber (Sitta europaea caesia) Val Roseg.jpg",
+      "reviewedAt": "2026-10-28T18:33:46.968Z"
+    },
+    {
+      "scientificName": "Haematopus ostralegus",
+      "commonName": "Eurasian Oystercatcher",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Haematopus_ostralegus0.jpg",
+      "sourceTitle": "File:Haematopus ostralegus0.jpg",
+      "reviewedAt": "2026-10-28T18:33:47.801Z"
+    },
+    {
+      "scientificName": "Spinus spinus",
+      "commonName": "Eurasian Siskin",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carduelis_spinus_male.jpg",
+      "sourceTitle": "File:Carduelis spinus male.jpg",
+      "reviewedAt": "2026-10-28T18:33:48.768Z"
+    },
+    {
+      "scientificName": "Alauda arvensis",
+      "commonName": "Eurasian Skylark",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alouette_des_champs_Zaghouan001.jpg",
+      "sourceTitle": "File:Alouette des champs Zaghouan001.jpg",
+      "reviewedAt": "2026-10-28T18:33:50.135Z"
+    },
+    {
+      "scientificName": "Accipiter nisus",
+      "commonName": "Eurasian Sparrowhawk",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Accipiter_nisus_edit.jpg",
+      "sourceTitle": "File:Accipiter nisus edit.jpg",
+      "reviewedAt": "2026-10-28T18:33:51.218Z"
+    },
+    {
+      "scientificName": "Mareca penelope",
+      "commonName": "Eurasian Wigeon",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_Wigeon_-_male.jpg",
+      "sourceTitle": "File:Eurasian Wigeon - male.jpg",
+      "reviewedAt": "2026-10-28T18:33:52.318Z"
+    },
+    {
+      "scientificName": "Scolopax rusticola",
+      "commonName": "Eurasian Woodcock",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Waldschnepfe_(scolopax_rusticola)_-_Spiekeroog,_Nationalpark_Nieders%C3%A4chsisches_Wattenmeer.jpg",
+      "sourceTitle": "File:Waldschnepfe (scolopax rusticola) - Spiekeroog, Nationalpark Niedersächsisches Wattenmeer.jpg",
+      "reviewedAt": "2026-10-28T18:33:53.268Z"
+    },
+    {
+      "scientificName": "Troglodytes troglodytes",
+      "commonName": "Eurasian Wren",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eurasian_wren_(Troglodytes_troglodytes).jpg",
+      "sourceTitle": "File:Eurasian wren (Troglodytes troglodytes).jpg",
+      "reviewedAt": "2026-10-28T18:33:54.118Z"
+    },
+    {
+      "scientificName": "Carduelis carduelis",
+      "commonName": "European Goldfinch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carduelis_carduelis_(2012).jpg",
+      "sourceTitle": "File:Carduelis carduelis (2012).jpg",
+      "reviewedAt": "2026-10-28T18:33:55.051Z"
+    },
+    {
+      "scientificName": "Chloris chloris",
+      "commonName": "European Greenfinch",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chloris_chloris_(profile).jpg",
+      "sourceTitle": "File:Chloris chloris (profile).jpg",
+      "reviewedAt": "2026-10-28T18:33:55.968Z"
+    },
+    {
+      "scientificName": "Larus argentatus",
+      "commonName": "European Herring Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Larus_argentatus01.jpg",
+      "sourceTitle": "File:Larus argentatus01.jpg",
+      "reviewedAt": "2026-10-28T18:33:56.735Z"
+    },
+    {
+      "scientificName": "Sturnus vulgaris",
+      "commonName": "European Starling",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Toulouse_-_Sturnus_vulgaris_-_2012-02-26_-_2.jpg",
+      "sourceTitle": "File:Toulouse - Sturnus vulgaris - 2012-02-26 - 2.jpg",
+      "reviewedAt": "2026-10-28T18:34:04.768Z"
+    },
+    {
+      "scientificName": "Saxicola rubicola",
+      "commonName": "European Stonechat",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Saxicola_rubicola_clochdar_y_cerrig.jpg",
+      "sourceTitle": "File:Saxicola rubicola clochdar y cerrig.jpg",
+      "reviewedAt": "2026-10-28T18:34:06.052Z"
+    },
+    {
+      "scientificName": "Turdus pilaris",
+      "commonName": "Fieldfare",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bj%C3%B6rktrast_(Turdus_pilaris)-4.jpg",
+      "sourceTitle": "File:Björktrast (Turdus pilaris)-4.jpg",
+      "reviewedAt": "2026-10-28T18:34:07.085Z"
+    },
+    {
+      "scientificName": "Mareca strepera",
+      "commonName": "Gadwall",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gadwall-Anas-strepera.jpg",
+      "sourceTitle": "File:Gadwall-Anas-strepera.jpg",
+      "reviewedAt": "2026-10-28T18:34:08.151Z"
+    },
+    {
+      "scientificName": "Sylvia borin",
+      "commonName": "Garden Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sylvia_borin_(%C3%96rebro_County).jpg",
+      "sourceTitle": "File:Sylvia borin (Örebro County).jpg",
+      "reviewedAt": "2026-10-28T18:34:09.118Z"
+    },
+    {
+      "scientificName": "Regulus regulus",
+      "commonName": "Goldcrest",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Goldcrest_(Regulus_regulus)_(15954267973).jpg",
+      "sourceTitle": "File:Goldcrest (Regulus regulus) (15954267973).jpg",
+      "reviewedAt": "2026-10-28T18:34:10.135Z"
+    },
+    {
+      "scientificName": "Ardea cinerea",
+      "commonName": "Gray Heron",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ardea_cinerea_EM1A2714_(27349354381).jpg",
+      "sourceTitle": "File:Ardea cinerea EM1A2714 (27349354381).jpg",
+      "reviewedAt": "2026-10-28T18:34:11.067Z"
+    },
+    {
+      "scientificName": "Motacilla cinerea",
+      "commonName": "Gray Wagtail",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grey_Wagtail_Motacilla_cinerea_(39682090233).jpg",
+      "sourceTitle": "File:Grey Wagtail Motacilla cinerea (39682090233).jpg",
+      "reviewedAt": "2026-10-28T18:34:12.985Z"
+    },
+    {
+      "scientificName": "Anser anser",
+      "commonName": "Graylag Goose",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:00_3688_Graugans_(Anser_anser).jpg",
+      "sourceTitle": "File:00 3688 Graugans (Anser anser).jpg",
+      "reviewedAt": "2026-10-28T18:34:14.118Z"
+    },
+    {
+      "scientificName": "Larus marinus",
+      "commonName": "Great Black-backed Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_Black-backed_Gull_Larus_marinus.jpg",
+      "sourceTitle": "File:Great Black-backed Gull Larus marinus.jpg",
+      "reviewedAt": "2026-10-28T18:34:18.051Z"
+    },
+    {
+      "scientificName": "Phalacrocorax carbo",
+      "commonName": "Great Cormorant",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-2.jpg",
+      "sourceTitle": "File:2021-05-05 Phalacrocorax carbo carbo, Killingworth Lake, Northumberland 1-2.jpg",
+      "reviewedAt": "2026-10-28T18:34:19.768Z"
+    },
+    {
+      "scientificName": "Podiceps cristatus",
+      "commonName": "Great Crested Grebe",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_Crested_Grebe_(52909695022).jpg",
+      "sourceTitle": "File:Great Crested Grebe (52909695022).jpg",
+      "reviewedAt": "2026-10-28T18:34:20.668Z"
+    },
+    {
+      "scientificName": "Lanius excubitor",
+      "commonName": "Great Gray Shrike",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_Grey_Shrike_in_Bhigwan_August_2025_by_Tisha_Mukherjee_02.jpg",
+      "sourceTitle": "File:Great Grey Shrike in Bhigwan August 2025 by Tisha Mukherjee 02.jpg",
+      "reviewedAt": "2026-10-28T18:34:21.918Z"
+    },
+    {
+      "scientificName": "Dendrocopos major",
+      "commonName": "Great Spotted Woodpecker",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:DendrocoposMajor.jpg",
+      "sourceTitle": "File:DendrocoposMajor.jpg",
+      "reviewedAt": "2026-10-28T18:34:23.801Z"
+    },
+    {
+      "scientificName": "Parus major",
+      "commonName": "Great Tit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_tit_(Parus_major),_Parc_de_Woluw%C3%A9,_Brussels_(13042792905).jpg",
+      "sourceTitle": "File:Great tit (Parus major), Parc de Woluwé, Brussels (13042792905).jpg",
+      "reviewedAt": "2026-10-28T18:34:24.735Z"
+    },
+    {
+      "scientificName": "Curruca communis",
+      "commonName": "Greater Whitethroat",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dorngrasm%C3%BCcke_im_Geo-Naturpark_Bergstra%C3%9Fe-Odenwald.jpg",
+      "sourceTitle": "File:Dorngrasmücke im Geo-Naturpark Bergstraße-Odenwald.jpg",
+      "reviewedAt": "2026-10-28T18:34:25.768Z"
+    },
+    {
+      "scientificName": "Passer domesticus",
+      "commonName": "House Sparrow",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:House_sparrow_male_in_Prospect_Park_(53532).jpg",
+      "sourceTitle": "File:House sparrow male in Prospect Park (53532).jpg",
+      "reviewedAt": "2026-10-28T18:34:33.418Z"
+    },
+    {
+      "scientificName": "Larus glaucoides",
+      "commonName": "Iceland Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Adult_Larus_glaucoides,_Swallow_Pond_1.jpg",
+      "sourceTitle": "File:Adult Larus glaucoides, Swallow Pond 1.jpg",
+      "reviewedAt": "2026-10-28T18:34:34.484Z"
+    },
+    {
+      "scientificName": "Lymnocryptes minimus",
+      "commonName": "Jack Snipe",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lymnocryptes_minimus.jpg",
+      "sourceTitle": "File:Lymnocryptes minimus.jpg",
+      "reviewedAt": "2026-10-28T18:34:35.884Z"
+    },
+    {
+      "scientificName": "Larus fuscus",
+      "commonName": "Lesser Black-backed Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Larus-fuscus-taxbox.jpg",
+      "sourceTitle": "File:Larus-fuscus-taxbox.jpg",
+      "reviewedAt": "2026-10-28T18:34:36.785Z"
+    },
+    {
+      "scientificName": "Curruca curruca",
+      "commonName": "Lesser Whitethroat",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Klappergrasm%C3%BCcke_(Curruca_curruca)_3,_Filey,_North_Yorkshire.jpg",
+      "sourceTitle": "File:Klappergrasmücke (Curruca curruca) 3, Filey, North Yorkshire.jpg",
+      "reviewedAt": "2026-10-28T18:34:37.651Z"
+    },
+    {
+      "scientificName": "Egretta garzetta",
+      "commonName": "Little Egret",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aigrette_garzette_au_lac_sud_de_Tunis_(site_RAMSAR).jpg",
+      "sourceTitle": "File:Aigrette garzette au lac sud de Tunis (site RAMSAR).jpg",
+      "reviewedAt": "2026-10-28T18:34:38.717Z"
+    },
+    {
+      "scientificName": "Tachybaptus ruficollis",
+      "commonName": "Little Grebe",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Little_Grebe_-_Tachybaptus_ruficollis_15-1.jpg",
+      "sourceTitle": "File:Little Grebe - Tachybaptus ruficollis 15-1.jpg",
+      "reviewedAt": "2026-10-28T18:34:39.568Z"
+    },
+    {
+      "scientificName": "Athene noctua",
+      "commonName": "Little Owl",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Athene_noctua,_Ambula,_Montenegro_1.jpg",
+      "sourceTitle": "File:Athene noctua, Ambula, Montenegro 1.jpg",
+      "reviewedAt": "2026-10-28T18:34:52.768Z"
+    },
+    {
+      "scientificName": "Aegithalos caudatus",
+      "commonName": "Long-tailed Tit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Long-tailed_tit_(74940).jpg",
+      "sourceTitle": "File:Long-tailed tit (74940).jpg",
+      "reviewedAt": "2026-10-28T18:34:54.367Z"
+    },
+    {
+      "scientificName": "Anthus pratensis",
+      "commonName": "Meadow Pipit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Meadow-Pipit.jpg",
+      "sourceTitle": "File:Meadow-Pipit.jpg",
+      "reviewedAt": "2026-10-28T18:34:59.284Z"
+    },
+    {
+      "scientificName": "Turdus viscivorus",
+      "commonName": "Mistle Thrush",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mistle_Thrush_(Turdus_viscivorus)_(33847459792).jpg",
+      "sourceTitle": "File:Mistle Thrush (Turdus viscivorus) (33847459792).jpg",
+      "reviewedAt": "2026-10-28T18:35:04.018Z"
+    },
+    {
+      "scientificName": "Cygnus olor",
+      "commonName": "Mute Swan",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mute_Swan_Emsworth2.JPG",
+      "sourceTitle": "File:Mute Swan Emsworth2.JPG",
+      "reviewedAt": "2026-10-28T18:35:04.934Z"
+    },
+    {
+      "scientificName": "Vanellus vanellus",
+      "commonName": "Northern Lapwing",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Northern-Lapwing-Vanellus-vanellus.jpg",
+      "sourceTitle": "File:Northern-Lapwing-Vanellus-vanellus.jpg",
+      "reviewedAt": "2026-10-28T18:35:05.884Z"
+    },
+    {
+      "scientificName": "Spatula clypeata",
+      "commonName": "Northern Shoveler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Northern_Shoveler-Anas_clypeata_female.jpg",
+      "sourceTitle": "File:Northern Shoveler-Anas clypeata female.jpg",
+      "reviewedAt": "2026-10-28T18:35:07.651Z"
+    },
+    {
+      "scientificName": "Milvus milvus",
+      "commonName": "Red Kite",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Milvus_milvus_Jura.jpg",
+      "sourceTitle": "File:Milvus milvus Jura.jpg",
+      "reviewedAt": "2026-10-28T18:35:12.768Z"
+    },
+    {
+      "scientificName": "Lanius collurio",
+      "commonName": "Red-backed Shrike",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lanius_collurio_-_Red-backed_shrike_09.jpg",
+      "sourceTitle": "File:Lanius collurio - Red-backed shrike 09.jpg",
+      "reviewedAt": "2026-10-28T18:35:13.901Z"
+    },
+    {
+      "scientificName": "Acanthis flammea",
+      "commonName": "Redpoll",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Acanthis_flammea,_Kotka,_Finland_2.jpg",
+      "sourceTitle": "File:Acanthis flammea, Kotka, Finland 2.jpg",
+      "reviewedAt": "2026-10-28T18:35:18.517Z"
+    },
+    {
+      "scientificName": "Turdus iliacus",
+      "commonName": "Redwing",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Redwing_Turdus_iliacus.jpg",
+      "sourceTitle": "File:Redwing Turdus iliacus.jpg",
+      "reviewedAt": "2026-10-28T18:35:19.367Z"
+    },
+    {
+      "scientificName": "Emberiza schoeniclus",
+      "commonName": "Reed Bunting",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2014-06-01_Emberiza_schoeniclus,_Swallow_Pond,_Northumberland_1.jpg",
+      "sourceTitle": "File:2014-06-01 Emberiza schoeniclus, Swallow Pond, Northumberland 1.jpg",
+      "reviewedAt": "2026-10-28T18:35:20.451Z"
+    },
+    {
+      "scientificName": "Anthus richardi",
+      "commonName": "Richard's Pipit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anthus_richardi_-_Laem_Pak_Bia.jpg",
+      "sourceTitle": "File:Anthus richardi - Laem Pak Bia.jpg",
+      "reviewedAt": "2026-10-28T18:35:21.767Z"
+    },
+    {
+      "scientificName": "Turdus torquatus",
+      "commonName": "Ring Ouzel",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2015-04-20_Turdus_torquatus_torquatus_Cairngorm_2.jpg",
+      "sourceTitle": "File:2015-04-20 Turdus torquatus torquatus Cairngorm 2.jpg",
+      "reviewedAt": "2026-10-28T18:35:22.767Z"
+    },
+    {
+      "scientificName": "Phasianus colchicus",
+      "commonName": "Ring-necked Pheasant",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:00_4488_H%C3%BChnervogel_-_Edelfasan.jpg",
+      "sourceTitle": "File:00 4488 Hühnervogel - Edelfasan.jpg",
+      "reviewedAt": "2026-10-28T18:35:24.134Z"
+    },
+    {
+      "scientificName": "Columba livia",
+      "commonName": "Rock Pigeon",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg",
+      "sourceTitle": "File:Columba livia (Rock Dove, wild), Duncansby Head, Caithness, Scotland 1.jpg",
+      "reviewedAt": "2026-10-28T18:35:24.951Z"
+    },
+    {
+      "scientificName": "Corvus frugilegus",
+      "commonName": "Rook",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Corvus_frugilegus_-Dartmoor,_Devon,_England-8.jpg",
+      "sourceTitle": "File:Corvus frugilegus -Dartmoor, Devon, England-8.jpg",
+      "reviewedAt": "2026-10-28T18:35:26.151Z"
+    },
+    {
+      "scientificName": "Psittacula krameri",
+      "commonName": "Rose-ringed Parakeet",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:African_Rose-ringed_Parakeet,_Tamanrasset,_Algeria_1.jpg",
+      "sourceTitle": "File:African Rose-ringed Parakeet, Tamanrasset, Algeria 1.jpg",
+      "reviewedAt": "2026-10-28T18:35:28.034Z"
+    },
+    {
+      "scientificName": "Calidris pugnax",
+      "commonName": "Ruff",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Philomachus_pugnaxRuffKampfl%C3%A4ufer.JPG",
+      "sourceTitle": "File:Philomachus pugnaxRuffKampfläufer.JPG",
+      "reviewedAt": "2026-10-28T18:35:29.601Z"
+    },
+    {
+      "scientificName": "Thalasseus sandvicensis",
+      "commonName": "Sandwich Tern",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2020-07-18_Thalasseus_sandvicensis,_St_Marys_Island,_Northumberland_05.jpg",
+      "sourceTitle": "File:2020-07-18 Thalasseus sandvicensis, St Marys Island, Northumberland 05.jpg",
+      "reviewedAt": "2026-10-28T18:35:31.250Z"
+    },
+    {
+      "scientificName": "Acrocephalus schoenobaenus",
+      "commonName": "Sedge Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Acrocephalus_schoenobaenus_-Sweden-8_(1).jpg",
+      "sourceTitle": "File:Acrocephalus schoenobaenus -Sweden-8 (1).jpg",
+      "reviewedAt": "2026-10-28T18:35:32.101Z"
+    },
+    {
+      "scientificName": "Asio flammeus",
+      "commonName": "Short-eared Owl",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Asio_flammeus_-Fazenda_Campo_de_Ouro,_Piraju,_Sao_Paulo,_Brasil-8.jpg",
+      "sourceTitle": "File:Asio flammeus -Fazenda Campo de Ouro, Piraju, Sao Paulo, Brasil-8.jpg",
+      "reviewedAt": "2026-10-28T18:35:33.551Z"
+    },
+    {
+      "scientificName": "Turdus philomelos",
+      "commonName": "Song Thrush",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Song_thrush_(Turdus_philomelos_philomelos).jpg",
+      "sourceTitle": "File:Song thrush (Turdus philomelos philomelos).jpg",
+      "reviewedAt": "2026-10-28T18:35:34.651Z"
+    },
+    {
+      "scientificName": "Muscicapa striata",
+      "commonName": "Spotted Flycatcher",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Muscicapa_striata_%D0%BC%D1%83%D1%85%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0_%D1%81%D1%96%D1%80%D0%B0.jpg",
+      "sourceTitle": "File:Muscicapa striata мухоловка сіра.jpg",
+      "reviewedAt": "2026-10-28T18:35:35.734Z"
+    },
+    {
+      "scientificName": "Columba oenas",
+      "commonName": "Stock Dove",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2019-03-17_Columba_oenas,_Jesmond_Dene_1.jpg",
+      "sourceTitle": "File:2019-03-17 Columba oenas, Jesmond Dene 1.jpg",
+      "reviewedAt": "2026-10-28T18:35:36.567Z"
+    },
+    {
+      "scientificName": "Strix aluco",
+      "commonName": "Tawny Owl",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Strix_aluco_aluco.jpg",
+      "sourceTitle": "File:Strix aluco aluco.jpg",
+      "reviewedAt": "2026-10-28T18:35:38.184Z"
+    },
+    {
+      "scientificName": "Anthus trivialis",
+      "commonName": "Tree Pipit",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2015-04-21_Anthus_trivialis,_Abernethy_Forest_1.jpg",
+      "sourceTitle": "File:2015-04-21 Anthus trivialis, Abernethy Forest 1.jpg",
+      "reviewedAt": "2026-10-28T18:35:39.400Z"
+    },
+    {
+      "scientificName": "Aythya fuligula",
+      "commonName": "Tufted Duck",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tufted_Duck_09_05_2025_01.jpg",
+      "sourceTitle": "File:Tufted Duck 09 05 2025 01.jpg",
+      "reviewedAt": "2026-10-28T18:35:40.384Z"
+    },
+    {
+      "scientificName": "Delichon urbicum",
+      "commonName": "Western House-Martin",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Delichon_urbica.jpg",
+      "sourceTitle": "File:Delichon urbica.jpg",
+      "reviewedAt": "2026-10-28T18:35:41.734Z"
+    },
+    {
+      "scientificName": "Saxicola rubetra",
+      "commonName": "Whinchat",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Saxicola_rubetra_poklaskwa_AM.jpg",
+      "sourceTitle": "File:Saxicola rubetra poklaskwa AM.jpg",
+      "reviewedAt": "2026-10-28T18:35:50.100Z"
+    },
+    {
+      "scientificName": "Motacilla alba",
+      "commonName": "White Wagtail",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg",
+      "sourceTitle": "File:20180415 015 Winterswijk Witte kwikstaart (40785272624).jpg",
+      "reviewedAt": "2026-10-28T18:35:51.184Z"
+    },
+    {
+      "scientificName": "Phylloscopus trochilus",
+      "commonName": "Willow Warbler",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Willow_Warbler_Phylloscopus_trochilus.jpg",
+      "sourceTitle": "File:Willow Warbler Phylloscopus trochilus.jpg",
+      "reviewedAt": "2026-10-28T18:35:52.400Z"
+    },
+    {
+      "scientificName": "Larus michahellis",
+      "commonName": "Yellow-legged Gull",
+      "decision": "approve",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Larus_michahellis_atlantis,_Lagoa_do_Fogo,_Azores_1a.jpg",
+      "sourceTitle": "File:Larus michahellis atlantis, Lagoa do Fogo, Azores 1a.jpg",
+      "reviewedAt": "2026-10-28T18:35:53.234Z"
+    }
+  ],
+  "rejectedTaxa": [
+    {
+      "scientificName": "Uria aalge",
+      "commonName": "Common Murre"
+    },
+    {
+      "scientificName": "Ficedula hypoleuca",
+      "commonName": "European Pied Flycatcher"
+    },
+    {
+      "scientificName": "Anas crecca",
+      "commonName": "Green-winged Teal"
+    },
+    {
+      "scientificName": "Hydrocoloeus minutus",
+      "commonName": "Little Gull"
+    },
+    {
+      "scientificName": "Aix galericulata",
+      "commonName": "Mandarin Duck"
+    },
+    {
+      "scientificName": "Ichthyaetus melanocephalus",
+      "commonName": "Mediterranean Gull"
+    },
+    {
+      "scientificName": "Oenanthe oenanthe",
+      "commonName": "Northern Wheatear"
+    },
+    {
+      "scientificName": "Netta rufina",
+      "commonName": "Red-crested Pochard"
+    },
+    {
+      "scientificName": "Circus aeruginosus",
+      "commonName": "Western Marsh Harrier"
+    },
+    {
+      "scientificName": "Motacilla flava",
+      "commonName": "Western Yellow Wagtail"
+    }
+  ]
+}
