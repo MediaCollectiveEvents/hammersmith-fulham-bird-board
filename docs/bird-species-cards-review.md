@@ -337,3 +337,14 @@ only on the local feature branch; the earlier source-workbook preservation note
 refers to that local branch. No source-workbooks directory or workbook blob is
 included in this deployment history. The website uses the derived public catalogues,
 not the original workbook. Deployment was explicitly requested by the user.
+
+## Listing photograph visibility correction
+
+The first complete-listing release showed names only; photographs required opening
+a card. The listing now displays the four verified photographs directly alongside
+species names, with creator, licence and source links. All other rows explicitly
+say No verified photo. The introduction and coverage summary state the limited
+four-photo coverage. Existing full-image card behaviour is retained. No new image
+sourcing or full-library expansion is included. All 141 tests pass; desktop/mobile
+listing checks verify four thumbnails, 129 missing-photo labels and decoded image
+visibility alongside search/card/download regression checks.
