@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "outlines": [
+    {
+      "scientificName": "Anas platyrhynchos",
+      "imagePath": "./images/flight/anas-platyrhynchos.svg",
+      "width": 1122,
+      "height": 866,
+      "sourceTitle": "File:Anas platyrhynchos flying.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_flying.svg",
+      "creator": "M. Buschmann (source photograph); Nevit Dilmen (SVG)",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Unmodified source SVG; displayed at a responsive size.",
+      "verificationStatus": "verified",
+      "checkedOn": "2026-10-28",
+      "verificationEvidence": "Commons scientific identity and source/derivative attribution reviewed; SVG rendered on white and visually checked for flight shape; active/external SVG content checked. Illustration is not an identification guarantee."
+    },
+    {
+      "scientificName": "Hirundo rustica",
+      "imagePath": "./images/flight/hirundo-rustica.svg",
+      "width": 275,
+      "height": 251,
+      "sourceTitle": "File:Hirundorusticaflightcropped.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hirundorusticaflightcropped.svg",
+      "creator": "Thermos (photograph); Jimfbleak (crop); Nevit Dilmen (SVG)",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Unmodified source SVG; displayed at a responsive size.",
+      "verificationStatus": "verified",
+      "checkedOn": "2026-10-28",
+      "verificationEvidence": "Commons scientific identity and source/derivative attribution reviewed; SVG rendered on white and visually checked for flight shape; active/external SVG content checked. Illustration is not an identification guarantee."
+    },
+    {
+      "scientificName": "Falco peregrinus",
+      "imagePath": "./images/flight/falco-peregrinus.svg",
+      "width": 300,
+      "height": 286,
+      "sourceTitle": "File:Falco-peregrinus-silhouette.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Falco-peregrinus-silhouette.svg",
+      "creator": "Liftarn",
+      "licence": "CC BY-SA 3.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "modifications": "Unmodified source SVG; displayed at a responsive size.",
+      "verificationStatus": "verified",
+      "checkedOn": "2026-10-28",
+      "verificationEvidence": "Commons scientific identity and source/derivative attribution reviewed; SVG rendered on white and visually checked for flight shape; active/external SVG content checked. Illustration is not an identification guarantee."
+    }
+  ]
+}
