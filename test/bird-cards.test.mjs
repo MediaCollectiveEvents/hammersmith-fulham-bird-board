@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {createSpeciesLookup,validateImages,cardMarkup,ambiguousTaxon} from '../dist/bird-cards-data.mjs';
+import {createSpeciesLookup,validateImages,cardMarkup,ambiguousTaxon,escapeHTML} from '../dist/bird-cards-data.mjs';
 const history=JSON.parse(fs.readFileSync(new URL('../dist/data/ebird-history.json',import.meta.url)));
 const manifest=JSON.parse(fs.readFileSync(new URL('../dist/data/bird-images.json',import.meta.url)));
 const lookup=createSpeciesLookup(history);
@@ -25,10 +25,10 @@ test('duplicate scientific identities and invalid counts rejected',()=>{
 test('ambiguous normalized aliases fail closed',()=>{
  const d=createSpeciesLookup({taxonCount:2,species:[{commonName:'European X',scientificName:'A a',records:1},{commonName:'X',scientificName:'B b',records:1}]});assert.equal(d.resolve('X'),null);
 });
-test('proof catalogue contains four licensed verified images and one withheld hybrid',()=>{
- const photos=validateImages(manifest,lookup);assert.equal(photos.size,4);assert.equal(manifest.images.length,5);
- assert.equal(manifest.images.filter(p=>p.verificationStatus==='manual-review').length,1);
- for(const p of photos.values())assert.match(cardMarkup(lookup.resolve(p.scientificName),p),new RegExp(p.creator.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+test('approved library contains 121 licensed photos, ten rejections and two withheld hybrids',()=>{
+ const photos=validateImages(manifest,lookup);assert.equal(photos.size,121);assert.equal(manifest.images.length,133);
+ assert.equal(manifest.images.filter(p=>p.verificationStatus==='manual-review').length,2);
+ for(const p of photos.values())assert(cardMarkup(lookup.resolve(p.scientificName),p).includes(escapeHTML(p.creator)));
  assert(ambiguousTaxon('Larus argentatus x fuscus'));
 });
 for(const [name,change] of Object.entries({unlicensed:p=>delete p.licenceUrl,unverified:p=>p.verificationStatus='candidate',ambiguous:p=>p.scientificName='Larus argentatus x fuscus',unsafe:p=>p.imageUrl='javascript:alert(1)',duplicate:p=>{}}))test(`catalogue rejects ${name} photographs`,()=>{

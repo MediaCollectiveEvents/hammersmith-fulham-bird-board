@@ -348,3 +348,12 @@ four-photo coverage. Existing full-image card behaviour is retained. No new imag
 sourcing or full-library expansion is included. All 141 tests pass; desktop/mobile
 listing checks verify four thumbnails, 129 missing-photo labels and decoded image
 visibility alongside search/card/download regression checks.
+
+## User-approved library expansion
+
+The four-photo proof-of-concept coverage above is superseded by the user's manual
+review export: 117 approvals and ten rejections. The approved library now contains
+121 photographs across 133 taxa, with 12 placeholders (ten rejected and two hybrids).
+See `docs/bird-approved-photo-library.md` and `docs/bird-photo-approvals.json` for
+size, source/licence coverage, decisions and validation. Unreviewed alternative
+candidates remain outside deployment; the original working workbook stays local.
