@@ -1,18 +1,12 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-27T10:42:20.542Z",
+  "updatedAt": "2026-10-28T11:26:17.038Z",
   "hotspots": [
     {
       "locId": "L12106898",
       "name": "Bishop's Park (Fulham)",
       "lat": 51.47221,
       "lng": -0.2185833
-    },
-    {
-      "locId": "L12105508",
-      "name": "East Acton (LBC District)",
-      "lat": 51.5142239,
-      "lng": -0.248918
     },
     {
       "locId": "L12105744",
@@ -2579,7 +2573,7 @@
     },
     {
       "species": "Wren",
-      "latin": "Troglodytes troglodytes",
+      "latin": "Nannus troglodytes",
       "speciesCode": "winwre4",
       "year": 2026,
       "month": 10,
@@ -2654,7 +2648,7 @@
     },
     {
       "species": "Wren",
-      "latin": "Troglodytes troglodytes",
+      "latin": "Nannus troglodytes",
       "speciesCode": "winwre4",
       "year": 2026,
       "month": 10,
@@ -3074,7 +3068,7 @@
     },
     {
       "species": "Wren",
-      "latin": "Troglodytes troglodytes",
+      "latin": "Nannus troglodytes",
       "speciesCode": "winwre4",
       "year": 2026,
       "month": 10,
@@ -3223,7 +3217,7 @@
       "howMany": null
     }
   ],
-  "lastRunNewReports": 125,
+  "lastRunNewReports": 122,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 586
+  "lastRunNearbyCandidates": 581
 }
