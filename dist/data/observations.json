@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-10-29T11:36:53.171Z",
+  "updatedAt": "2026-10-30T11:28:12.355Z",
   "hotspots": [
     {
       "locId": "L12105744",
@@ -3938,9 +3938,24 @@
       "checklistId": "S406272277",
       "observer": "Colin Aldridge",
       "howMany": null
+    },
+    {
+      "species": "Yellow-legged Gull",
+      "latin": "Larus michahellis",
+      "speciesCode": "yelgul1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-29",
+      "notable": true,
+      "reportType": "hotspot",
+      "hotspot": "River Thames at Hammersmith Bridge",
+      "hotspotId": "L8165956",
+      "checklistId": "S406272277",
+      "observer": "Colin Aldridge",
+      "howMany": 1
     }
   ],
-  "lastRunNewReports": 114,
+  "lastRunNewReports": 115,
   "lastRunNewNearbyReports": 0,
   "lastRunNearbyCandidates": 594
 }
