@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 const html=await fs.readFile(new URL('../dist/index.html',import.meta.url),'utf8');
 test('navigation names and combined movement board retain both seasonal tables',()=>{
-  assert.match(html,/data-category="actual"[^>]*>This Month<\/button>/);
+  assert.match(html,/data-category="actual"[^>]*>Actual Sightings<\/button>/);
   assert.match(html,/data-category="expected"[^>]*>Movements<\/button>/);
   assert.equal((html.match(/data-open-panel="panel-movements"/g)||[]).length,1);
   assert.doesNotMatch(html,/id="panel-arrivals"|id="panel-departures"/);

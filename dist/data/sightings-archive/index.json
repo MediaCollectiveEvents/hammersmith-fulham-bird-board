@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "source": "eBird",
+  "timeZone": "Europe/London",
+  "coverageNotice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
+  "months": [
+    {
+      "month": "2026-09",
+      "reports": 97,
+      "species": 43,
+      "hotspots": 10,
+      "lastRecorded": "2026-09-28",
+      "coverage": {
+        "status": "partial",
+        "notice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
+        "firstObservationDate": "2026-09-10",
+        "lastObservationDate": "2026-09-28",
+        "sourceFeedUpdatedAt": "2026-10-31T10:59:14.353Z"
+      }
+    },
+    {
+      "month": "2026-10",
+      "reports": 191,
+      "species": 50,
+      "hotspots": 7,
+      "lastRecorded": "2026-10-30",
+      "coverage": {
+        "status": "partial",
+        "notice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
+        "firstObservationDate": "2026-10-03",
+        "lastObservationDate": "2026-10-30",
+        "sourceFeedUpdatedAt": "2026-10-31T10:59:14.353Z"
+      }
+    }
+  ]
+}

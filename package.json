@@ -11,7 +11,8 @@
     "test": "node --test",
     "update:ebird": "node scripts/update-ebird.mjs",
     "update:wetland": "node scripts/update-wetland-ebird.mjs",
-    "update:birdweather": "node scripts/update-birdweather.mjs"
+    "update:birdweather": "node scripts/update-birdweather.mjs",
+    "archive:sightings": "node scripts/archive-sightings.mjs"
   },
   "dependencies": {
     "ajv": "^8.20.0",
