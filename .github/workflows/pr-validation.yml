@@ -1,0 +1,66 @@
+name: PR validation
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate ${{ matrix.target }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        # Bootstrap only: validate PR #12's immutable reviewed code without
+        # adding this workflow to its four commits. Other PRs get one job.
+        target: ${{ fromJSON(github.head_ref == 'codex/bird-pr-validation' && '["proposed-merge","dashboard-22931b9"]' || '["proposed-merge"]') }}
+    steps:
+      - name: Check out validation tools from this PR's proposed merge
+        uses: actions/checkout@v4
+        with:
+          path: validation
+          persist-credentials: false
+      - name: Check out code under test
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.target == 'dashboard-22931b9' && '22931b9a65c802f3ba0e2ded6fed52e616626790' || github.sha }}
+          path: candidate
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install locked dependencies without lifecycle scripts
+        working-directory: candidate
+        run: npm ci --ignore-scripts
+      - name: Automated tests
+        working-directory: candidate
+        run: npm test
+      - name: Validate published data, syntax, assets and archive consistency
+        working-directory: candidate
+        run: node ../validation/scripts/validate-pr-data.mjs
+      - name: Install isolated browser tooling
+        if: hashFiles('candidate/scripts/check-dashboard-browser.cjs') != ''
+        run: |
+          npm install --prefix "$RUNNER_TEMP/hf-browser" --no-save --package-lock=false --ignore-scripts playwright@1.62.1
+          "$RUNNER_TEMP/hf-browser/node_modules/.bin/playwright" install --with-deps chrome
+      - name: Dashboard and monthly browser regressions
+        if: hashFiles('candidate/scripts/check-dashboard-browser.cjs') != ''
+        working-directory: candidate
+        run: |
+          # Existing local regressions write screenshots to this macOS-style path.
+          sudo install -d -m 1777 /private/tmp
+          export PLAYWRIGHT_MODULE="$RUNNER_TEMP/hf-browser/node_modules/playwright"
+          node scripts/check-dashboard-browser.cjs
+          node scripts/check-monthly-sightings-browser.cjs
+      - name: Confirm tracked data and code were not modified
+        working-directory: candidate
+        run: git diff --exit-code
