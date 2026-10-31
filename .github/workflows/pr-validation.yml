@@ -56,6 +56,8 @@ jobs:
         if: hashFiles('candidate/scripts/check-dashboard-browser.cjs') != ''
         working-directory: candidate
         run: |
+          # Existing local regressions write screenshots to this macOS-style path.
+          sudo install -d -m 1777 /private/tmp
           export PLAYWRIGHT_MODULE="$RUNNER_TEMP/hf-browser/node_modules/playwright"
           node scripts/check-dashboard-browser.cjs
           node scripts/check-monthly-sightings-browser.cjs
