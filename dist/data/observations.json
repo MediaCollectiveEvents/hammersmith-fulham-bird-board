@@ -3,6 +3,12 @@
   "updatedAt": "2026-10-31T10:59:14.353Z",
   "hotspots": [
     {
+      "locId": "L939893",
+      "name": "Ravenscourt Park",
+      "lat": 51.4966678,
+      "lng": -0.2383518
+    },
+    {
       "locId": "L12105744",
       "name": "Fulham Old Cemetery",
       "lat": 51.4803986,

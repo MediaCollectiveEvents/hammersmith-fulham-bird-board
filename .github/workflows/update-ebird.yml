@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/update-ebird.mjs'
+      - 'dist/borough-hotspots.mjs'
       - 'scripts/update-wetland-ebird.mjs'
       - 'scripts/update-birdweather.mjs'
       - '.github/workflows/update-ebird.yml'
