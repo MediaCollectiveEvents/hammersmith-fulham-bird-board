@@ -1,4 +1,4 @@
-const CACHE='hf-bird-board-v35';
+const CACHE='hf-bird-board-v36';
 const scopeUrl=new URL(self.registration.scope);
 const shell=[...['dashboard.mjs','dashboard-data.mjs','dashboard-csv.mjs','dashboard.css'].map(name=>new URL('./'+name,scopeUrl).href),new URL('./sightings-months.mjs',scopeUrl).href,new URL('./sightings-history.mjs',scopeUrl).href,new URL('./borough-hotspots.mjs',scopeUrl).href,new URL('./',scopeUrl).href,new URL('./index.html',scopeUrl).href,new URL('./manifest.webmanifest',scopeUrl).href,new URL('./icons/bird.svg',scopeUrl).href,new URL('./data/observations.json',scopeUrl).href,new URL('./data/birdweather.json',scopeUrl).href,new URL('./data/nbn-history.json',scopeUrl).href];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(shell)).then(()=>self.skipWaiting()))});
@@ -10,14 +10,14 @@ self.addEventListener('fetch',event=>{
  if(url.origin!==location.origin)return;
  const isMonthlyArchive=url.pathname.includes('/data/sightings-archive/');
  const isFeed=url.pathname.endsWith('/data/observations.json')||url.pathname.endsWith('/data/birdweather.json');
- const isRankingAsset=['/dashboard.mjs','/dashboard-data.mjs','/dashboard-csv.mjs','/dashboard.css','/sightings-months.mjs','/sightings-history.mjs','/borough-hotspots.mjs','/bird-flight.mjs','/data/bird-flight-outlines.json','/bird-places.mjs','/data/bird-nicknames.json','/species.html','/species-listing.mjs','/species-listing-data.mjs','/bird-card-context.mjs','/data/wetland-centre-observations.json','/bird-facts.mjs','/data/bird-facts.json','/bird-cards.mjs','/bird-cards-data.mjs','/bird-cards.css','/data/bird-images.json','/data/ebird-history.json','/data/bird-rankings.json','/bird-rankings.mjs','/bird-rankings-data.mjs','/bird-rankings.css'].some(suffix=>url.pathname.endsWith(suffix));
+ const isRankingAsset=['/data/seasonality_metadata.json','/data/species_migration_calendar.csv','/dashboard.mjs','/dashboard-data.mjs','/dashboard-csv.mjs','/dashboard.css','/sightings-months.mjs','/sightings-history.mjs','/borough-hotspots.mjs','/bird-flight.mjs','/data/bird-flight-outlines.json','/bird-places.mjs','/data/bird-nicknames.json','/species.html','/species-listing.mjs','/species-listing-data.mjs','/bird-card-context.mjs','/data/wetland-centre-observations.json','/bird-facts.mjs','/data/bird-facts.json','/bird-cards.mjs','/bird-cards-data.mjs','/bird-cards.css','/data/bird-images.json','/data/ebird-history.json','/data/bird-rankings.json','/bird-rankings.mjs','/bird-rankings-data.mjs','/bird-rankings.css'].some(suffix=>url.pathname.endsWith(suffix));
  if(isFeed||isRankingAsset||isMonthlyArchive){
-  event.respondWith(fetch(request,{cache:'no-store'}).then(response=>{if(response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy))}return response}).catch(async()=>await caches.match(request)||new Response(JSON.stringify({source:'offline',records:[]}),{headers:{'Content-Type':'application/json'}})));
+  event.respondWith(fetch(request,{cache:'no-store'}).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,copy)))}return response}).catch(async()=>await caches.match(request)||new Response(JSON.stringify({source:'offline',records:[]}),{headers:{'Content-Type':'application/json'}})));
   return;
  }
  if(request.mode==='navigate'){
-  event.respondWith(fetch(request).then(response=>{if(response.ok)caches.open(CACHE).then(cache=>cache.put(new URL('./index.html',scopeUrl).href,response.clone()));return response}).catch(async()=>await caches.match(request)||await caches.match(new URL('./index.html',scopeUrl).href)));
+  event.respondWith(fetch(request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(new URL('./index.html',scopeUrl).href,copy)));}return response}).catch(async()=>await caches.match(request)||await caches.match(new URL('./index.html',scopeUrl).href)));
   return;
  }
- event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{if(response.ok)caches.open(CACHE).then(cache=>cache.put(request,response.clone()));return response})));
+ event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,copy)));}return response})));
 });

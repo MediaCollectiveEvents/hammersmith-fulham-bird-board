@@ -48,3 +48,7 @@ Local screenshots: `/private/tmp/hf-dashboard-390.png`, `/private/tmp/hf-dashboa
 ## Remaining evidence limits
 
 The existing monthly sample starts September 2026 and is partial. Original archive rankings remain dated to their published release. Missing reports do not demonstrate absence. No verified routes or continuous-presence windows are invented. The approved purple is a design choice, not a claimed verified council brand standard. Nothing has been pushed, merged or deployed.
+
+## Pre-merge follow-up
+
+The three review blockers were addressed after cf58096: independent homepage/archive labels, compact top shortcuts and larger fixed TV typography. The service-worker-enabled check additionally found and corrected a response-cloning/cache-lifetime race. Current validation is 170/170 tests and 21 TV pages; see [pre-merge fix report](dashboard-premerge-fixes.md) for measurements, screenshots and PWA limitations.

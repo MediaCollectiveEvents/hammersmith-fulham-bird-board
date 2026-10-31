@@ -26,7 +26,9 @@ const root=path.resolve(__dirname,'../dist');
    await page.locator('#sightings-period').selectOption('last');
    await page.waitForFunction(expected=>document.querySelector('#sightings-coverage').textContent.includes(expected),`${sept.records.length} collected reports`);
    assert.equal(await page.locator('#sightings-month-label').innerText(),'September 2026');
-   assert.equal((await page.locator('#month-title').innerText()).toLowerCase(),'september 2026');
+   assert.equal((await page.locator('#month-title').innerText()).toLowerCase(),'october 2026');
+   assert.equal(await page.locator('#dashboard-month').innerText(),'October 2026');assert.match(await page.locator('#dashboard-summary').innerText(),/191/);assert.match(await page.locator('#sightings-title').textContent(),/September 2026/);assert.match(await page.locator('.news-lead time').innerText(),/2026-10-/);
+   if(width===390){await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'/private/tmp/hf-dashboard-after-month-label.png'});}
    assert.equal(Number(await page.locator('#bento-sightings-count').innerText()),sept.totals.species);
    assert.match(await page.locator('#sightings-coverage').innerText(),new RegExp(sept.totals.lastRecorded));
    await page.locator('[data-open-panel="panel-sightings"]').click();
@@ -45,9 +47,9 @@ const root=path.resolve(__dirname,'../dist');
    assert.equal(await page.locator('#sightings-period-controls').isVisible(),false);
    assert.deepEqual(errors,[]);await page.close();console.log(width+'px: current/previous month, dates, totals, Ravenscourt, WWT and movement-board isolation pass');
   }
-  for(const scenario of ['missing','failed-live','invalid-archive','rollover']){
+  for(const scenario of ['missing','december','failed-live','invalid-archive','rollover']){
    const context=await browser.newContext({serviceWorkers:'block',timezoneId:'America/Los_Angeles'}),page=await context.newPage();
-   await page.clock.install({time:new Date(scenario==='missing'?'2027-01-01T12:00:00Z':scenario==='rollover'?'2026-11-01T00:30:00Z':'2026-10-31T12:00:00Z')});
+   await page.clock.install({time:new Date(scenario==='missing'?'2027-01-01T12:00:00Z':scenario==='december'?'2026-12-31T12:00:00Z':scenario==='rollover'?'2026-11-01T00:30:00Z':'2026-10-31T12:00:00Z')});
    if(scenario==='failed-live')await page.route('**/data/observations.json',route=>route.fulfill({status:503,body:'Unavailable'}));
    if(scenario==='invalid-archive')await page.route('**/sightings-archive/2026-09.json',route=>route.fulfill({json:{...sept,month:'2025-09'}}));
    await page.goto(url);await page.locator('#section-menu [data-category="actual"]').click();
@@ -56,7 +58,7 @@ const root=path.resolve(__dirname,'../dist');
    await page.locator('#sightings-period').selectOption('last');
    await page.waitForFunction(()=>!document.querySelector('#sightings-coverage').textContent.includes('Loading')&&document.querySelector('#sightings-coverage').textContent.length>0);
    const text=await page.locator('#sightings-coverage').innerText();
-   if(scenario==='missing'){assert.match(text,/No collected archive/);assert.equal(await page.locator('#bento-sightings-count').innerText(),'0');}
+   if(scenario==='missing'||scenario==='december'){const current=scenario==='missing'?'January 2027':'December 2026',previous=scenario==='missing'?'December 2026':'November 2026';assert.equal(await page.locator('#month-title').textContent(),current);assert.equal(await page.locator('#dashboard-month').innerText(),current);assert.equal(await page.locator('#sightings-month-label').innerText(),previous);assert.match(await page.locator('#sightings-title').textContent(),new RegExp(previous));assert.match(text,/No collected archive/);assert.equal(await page.locator('#bento-sightings-count').innerText(),'0');}
    else if(scenario==='invalid-archive')assert.match(text,/Archive unavailable; showing partial records retained/);
    else if(scenario==='failed-live')assert(text.includes(`${sept.records.length} collected reports`));
    else assert(text.includes(`${oct.records.length} collected reports`));
