@@ -1,10 +1,11 @@
+import {requiredBoroughHotspots, isExcludedBoroughLocation, sanitizeBoroughFeed} from "../dist/borough-hotspots.mjs";
+
 const apiKey = process.env.EBIRD_API_KEY;
 if (!apiKey) throw new Error('Set EBIRD_API_KEY in the GitHub Actions repository secrets.');
 
 const apiRoot = 'https://api.ebird.org/v2';
 const boundaryUrl = 'https://www.planning.data.gov.uk/entity/8600296.geojson';
 const outputPath = new URL('../dist/data/observations.json', import.meta.url);
-const excludedHotspotIds = new Set(['L12107155']); // St Mary's Catholic Cemetery (Kensal Green), outside the borough
 const explicitlyIncludedHotspotNames = new Set(['Hammersmith (LBC District)', 'Furnival Gardens', 'Furnivall Gardens', 'Hammersmith Cemetery / Magravine Cemetery', 'Magravine Cemetery']); // Keep these borough hotspots in refreshes even without a recent checklist; accept common Furnivall spellings.
 
 async function getJson(url, headers = {}) {
@@ -69,10 +70,10 @@ const allHotspotUrl = new URL(`${apiRoot}/ref/hotspot/geo`);
 allHotspotUrl.search = new URLSearchParams({lat: '51.49', lng: '-0.23', dist: '10', fmt: 'json'});
 const allNearbyHotspots = await getJson(allHotspotUrl, headers);
 const recentHotspotIds = new Set(nearbyHotspots.map(h => h.locId));
-const hotspotCandidates = new Map([...allNearbyHotspots, ...nearbyHotspots].map(h => [h.locId, h]));
+const hotspotCandidates = new Map([...requiredBoroughHotspots, ...allNearbyHotspots, ...nearbyHotspots].map(h => [h.locId, h]));
 const boroughHotspots = [...hotspotCandidates.values()].filter(h => {
   const name = String(h.name || h.locName || '');
-  return h.locId && !excludedHotspotIds.has(h.locId) && !/kensal green/i.test(name) && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons) && (recentHotspotIds.has(h.locId) || explicitlyIncludedHotspotNames.has(name));
+  return h.locId && !isExcludedBoroughLocation(h) && Number.isFinite(Number(h.lat)) && Number.isFinite(Number(h.lng)) && inBorough(Number(h.lng), Number(h.lat), polygons) && (recentHotspotIds.has(h.locId) || requiredBoroughHotspots.some(required => required.locId === h.locId) || explicitlyIncludedHotspotNames.has(name));
 });
 
 const boroughHotspotIds = new Set(boroughHotspots.map(hotspot => hotspot.locId));
@@ -128,14 +129,15 @@ catch { feed = {source: 'eBird', updatedAt: null, records: []}; }
 // Use the hotspot ID consistently so old records keyed by hotspot name are
 // normalised and repeated daily runs replace, rather than duplicate, reports.
 const recordKey = record => `${record.species}|${record.date}|${record.hotspotId || record.hotspot}|${record.checklistId || ''}`;
-const byId = new Map(feed.records.filter(record => !excludedHotspotIds.has(record.hotspotId) && !/kensal green/i.test(record.hotspot || '')).map(record => {
+feed = sanitizeBoroughFeed(feed);
+const byId = new Map(feed.records.map(record => {
   const normalized = {...record, species: normalizeCommonName(record.species, record.latin), reportType: record.reportType || 'hotspot'};
   return [recordKey(normalized), normalized];
 }));
 let accepted = 0, acceptedNearby = 0;
 
 for (const observation of observations) {
-  if (!observation.locId || excludedHotspotIds.has(observation.locId) || /kensal green/i.test(observation.locName || '') || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
+  if (!observation.locId || isExcludedBoroughLocation(observation) || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
   if (observation.obsValid !== true) continue;
   if (!inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
@@ -148,7 +150,7 @@ for (const observation of observations) {
 }
 
 for (const observation of nearbyObservations) {
-  if (!observation.locId || boroughHotspotIds.has(observation.locId) || excludedHotspotIds.has(observation.locId) || /kensal green/i.test(observation.locName || '') || observation.locationPrivate === true || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
+  if (!observation.locId || boroughHotspotIds.has(observation.locId) || isExcludedBoroughLocation(observation) || observation.locationPrivate === true || !Number.isFinite(Number(observation.lat)) || !Number.isFinite(Number(observation.lng))) continue;
   if (observation.obsValid !== true || !inBorough(Number(observation.lng), Number(observation.lat), polygons)) continue;
   const date = String(observation.obsDt).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
@@ -172,6 +174,6 @@ const hotspotDirectory = boroughHotspots.map(hotspot => ({
   lat: Number(hotspot.lat),
   lng: Number(hotspot.lng)
 }));
-feed = {source: 'eBird', updatedAt: new Date().toISOString(), hotspots: hotspotDirectory, records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby, lastRunNearbyCandidates: nearbyObservations.length};
+feed = sanitizeBoroughFeed({source: 'eBird', updatedAt: new Date().toISOString(), hotspots: hotspotDirectory, records, lastRunNewReports: accepted + acceptedNearby, lastRunNewNearbyReports: acceptedNearby, lastRunNearbyCandidates: nearbyObservations.length});
 await fs.writeFile(outputPath, `${JSON.stringify(feed, null, 2)}\n`);
 console.log(`Saved ${records.length} retained reports: ${accepted} new hotspot reports from ${boroughHotspots.length} borough hotspots and ${acceptedNearby} recent reports from other mapped in-borough locations.`);

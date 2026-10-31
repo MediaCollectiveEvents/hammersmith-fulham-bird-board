@@ -23,6 +23,7 @@ async function run(t, scenario) {
   await mkdir(path.join(root,'scripts'));
   await mkdir(path.join(root,'dist/data'),{recursive:true});
   await writeFile(path.join(root,'scripts/update-ebird.mjs'),updater);
+  await writeFile(path.join(root,'dist/borough-hotspots.mjs'),await readFile(new URL('../dist/borough-hotspots.mjs',import.meta.url),'utf8'));
   const before=JSON.stringify(seed,null,2)+'\n';
   const output=path.join(root,'dist/data/observations.json');
   await writeFile(output,before);
@@ -39,6 +40,7 @@ globalThis.fetch=async function(input) {
  if (${JSON.stringify(scenario)}==='rate-limit' && !limited) {limited=true; return new Response('Synthetic rate limit',{status:429,headers:{'retry-after':'0.001'}});}
  if (u.pathname==='/v2/ref/hotspot/geo') return new Response(JSON.stringify([{locId:'LTEST',locName:'Synthetic fixture location',lat:51.49,lng:-0.23}]));
  if (u.pathname==='/v2/data/obs/geo/recent' || u.pathname.endsWith('/notable')) return new Response('[]');
+ if (u.pathname==='/v2/data/obs/L939893/recent') return new Response('[]');
  if (u.pathname==='/v2/data/obs/LTEST/recent') return new Response(JSON.stringify(records));
  throw new Error('Unrecognised endpoint blocked by offline harness');
 };`;

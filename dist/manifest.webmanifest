@@ -7,8 +7,8 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "any",
-  "background_color": "#080a0e",
-  "theme_color": "#101923",
+  "background_color": "#f5f7f2",
+  "theme_color": "#216e4b",
   "icons": [
     {
       "src": "./icons/bird.svg",
