@@ -1,0 +1,15 @@
+# Read-only PR validation
+
+`pr-validation.yml` runs only for pull requests targeting `main`. It checks the proposed merge, installs locked Node 22 dependencies without lifecycle scripts, runs `npm test`, and reuses production schema/release/image/archive helpers for read-only checked-in data validation. JSON parsing, JavaScript syntax and literal HTML asset paths are also checked. Monthly archives are rebuilt **in memory** and compared to checked-in files; neither refresh scripts nor archive writers run.
+
+When dashboard browser scripts are present, pinned Playwright tooling is installed under the runner's temporary directory, outside the repository. The existing desktop/tablet/mobile/TV and monthly browser regressions run using Chrome. Real service-worker/PWA installation/update/offline checks remain separately verified locally; native installation UI and casting hardware remain outside headless coverage.
+
+The workflow has only `contents: read`, does not persist checkout credentials, references no secrets, uses no environment, deployment, push, schedule, `workflow_dispatch`, `pull_request_target` or cross-workflow trigger, and cannot invoke the production workflows with its token. Production Pages and eBird workflows are unchanged. Test subprocesses may create synthetic temporary fixtures, but production feeds and checked-in archives are not regenerated. A final tracked-diff check detects unintended writes. Checks run on disposable GitHub-hosted runners; this is validation, not a deployment.
+
+## PR #12 bootstrap
+
+This CI PR branches from main and stays separate from the four reviewed dashboard commits. On the specifically named CI branch `codex/bird-pr-validation`, a second matrix target checks out immutable reviewed dashboard SHA `22931b9a65c802f3ba0e2ded6fed52e616626790`. Both targets use this CI PR's validator. This provides actual Actions evidence for that exact commit without modifying PR #12 or merging the CI workflow first (which would itself trigger the existing Pages workflow).
+
+The bootstrap result appears on the **CI PR's check suite**, not as a required status on PR #12's head. It does not automatically protect the main branch or make checks mandatory. For every other PR, the workflow has only the normal proposed-merge target. If main or PR #12 advances, the pinned bootstrap result is no longer evidence for that new integration state; revalidate explicitly. No auto-merge is enabled and no branch protection/Pages settings are changed.
+
+Private upstream CSV/database inputs and live eBird credentials are not required. The full test suite already uses synthetic generation/API fixtures. `validate-seasonality.mjs` needs an unavailable authoritative upstream CSV, so this workflow instead reuses the existing checked-in metadata JSON schema and `verifyRelease` hash/publication checks; it does not fabricate an upstream source or claim to rebuild production seasonality data.
