@@ -69,10 +69,11 @@ test('disk generation preserves old months across deployments, skips unchanged w
  await fs.writeFile(feedPath,'not JSON');await assert.rejects(archiveSightings({feedPath,directory}));assert.equal(await fs.readFile(month,'utf8'),before);
 });
 
-test('workflow archives only successful borough refreshes, commits history and deploys dist without changing other feed commands',async()=>{
+test('workflow archives successful borough refreshes and delegates dist publication without changing other feed commands',async()=>{
  const workflow=await fs.readFile(new URL('../.github/workflows/update-ebird.yml',import.meta.url),'utf8');
  assert.match(workflow,/if: steps.borough.outcome == 'success'/);assert.match(workflow,/git add .*dist\/data\/sightings-archive/);
- assert.match(workflow,/path: dist/);assert.match(workflow,/run: npm run update:wetland/);assert.match(workflow,/run: npm run update:birdweather/);
+ const pages=await fs.readFile(new URL('../.github/workflows/pages.yml',import.meta.url),'utf8');
+ assert.match(pages,/path: dist/);assert.doesNotMatch(workflow,/deploy-pages/);assert.match(workflow,/run: npm run update:wetland/);assert.match(workflow,/run: npm run update:birdweather/);
  const manifest=JSON.parse(await fs.readFile(new URL('../dist/data/sightings-archive/index.json',import.meta.url)));
  assert(manifest.months.some(m=>m.month==='2026-09'));
  for(const month of manifest.months){const archive=JSON.parse(await fs.readFile(new URL(`../dist/data/sightings-archive/${month.month}.json`,import.meta.url)));assert.deepEqual(monthlyTotals(archive.records),archive.totals);assert.equal(month.reports,archive.records.length);assert(archive.records.every(r=>!Object.hasOwn(r,'observer')));}
