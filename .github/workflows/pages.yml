@@ -3,6 +3,10 @@ name: Deploy bird board to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: [Update eBird observations]
+    branches: [main]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -10,21 +14,49 @@ permissions:
   pages: write
   id-token: write
 
+# This is the ONLY Pages publisher. Do not cancel an in-flight deployment.
+# Queue ordering is immaterial: every run selects current main inside this lock.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.head_repository.full_name == github.repository &&
+        github.event.workflow_run.head_branch == 'main' &&
+        contains(fromJSON('["push","schedule","workflow_dispatch"]'), github.event.workflow_run.event)))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --ignore-scripts
+      - name: Validate committed release and retained archives without writing data
+        run: node scripts/validate-pr-data.mjs
+      - name: Reject a snapshot superseded during validation
+        id: before_upload
+        run: node scripts/check-publication-head.mjs
       - uses: actions/configure-pages@v5
+        if: steps.before_upload.outputs.publish == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.before_upload.outputs.publish == 'true'
         with:
           path: dist
+      - name: Reject a snapshot superseded during artifact upload
+        if: steps.before_upload.outputs.publish == 'true'
+        id: before_deploy
+        run: node scripts/check-publication-head.mjs
       - id: deployment
+        if: steps.before_deploy.outputs.publish == 'true'
         uses: actions/deploy-pages@v4
