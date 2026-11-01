@@ -18,13 +18,12 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: ebird-feed-refresh
-  cancel-in-progress: false
-
 jobs:
   update:
     if: github.ref == 'refs/heads/main'
+    concurrency:
+      group: ebird-feed-refresh
+      cancel-in-progress: false
     environment:
       name: github-pages
     runs-on: ubuntu-latest

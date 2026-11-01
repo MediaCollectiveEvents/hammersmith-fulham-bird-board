@@ -16,10 +16,6 @@ permissions:
 
 # This is the ONLY Pages publisher. Do not cancel an in-flight deployment.
 # Queue ordering is immaterial: every run selects current main inside this lock.
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   deploy:
     if: >-
@@ -28,6 +24,9 @@ jobs:
        (github.event.workflow_run.head_repository.full_name == github.repository &&
         github.event.workflow_run.head_branch == 'main' &&
         contains(fromJSON('["push","schedule","workflow_dispatch"]'), github.event.workflow_run.event)))
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

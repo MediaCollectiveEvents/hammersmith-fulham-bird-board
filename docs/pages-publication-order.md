@@ -34,7 +34,7 @@ flowchart LR
     Gate2 --> Deploy[Pages deployment]
 ```
 
-Only `pages.yml` uses Pages artifact/deployment actions. Its global `pages` concurrency group has `cancel-in-progress: false`: a deployment already started is allowed to finish, and newer publication cannot race past it. Each run explicitly checks out **main at execution time**, not the SHA of an old triggering event. An old queued/manual/refresh-completion event therefore does not imply an old snapshot.
+Only `pages.yml` uses Pages artifact/deployment actions. Its repository-wide `pages` concurrency group, attached to the eligible main-only job, has `cancel-in-progress: false`: a deployment already started is allowed to finish, and newer publication cannot race past it. Ignored non-main manual runs do not join either main job’s concurrency queue. Each run explicitly checks out **main at execution time**, not the SHA of an old triggering event. An old queued/manual/refresh-completion event therefore does not imply an old snapshot.
 
 `check-publication-head.mjs` compares checked-out HEAD with `git ls-remote origin refs/heads/main` before upload and again before deployment. Missing/invalid/unreachable identities fail closed. A changed head produces `publish=false`, a clear summary and no deployment. The read-only existing validator checks metadata schema, READY release hashes, public images/assets and in-memory archive consistency before either fence; it does not regenerate feeds or archives.
 
