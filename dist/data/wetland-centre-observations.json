@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-11-01T05:24:57.814Z",
+  "updatedAt": "2026-11-01T11:54:39.077Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -9662,6 +9662,19 @@
       "hotspotId": "L939896",
       "checklistId": "S406893056",
       "howMany": 49
+    },
+    {
+      "species": "Reed Bunting",
+      "latin": "Schoeniclus schoeniclus",
+      "speciesCode": "reebun",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-31",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407108574",
+      "howMany": 2
     },
     {
       "species": "Robin",
