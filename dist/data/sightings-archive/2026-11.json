@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "source": "eBird",
+  "month": "2026-11",
+  "timeZone": "Europe/London",
+  "coverage": {
+    "status": "partial",
+    "notice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
+    "firstObservationDate": "2026-11-02",
+    "lastObservationDate": "2026-11-02",
+    "sourceFeedUpdatedAt": "2026-11-02T10:59:21.114Z"
+  },
+  "totals": {
+    "reports": 14,
+    "species": 14,
+    "hotspots": 1,
+    "lastRecorded": "2026-11-02"
+  },
+  "hotspots": [
+    {
+      "locId": "L12105744",
+      "name": "Fulham Old Cemetery",
+      "lat": 51.4803986,
+      "lng": -0.215731
+    },
+    {
+      "locId": "L12105747",
+      "name": "Fulham Reach",
+      "lat": 51.4854186,
+      "lng": -0.2267154
+    },
+    {
+      "locId": "L12105749",
+      "name": "Furnival Gardens",
+      "lat": 51.4905965,
+      "lng": -0.2331551
+    },
+    {
+      "locId": "L12106160",
+      "name": "Hammersmith (LBC District)",
+      "lat": 51.4924127,
+      "lng": -0.2251701
+    },
+    {
+      "locId": "L12107769",
+      "name": "Shepherd's Bush (LBC District)",
+      "lat": 51.5095775,
+      "lng": -0.2302681
+    },
+    {
+      "locId": "L1973820",
+      "name": "Wormwood Scrubs LNR",
+      "lat": 51.5219888,
+      "lng": -0.2379227
+    },
+    {
+      "locId": "L21101281",
+      "name": "Shepherd's Bush Green",
+      "lat": 51.503901,
+      "lng": -0.2228755
+    },
+    {
+      "locId": "L3526185",
+      "name": "Hammersmith Cemetery / Magravine Cemetery",
+      "lat": 51.4888122,
+      "lng": -0.2159876
+    },
+    {
+      "locId": "L8165956",
+      "name": "River Thames at Hammersmith Bridge",
+      "lat": 51.4884612,
+      "lng": -0.2303628
+    },
+    {
+      "locId": "L939893",
+      "name": "Ravenscourt Park",
+      "lat": 51.4966678,
+      "lng": -0.2383518
+    }
+  ],
+  "records": [
+    {
+      "species": "Black-headed Gull",
+      "latin": "Chroicocephalus ridibundus",
+      "speciesCode": "bkhgul",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 10
+    },
+    {
+      "species": "Canada Goose",
+      "latin": "Branta canadensis",
+      "speciesCode": "cangoo",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 2
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 17
+    },
+    {
+      "species": "Common Wood-Pigeon",
+      "latin": "Columba palumbus",
+      "speciesCode": "cowpig1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 7
+    },
+    {
+      "species": "Coot",
+      "latin": "Fulica atra",
+      "speciesCode": "eurcoo",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 5
+    },
+    {
+      "species": "Egyptian Goose",
+      "latin": "Alopochen aegyptiaca",
+      "speciesCode": "egygoo",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 2
+    },
+    {
+      "species": "Great Tit",
+      "latin": "Parus major",
+      "speciesCode": "gretit1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 1
+    },
+    {
+      "species": "Jackdaw",
+      "latin": "Coloeus monedula",
+      "speciesCode": "eurjac",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 2
+    },
+    {
+      "species": "Magpie",
+      "latin": "Pica pica",
+      "speciesCode": "eurmag1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 8
+    },
+    {
+      "species": "Mallard",
+      "latin": "Anas platyrhynchos",
+      "speciesCode": "mallar3",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 21
+    },
+    {
+      "species": "Moorhen",
+      "latin": "Gallinula chloropus",
+      "speciesCode": "commoo3",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 17
+    },
+    {
+      "species": "Robin",
+      "latin": "Erithacus rubecula",
+      "speciesCode": "eurrob1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 1
+    },
+    {
+      "species": "Rock Pigeon",
+      "latin": "Columba livia",
+      "speciesCode": "rocpig",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 13
+    },
+    {
+      "species": "Rose-ringed Parakeet",
+      "latin": "Psittacula krameri",
+      "speciesCode": "rorpar",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Ravenscourt Park",
+      "hotspotId": "L939893",
+      "checklistId": "S407448518",
+      "howMany": 3
+    }
+  ]
+}

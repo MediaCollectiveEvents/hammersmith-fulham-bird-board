@@ -31,6 +31,20 @@
         "lastObservationDate": "2026-10-30",
         "sourceFeedUpdatedAt": "2026-10-31T10:59:14.353Z"
       }
+    },
+    {
+      "month": "2026-11",
+      "reports": 14,
+      "species": 14,
+      "hotspots": 1,
+      "lastRecorded": "2026-11-02",
+      "coverage": {
+        "status": "partial",
+        "notice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
+        "firstObservationDate": "2026-11-02",
+        "lastObservationDate": "2026-11-02",
+        "sourceFeedUpdatedAt": "2026-11-02T10:59:21.114Z"
+      }
     }
   ]
 }
