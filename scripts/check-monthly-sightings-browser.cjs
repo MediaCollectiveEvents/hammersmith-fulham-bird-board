@@ -14,55 +14,51 @@ const root=path.resolve(__dirname,'../dist');
  });
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const url=`http://127.0.0.1:${server.address().port}`;
  const browser=await chromium.launch({headless:true,channel:'chrome'});
- const sept=JSON.parse(await fs.readFile(path.join(root,'data/sightings-archive/2026-09.json'))),oct=JSON.parse(await fs.readFile(path.join(root,'data/sightings-archive/2026-10.json')));
  try{
-  for(const width of [1440,390]){
-   const page=await browser.newPage({viewport:{width,height:1000},serviceWorkers:'block'}),errors=[];
+  for(const width of [1440,390,1920]){
+   const page=await browser.newPage({viewport:{width,height:width===1920?1080:1000},serviceWorkers:'block'}),errors=[];
    page.on('pageerror',e=>errors.push(e.message));
-   await page.clock.install({time:new Date('2026-10-31T12:00:00Z')});await page.goto(url);
-   await page.locator('#section-menu [data-category="actual"]').click();
-   await page.waitForFunction(expected=>document.querySelector('#sightings-coverage').textContent.includes(expected),`${oct.records.length} collected reports`);
-   assert.equal(await page.locator('#sightings-period').inputValue(),'this');
-   await page.locator('#sightings-period').selectOption('last');
-   await page.waitForFunction(expected=>document.querySelector('#sightings-coverage').textContent.includes(expected),`${sept.records.length} collected reports`);
-   assert.equal(await page.locator('#sightings-month-label').innerText(),'September 2026');
-   assert.equal((await page.locator('#month-title').innerText()).toLowerCase(),'october 2026');
-   assert.equal(await page.locator('#dashboard-month').innerText(),'October 2026');assert.match(await page.locator('#dashboard-summary').innerText(),/191/);assert.match(await page.locator('#sightings-title').textContent(),/September 2026/);assert.match(await page.locator('.news-lead time').innerText(),/2026-10-/);
-   if(width===390){await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:'/private/tmp/hf-dashboard-after-month-label.png'});}
-   assert.equal(Number(await page.locator('#bento-sightings-count').innerText()),sept.totals.species);
-   assert.match(await page.locator('#sightings-coverage').innerText(),new RegExp(sept.totals.lastRecorded));
-   await page.locator('[data-open-panel="panel-sightings"]').click();
-   assert.match(await page.locator('#sightings-rows').innerText(),/Last recorded 2026-09-/);
-   assert.doesNotMatch(await page.locator('#sightings-rows').innerText(),/Last recorded 2026-10-/);
-   await page.locator('[data-open-panel="panel-hotspots"]').click();
-   assert.match(await page.locator('#hotspot-L939893').innerText(),/11 species · 11 species reports/);
-   assert.doesNotMatch(await page.locator('#hotspot-totals').innerText(),/WWT|Wetland Centre/);
-   await page.locator('#sightings-period-controls').scrollIntoViewIfNeeded();
-   await page.screenshot({path:`/private/tmp/hf-monthly-selector-${width}.png`});
-   await page.locator('#sightings-period').selectOption('this');
-   await page.waitForFunction(expected=>document.querySelector('#sightings-coverage').textContent.includes(expected),`${oct.records.length} collected reports`);
-   assert.equal(Number(await page.locator('#bento-sightings-count').innerText()),oct.totals.species);
-   await page.locator('#section-menu [data-category="expected"]').click();
-   assert.equal((await page.locator('#month-title').innerText()).toLowerCase(),'october 2026');
-   assert.equal(await page.locator('#sightings-period-controls').isVisible(),false);
-   assert.deepEqual(errors,[]);await page.close();console.log(width+'px: current/previous month, dates, totals, Ravenscourt, WWT and movement-board isolation pass');
+   await page.clock.install({time:new Date('2026-11-02T10:00Z')});await page.goto(url);
+   await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();
+   await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('collected reports'));
+   assert.equal(await page.locator('[data-period="30days"]').getAttribute('aria-pressed'),'true');
+   assert.match(await page.locator('#sightings-month-label').innerText(),/2026-10-04.*2026-11-02/);
+   assert(await page.locator('#sightings-rows .sighting-row').count()>0);
+   const initial=await page.locator('#bento-sightings-count').innerText();
+   for(const period of ['today','week']){
+    await page.locator(`[data-period="${period}"]`).click();
+    await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('0 collected reports'));
+    assert.match(await page.locator('#sightings-rows').innerText(),/No sightings recorded for this period/);
+    assert.equal(await page.locator('#bento-sightings-count').innerText(),'0');
+   }
+   await page.locator('[data-period="30days"]').click();
+   await page.waitForFunction(()=>document.querySelector('#sightings-rows .sighting-row'));
+   assert.equal(await page.locator('#bento-sightings-count').innerText(),initial);
+   assert.equal((await page.locator('#month-title').innerText()).toLowerCase(),'november 2026');
+   assert.doesNotMatch(await page.locator('#sightings-rows').innerText(),/Wetland Centre/);
+   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+   await page.screenshot({path:`/private/tmp/hf-rolling-${width}.png`});
+   assert.deepEqual(errors,[]);await page.close();console.log(width+'px: rolling periods, summaries, empty state, month isolation, overflow pass');
   }
-  for(const scenario of ['missing','december','failed-live','invalid-archive','rollover']){
-   const context=await browser.newContext({serviceWorkers:'block',timezoneId:'America/Los_Angeles'}),page=await context.newPage();
-   await page.clock.install({time:new Date(scenario==='missing'?'2027-01-01T12:00:00Z':scenario==='december'?'2026-12-31T12:00:00Z':scenario==='rollover'?'2026-11-01T00:30:00Z':'2026-10-31T12:00:00Z')});
-   if(scenario==='failed-live')await page.route('**/data/observations.json',route=>route.fulfill({status:503,body:'Unavailable'}));
-   if(scenario==='invalid-archive')await page.route('**/sightings-archive/2026-09.json',route=>route.fulfill({json:{...sept,month:'2025-09'}}));
-   await page.goto(url);await page.locator('#section-menu [data-category="actual"]').click();
-   await page.waitForFunction(()=>!document.querySelector('#sightings-coverage').textContent.includes('Loading')&&document.querySelector('#sightings-coverage').textContent.length>0);
-   if(scenario==='rollover')assert.equal(await page.locator('#sightings-month-label').innerText(),'November 2026');
-   await page.locator('#sightings-period').selectOption('last');
-   await page.waitForFunction(()=>!document.querySelector('#sightings-coverage').textContent.includes('Loading')&&document.querySelector('#sightings-coverage').textContent.length>0);
-   const text=await page.locator('#sightings-coverage').innerText();
-   if(scenario==='missing'||scenario==='december'){const current=scenario==='missing'?'January 2027':'December 2026',previous=scenario==='missing'?'December 2026':'November 2026';assert.equal(await page.locator('#month-title').textContent(),current);assert.equal(await page.locator('#dashboard-month').innerText(),current);assert.equal(await page.locator('#sightings-month-label').innerText(),previous);assert.match(await page.locator('#sightings-title').textContent(),new RegExp(previous));assert.match(text,/No collected archive/);assert.equal(await page.locator('#bento-sightings-count').innerText(),'0');}
-   else if(scenario==='invalid-archive')assert.match(text,/Archive unavailable; showing partial records retained/);
-   else if(scenario==='failed-live')assert(text.includes(`${sept.records.length} collected reports`));
-   else assert(text.includes(`${oct.records.length} collected reports`));
-   await context.close();console.log(scenario+': pass');
+  for(const scenario of ['unavailable','stale','empty','invalid-archive']){
+   const page=await browser.newPage({serviceWorkers:'block'});
+   await page.clock.install({time:new Date('2026-11-02T10:00Z')});
+   if(scenario==='unavailable'){
+    await page.route('**/data/observations.json',r=>r.fulfill({status:503,body:'unavailable'}));
+    await page.route('**/sightings-archive/*.json',r=>r.fulfill({status:503,body:'unavailable'}));
+   }else if(scenario==='empty'){
+    await page.route('**/data/observations.json',r=>r.fulfill({json:{source:'eBird',updatedAt:'2026-11-02T09:00Z',hotspots:[],records:[]}}));
+    await page.route('**/sightings-archive/*.json',r=>r.fulfill({status:404,body:'No archive'}));
+   }else if(scenario==='invalid-archive')await page.route('**/sightings-archive/*.json',r=>r.fulfill({json:{schemaVersion:1,source:'offline',records:[]}}));
+   else await page.route('**/data/observations.json',async r=>{const res=await r.fetch(),json=await res.json();json.updatedAt='2026-10-29T09:00Z';await r.fulfill({json});});
+   await page.goto(url);await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();
+   await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('collected reports'));
+   const status=await page.locator('#sightings-coverage').innerText(),rows=await page.locator('#sightings-rows').innerText();
+   if(scenario==='unavailable'){assert.match(status,/feed unavailable/);assert.match(rows,/Sightings data unavailable/);assert.doesNotMatch(rows,/No sightings recorded/);}
+   if(scenario==='stale')assert.match(status,/over 48 hours/);
+   if(scenario==='empty')assert.match(rows,/No sightings recorded for this period/);
+   if(scenario==='invalid-archive'){assert.match(status,/Archives unavailable/);assert(await page.locator('#sightings-rows .sighting-row').count()>0);}
+   await page.close();console.log(scenario+': pass');
   }
  }finally{await browser.close();await new Promise(resolve=>server.close(resolve));}
 })().catch(e=>{console.error(e);process.exit(1)});

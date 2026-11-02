@@ -31,19 +31,19 @@ const root=path.resolve(__dirname,'../dist');
   const installability=await session.send('Page.getInstallabilityErrors');assert.deepEqual(installability.installabilityErrors,[]);await page.waitForFunction(()=>window.__installPromptSeen===true);console.log('Installability: no Chromium errors; genuine beforeinstallprompt received; install control visible: '+await page.locator('#install-button').isVisible());
   console.log('Native installation UI/app launch cannot be verified in headless Chrome.');
   release='after';await page.evaluate(async()=>{const old=navigator.serviceWorker.controller,registration=await navigator.serviceWorker.getRegistration();const changed=new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',()=>{if(navigator.serviceWorker.controller!==old)resolve();}));await registration.update();await changed;});
-  await page.waitForFunction(async()=>{const keys=await caches.keys();return keys.includes('hf-bird-board-v36')&&!keys.includes('hf-bird-board-v35');});
+  await page.waitForFunction(async()=>{const keys=await caches.keys();return keys.includes('hf-bird-board-v37')&&!keys.includes('hf-bird-board-v35');});
   await page.reload();await page.waitForSelector('.dashboard-shortcuts');await page.waitForSelector('.news-lead');
   assert(await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();return navigator.serviceWorker.controller===r.active&&r.active.state==='activated';}));
-  console.log('Update: v35 → v36 activates, old cache removed, new shortcuts load.');
+  console.log('Update: v35 → v37 activates, old cache removed, new shortcuts load.');
   // Warm the retained month through its real user flow, then wait for cache writes.
-  await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();await page.locator('#sightings-period').selectOption('last');await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('97 collected reports'));
-  await page.waitForFunction(async()=>{const cache=await caches.open('hf-bird-board-v36');const urls=(await cache.keys()).map(r=>r.url);return ['index.html','dashboard.css','dashboard.mjs','seasonality_metadata.json','species_migration_calendar.csv','sightings-archive/2026-09.json'].every(file=>urls.some(u=>u.endsWith('/'+file)));});
+  await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();await page.locator('[data-period="30days"]').click();await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('191 collected reports'));
+  await page.waitForFunction(async()=>{const cache=await caches.open('hf-bird-board-v37');const urls=(await cache.keys()).map(r=>r.url);return ['index.html','dashboard.css','dashboard.mjs','seasonality_metadata.json','species_migration_calendar.csv','sightings-archive/2026-10.json'].every(file=>urls.some(u=>u.endsWith('/'+file)));});
   await context.setOffline(true);await page.reload();try{await page.waitForSelector('.news-lead',{timeout:10000});}catch(e){console.log('Offline state: '+await page.locator('#bird-news-grid').textContent());console.log(await page.evaluate(async()=>{return await Promise.all(['ebird-history.json','bird-rankings.json','species_migration_calendar.csv','seasonality_metadata.json','observations.json'].map(async f=>{try{const r=await fetch('./data/'+f);return [f,r.status,(await r.text()).slice(0,180)];}catch(e){return [f,e.message];}}));}));throw e;}await page.waitForSelector('.dashboard-shortcuts');
   assert.equal(await page.locator('#month-title').textContent(),'October 2026');assert.match(await page.locator('#dashboard-summary').innerText(),/191/);
-  await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();await page.locator('#sightings-period').selectOption('last');await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('97 collected reports'));
-  assert.equal(await page.locator('#sightings-month-label').innerText(),'September 2026');assert.equal(await page.locator('#month-title').textContent(),'October 2026');
+  await page.locator('.dashboard-shortcuts a[href="#panel-sightings"]').click();await page.locator('[data-period="30days"]').click();await page.waitForFunction(()=>document.querySelector('#sightings-coverage').textContent.includes('191 collected reports'));
+  assert.equal(await page.locator('#sightings-month-label').innerText(),'2026-10-02 – 2026-10-31 · Europe/London');assert.equal(await page.locator('#month-title').textContent(),'October 2026');
   await page.screenshot({path:'/private/tmp/hf-dashboard-pwa-offline.png'});
-  console.log('Offline warm-cache reload: news, styles, current totals, shortcuts and retained September archive pass.');
+  console.log('Offline warm-cache reload: news, styles, current totals, shortcuts and retained October archive pass.');
   
  }finally{await browser.close();await new Promise(resolve=>server.close(resolve));await fs.rm(profile,{recursive:true,force:true});}
 })().catch(e=>{console.error(e);process.exit(1)});
