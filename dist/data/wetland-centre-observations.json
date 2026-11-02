@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-11-02T10:59:23.359Z",
+  "updatedAt": "2026-11-02T13:39:58.675Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -10403,6 +10403,84 @@
       "hotspotId": "L939896",
       "checklistId": "S407210737",
       "howMany": null
+    },
+    {
+      "species": "Common Snipe",
+      "latin": "Gallinago gallinago",
+      "speciesCode": "comsni",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 1
+    },
+    {
+      "species": "Garganey",
+      "latin": "Spatula querquedula",
+      "speciesCode": "gargan",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 1
+    },
+    {
+      "species": "Great Crested Grebe",
+      "latin": "Podiceps cristatus",
+      "speciesCode": "grcgre1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 2
+    },
+    {
+      "species": "Grey Wagtail",
+      "latin": "Motacilla cinerea",
+      "speciesCode": "grywag",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 1
+    },
+    {
+      "species": "Little Grebe",
+      "latin": "Tachybaptus ruficollis",
+      "speciesCode": "litgre1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 1
+    },
+    {
+      "species": "Sparrowhawk",
+      "latin": "Accipiter nisus",
+      "speciesCode": "eurspa1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-02",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S407489511",
+      "howMany": 1
     }
   ],
   "lastRunNewReports": 84
