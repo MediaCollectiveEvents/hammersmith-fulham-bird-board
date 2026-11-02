@@ -19,7 +19,7 @@ function environment() {
     const marker={attributes,events,handlers:{},style:options,setStyle(value){Object.assign(this.style,value);},bindTooltip(value){this.tooltip=value;},bindPopup(value){this.popup=value;},on(name,handler){this.handlers[name]=handler;},addTo(){},getElement:()=>element};
     markers.push(marker);return marker;
   }};
-  const context=vm.createContext({L,console,Map,Number,String,Set,months:['January'],normalizeCommonName:name=>name,
+  const context=vm.createContext({L,console,Map,Number,String,Set,actualRecords:[],actualPeriod:{label:'Last 30 Days'},months:['January'],normalizeCommonName:name=>name,
     esc:value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'),
     speciesListMarkup:()=>'<ul><li>Public taxon</li></ul>',addSpeciesReport(entry,row){entry.reports++;entry.species.set(row.latin,{name:row.species});},
     localReports:{hotspots:[{locId:'L1',name:'Public Park',lat:51.49,lng:-.23},{locId:'L1',name:'Public Park',lat:51.49,lng:-.23},{locId:'L2',name:'Public Gardens',lat:51.50,lng:-.22}],records:[]},
@@ -68,7 +68,7 @@ test('hotspot/contributor groups close only sibling lists, retaining native keyb
 });
 test('report aliases with the same hotspot ID use one list and preserve counts',()=>{
   const e=environment();
-  vm.runInContext("localReports.records=[{year:2026,month:1,reportType:'hotspot',hotspot:'Old public name',hotspotId:'L1',species:'Bird',latin:'Avis test'},{year:2026,month:1,reportType:'hotspot',hotspot:'Public Park',hotspotId:'L1',species:'Bird',latin:'Avis test'}];renderHotspotTotals(2026,1)",e.context);
+  vm.runInContext("actualRecords=[{year:2026,month:1,reportType:'hotspot',hotspot:'Old public name',hotspotId:'L1',species:'Bird',latin:'Avis test'},{year:2026,month:1,reportType:'hotspot',hotspot:'Public Park',hotspotId:'L1',species:'Bird',latin:'Avis test'}];renderHotspotTotals(2026,1)",e.context);
   assert.equal((e.root.innerHTML.match(/id="hotspot-L1"/g)||[]).length,1);
   assert.match(e.root.innerHTML,/1 species · 2 species reports/);
   assert.match(e.root.innerHTML,/Public Park/);assert.doesNotMatch(e.root.innerHTML,/Old public name/);
