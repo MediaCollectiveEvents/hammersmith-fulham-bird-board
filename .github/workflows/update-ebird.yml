@@ -12,15 +12,39 @@ on:
       - 'scripts/update-birdweather.mjs'
       - '.github/workflows/update-ebird.yml'
   schedule:
-    - cron: '23 5 * * *'
+    # UTC candidates: 11:00 in BST, 12:00 in GMT. Only London noon collects.
+    - cron: '0 11 * * *'
+    - cron: '0 12 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
+  london-noon:
+    if: github.ref == 'refs/heads/main' && github.event_name == 'schedule'
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.eligibility.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Select the Europe/London noon candidate
+        id: eligibility
+        run: node scripts/check-london-noon.mjs
+
   update:
-    if: github.ref == 'refs/heads/main'
+    needs: london-noon
+    # Explicit status check allows manual/push runs when the schedule job is skipped.
+    if: >-
+      always() && !cancelled() && github.ref == 'refs/heads/main' &&
+      (github.event_name != 'schedule' || needs.london-noon.outputs.run == 'true')
     concurrency:
       group: ebird-feed-refresh
       cancel-in-progress: false
