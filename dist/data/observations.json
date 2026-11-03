@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-11-02T13:39:56.732Z",
+  "updatedAt": "2026-11-03T12:53:22.187Z",
   "hotspots": [
     {
       "locId": "L939893",
@@ -43,12 +43,6 @@
       "name": "River Thames at Hammersmith Bridge",
       "lat": 51.4884612,
       "lng": -0.2303628
-    },
-    {
-      "locId": "L12107769",
-      "name": "Shepherd's Bush (LBC District)",
-      "lat": 51.5095775,
-      "lng": -0.2302681
     },
     {
       "locId": "L21101281",
@@ -4591,7 +4585,7 @@
       "howMany": 3
     }
   ],
-  "lastRunNewReports": 137,
+  "lastRunNewReports": 133,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 585
+  "lastRunNearbyCandidates": 578
 }
