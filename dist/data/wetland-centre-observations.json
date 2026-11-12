@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-11-11T12:49:47.361Z",
+  "updatedAt": "2026-11-12T13:52:20.731Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -6204,6 +6204,19 @@
       "hotspotId": "L939896",
       "checklistId": "S405058034",
       "howMany": null
+    },
+    {
+      "species": "Red Kite",
+      "latin": "Milvus milvus",
+      "speciesCode": "redkit1",
+      "year": 2026,
+      "month": 10,
+      "date": "2026-10-24",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S409872319",
+      "howMany": 2
     },
     {
       "species": "Robin",
