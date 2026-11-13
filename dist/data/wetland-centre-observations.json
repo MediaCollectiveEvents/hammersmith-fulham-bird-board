@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-11-12T13:52:20.731Z",
+  "updatedAt": "2026-11-13T13:15:06.526Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -14084,6 +14084,19 @@
       "howMany": 1
     },
     {
+      "species": "Common Chiffchaff",
+      "latin": "Phylloscopus collybita",
+      "speciesCode": "comchi1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-09",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S409990231",
+      "howMany": null
+    },
+    {
       "species": "Common Gull",
       "latin": "Larus canus",
       "speciesCode": "mewgul",
@@ -14107,6 +14120,19 @@
       "hotspot": "WWT London Wetland Centre (from 2000)",
       "hotspotId": "L939896",
       "checklistId": "S409354240",
+      "howMany": null
+    },
+    {
+      "species": "Common Shelduck",
+      "latin": "Tadorna tadorna",
+      "speciesCode": "comshe",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-09",
+      "notable": false,
+      "hotspot": "WWT London Wetland Centre (from 2000)",
+      "hotspotId": "L939896",
+      "checklistId": "S409990231",
       "howMany": null
     },
     {
