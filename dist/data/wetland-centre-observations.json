@@ -2,7 +2,7 @@
   "source": "eBird",
   "hotspotName": "WWT London Wetland Centre (from 2000)",
   "hotspotId": "L939896",
-  "updatedAt": "2026-11-17T14:41:26.750Z",
+  "updatedAt": "2026-11-18T14:18:21.142Z",
   "records": [
     {
       "species": "Barn Swallow",
@@ -16996,5 +16996,5 @@
       "howMany": 1
     }
   ],
-  "lastRunNewReports": 81
+  "lastRunNewReports": 80
 }
