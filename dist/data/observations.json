@@ -1,6 +1,6 @@
 {
   "source": "eBird",
-  "updatedAt": "2026-11-20T14:10:03.262Z",
+  "updatedAt": "2026-11-21T13:35:03.030Z",
   "hotspots": [
     {
       "locId": "L939893",
@@ -5552,9 +5552,69 @@
       "checklistId": "S410401535",
       "observer": "Paul Barrett",
       "howMany": null
+    },
+    {
+      "species": "Black-headed Gull",
+      "latin": "Chroicocephalus ridibundus",
+      "speciesCode": "bkhgul",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "observer": "Colin Mairs",
+      "howMany": 2
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "observer": "Colin Mairs",
+      "howMany": 6
+    },
+    {
+      "species": "Kestrel",
+      "latin": "Falco tinnunculus",
+      "speciesCode": "eurkes",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "observer": "Colin Mairs",
+      "howMany": 1
+    },
+    {
+      "species": "Pied Wagtail",
+      "latin": "Motacilla alba",
+      "speciesCode": "whiwag",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "observer": "Colin Mairs",
+      "howMany": 12
     }
   ],
   "lastRunNewReports": 125,
   "lastRunNewNearbyReports": 0,
-  "lastRunNearbyCandidates": 603
+  "lastRunNearbyCandidates": 604
 }

@@ -7,14 +7,14 @@
     "status": "partial",
     "notice": "Partial collected coverage, not a complete eBird census. Missing reports do not prove absence. The recent API is limited to a rolling 30-day window and may omit records.",
     "firstObservationDate": "2026-11-02",
-    "lastObservationDate": "2026-11-14",
-    "sourceFeedUpdatedAt": "2026-11-16T13:48:54.241Z"
+    "lastObservationDate": "2026-11-21",
+    "sourceFeedUpdatedAt": "2026-11-21T13:35:03.030Z"
   },
   "totals": {
-    "reports": 79,
-    "species": 41,
+    "reports": 83,
+    "species": 42,
     "hotspots": 5,
-    "lastRecorded": "2026-11-14"
+    "lastRecorded": "2026-11-21"
   },
   "hotspots": [
     {
@@ -1184,6 +1184,62 @@
       "hotspotId": "L12105744",
       "checklistId": "S410401535",
       "howMany": null
+    },
+    {
+      "species": "Black-headed Gull",
+      "latin": "Chroicocephalus ridibundus",
+      "speciesCode": "bkhgul",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "howMany": 2
+    },
+    {
+      "species": "Carrion Crow",
+      "latin": "Corvus corone",
+      "speciesCode": "carcro1",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "howMany": 6
+    },
+    {
+      "species": "Kestrel",
+      "latin": "Falco tinnunculus",
+      "speciesCode": "eurkes",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "howMany": 1
+    },
+    {
+      "species": "Pied Wagtail",
+      "latin": "Motacilla alba",
+      "speciesCode": "whiwag",
+      "year": 2026,
+      "month": 11,
+      "date": "2026-11-21",
+      "notable": false,
+      "reportType": "hotspot",
+      "hotspot": "Wormwood Scrubs LNR",
+      "hotspotId": "L1973820",
+      "checklistId": "S411976294",
+      "howMany": 12
     }
   ]
 }
